@@ -7,31 +7,39 @@ using DG.Tweening;
 
 public class UIToggleGroup : MonoBehaviour
 {
-    [SerializeField] ToggleGroup toggleGroup;
-    [SerializeField] List<GameObject> toggleGameObjects;
+    [SerializeField] List<Toggle> toggles = new List<Toggle>();
 
-    List<Toggle> toggles;
+    Dictionary<Toggle, Vector3> toggleOriginPosDictionary = new Dictionary<Toggle, Vector3>();
 
     private void Start()
     {
-        toggles = toggleGroup.ActiveToggles().ToList();
-        ResetToggleGroup();
-    }
+        toggles.ForEach(x => toggleOriginPosDictionary.Add(x, x.GetComponent<RectTransform>().anchoredPosition));
 
-    private void Update()
-    {
-        if(toggles.Find(x => x.isOn) != null)
+        toggles.ForEach(x => x.onValueChanged.AddListener(isOn =>
         {
 
-        }
-    }
+            RectTransform myRect = x.transform.GetComponent<RectTransform>();
+            myRect.DOComplete();
 
-    public void ResetToggleGroup()
-    {
-        Toggle activeToggle = toggles.Find(x => x.isOn);
-        if (activeToggle != null)
-        {
-            toggles.FindAll(x => x != activeToggle).ForEach(x => x.GetComponent<RectTransform>().DOAnchorPosY(-1, 0.1f));
-        }
+            if (isOn)
+            {
+                myRect.DOAnchorPosY(myRect.anchoredPosition.y - 25, 0.1f);
+                toggles.FindAll(item => x != item).ForEach(item => item.isOn = false);
+            }
+            else
+            {
+                if (toggleOriginPosDictionary.TryGetValue(x, out var originPos))
+                {
+                    myRect.DOAnchorPos(originPos, 0.1f);
+                }
+                else
+                {
+#if UNITY_EDITOR
+                    Debug.Log($"{x.name}의 원래 위치를 찾는데 실패했습니다!\n에러로 UI가 움직이지 않을 수 있습니다.");
+#endif
+                    return;
+                }
+            }
+        }));
     }
 }
