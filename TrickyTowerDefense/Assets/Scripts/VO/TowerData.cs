@@ -11,8 +11,16 @@ public class TowerData
 
     public Vector2 position = Vector2.zero;
 
-    public int atk;
-    public int atkSpeed;
+    public int atk = 0;
+    public float atkSpeed = 0;
+
+    public TowerData(int atk, float atkSpeed, TowerType type, TowerGrade grade)
+    {
+        this.myType = type;
+        this.myGrade = grade;
+        this.atk = atk;
+        this.atkSpeed = atkSpeed;
+    }
 }
 
 public enum TowerType
