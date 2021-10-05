@@ -12,7 +12,10 @@ public class TowerData
     public Vector2 position = Vector2.zero;
 
     public int atk = 0;
+
     public float atkSpeed = 0;
+
+    public bool isCanPenetrate = false;
 
     public TowerData(int atk, float atkSpeed, TowerType type, TowerGrade grade)
     {
