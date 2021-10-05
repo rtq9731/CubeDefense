@@ -30,6 +30,7 @@ public class UIToggleGroup : MonoBehaviour
             {
                 if (toggleOriginPosDictionary.TryGetValue(x, out var originPos))
                 {
+                    Debug.Log(originPos);
                     myRect.DOAnchorPos(originPos, 0.1f);
                 }
                 else
