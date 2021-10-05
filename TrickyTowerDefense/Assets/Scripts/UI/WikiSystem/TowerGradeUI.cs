@@ -15,7 +15,7 @@ public class TowerGradeUI : MonoBehaviour
     {
         gradeStars.ForEach(x => x.SetActive(false));
 
-        gradeText.text = ((TowerGrade)grade).ToString();
+        gradeText.text = ((TowerData.TowerGrade)grade).ToString();
         gradeText.color = gradeColorset[grade];
         gradeBarImage.color = gradeColorset[grade];
 

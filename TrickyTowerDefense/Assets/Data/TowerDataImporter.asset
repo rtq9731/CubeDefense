@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e14a72067f1ad408ec8d661bc560ce, type: 3}
+  m_Name: TowerDataImporter
+  m_EditorClassIdentifier: 
+  templatePath: QuickSheet/ExcelPlugin/Templates
+  scriptFilePath: Data/Runtime
+  editorScriptFilePath: Data/Editor
+  sheetName: TowerData.xlsx
+  workSheetName: Sheet1
+  columnHeaderList:
+  - type: 1
+    name: towerName
+    isEnable: 0
+    isArray: 0
+  - type: 7
+    name: TowerType
+    isEnable: 0
+    isArray: 0
+  - type: 7
+    name: TowerGrade
+    isEnable: 0
+    isArray: 0
+  - type: 5
+    name: atk
+    isEnable: 0
+    isArray: 0
+  - type: 5
+    name: atkSpeed
+    isEnable: 0
+    isArray: 0
+  - type: 5
+    name: range
+    isEnable: 0
+    isArray: 0
+  - type: 8
+    name: isPenetrate
+    isEnable: 0
+    isArray: 0
+  excelFilePath: Assets/Data/TowerData.xlsx
+  SheetNames:
+  - Sheet1
+  - Sheet2
+  - Sheet3
+  currentSelectedSheet: 0

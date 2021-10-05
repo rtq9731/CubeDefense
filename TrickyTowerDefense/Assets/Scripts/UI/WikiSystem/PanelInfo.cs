@@ -16,21 +16,21 @@ public class PanelInfo : MonoBehaviour
 
     public void InitInfoPanel(TowerData data)
     {
-        Sprite towerSprite = GetTowerImage(data.myType, data.myGrade);
+        Sprite towerSprite = GetTowerImage(data.TOWERTYPE, data.TOWERGRADE);
         if (towerSprite != null)
         {
             towerImage.sprite = towerSprite;
         }
 
-        textTowerName.text = data.towerName;
-        towerGradeUI.UpdateGradeUI((int)data.myGrade);
-        textATK.text = $"공격력 {data.atk}";
-        textRange.text = $"사거리 : {data.range}";
-        textAttackSpeed.text = $"공격속도 : {data.atkSpeed}";
-        textPenetration.text = data.isCanPenetrate ? "관통 여부 : O" : "관통 여부 : X";
+        textTowerName.text = data.Towername;
+        towerGradeUI.UpdateGradeUI((int)data.TOWERGRADE);
+        textATK.text = $"공격력 {data.Atk}";
+        textRange.text = $"사거리 : {data.Range}";
+        textAttackSpeed.text = $"공격속도 : {data.Atkspeed}";
+        textPenetration.text = data.Ispenetrate ? "관통 여부 : O" : "관통 여부 : X";
     }
 
-    private Sprite GetTowerImage(TowerType towerType, TowerGrade towerGrade)
+    private Sprite GetTowerImage(TowerData.TowerType towerType, TowerData.TowerGrade towerGrade)
     {
         return null;
     }
