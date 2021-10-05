@@ -6,6 +6,8 @@ using UnityEngine;
 [Serializable]
 public class TowerData
 {
+    public string towerName = "";
+
     public TowerType myType = 0;
     public TowerGrade myGrade = 0;
 
@@ -13,7 +15,8 @@ public class TowerData
 
     public int atk = 0;
 
-    public float atkSpeed = 0;
+    public float atkSpeed = 0f;
+    public float range = 0f;
 
     public bool isCanPenetrate = false;
 
