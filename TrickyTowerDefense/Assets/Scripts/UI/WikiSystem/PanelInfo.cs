@@ -24,11 +24,38 @@ public class PanelInfo : MonoBehaviour
 
         textTowerName.text = data.Towername;
         towerGradeUI.UpdateGradeUI((int)data.TOWERGRADE);
-        textATK.text = $"공격력 {data.Atk}";
-        textRange.text = $"사거리 : {data.Range}";
-        textAttackSpeed.text = $"공격속도 : {data.Atkspeed}";
+        textATK.text = $"공격력 : {data.Atk}";
         textPenetration.text = data.Ispenetrate ? "관통 여부 : O" : "관통 여부 : X";
         textTMI.text = data.TMI;
+
+        switch (data.TOWERTYPE)
+        {
+            case TowerData.TowerType.Grenadier:
+                textAttackSpeed.text = "공격속도 : 느림";
+                textRange.text = "사거리 : 근중거리";
+                break;
+            case TowerData.TowerType.Laser:
+                textAttackSpeed.text = "공격속도 : 매우 느림";
+                textRange.text = "사거리 : 장거리";
+                break;
+            case TowerData.TowerType.Acher:
+                textAttackSpeed.text = $"공격속도 : 느림";
+                textRange.text = "사거리 : 장거리";
+                break;
+            case TowerData.TowerType.Bullet:
+                textAttackSpeed.text = $"공격속도 : 빠름";
+                textRange.text = "사거리 : 근중거리";
+                break;
+            case TowerData.TowerType.Buff:
+                textAttackSpeed.text = $"공격속도 : 없음";
+                textRange.text = "사거리 : 양 옆 두개";
+                textATK.text = $"공격력 {data.Atk}배";
+                break;
+            default:
+                break;
+        }
+
+        this.gameObject.SetActive(true);
     }
 
     private Sprite GetTowerImage(TowerData.TowerType towerType, TowerData.TowerGrade towerGrade)

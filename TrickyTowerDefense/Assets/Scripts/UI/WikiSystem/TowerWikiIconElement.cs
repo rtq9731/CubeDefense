@@ -15,7 +15,7 @@ public class TowerWikiIconElement : MonoBehaviour
         btn = GetComponent<Button>();
     }
 
-    public void Init(TowerData data)
+    public void Init(TowerData data, PanelInfo panelInfo)
     {
         this.data = data;
         if(mySprite != null)
@@ -23,5 +23,7 @@ public class TowerWikiIconElement : MonoBehaviour
             mySprite.sprite = GameManager.Instance.tower.GetTowerSprite(data.TOWERTYPE, data.TOWERGRADE);
         }
 
+        btn.onClick.RemoveAllListeners();
+        btn.onClick.AddListener(() => panelInfo.InitInfoPanel(data));
     }
 }

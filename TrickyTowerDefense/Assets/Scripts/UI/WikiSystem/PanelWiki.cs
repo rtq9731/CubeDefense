@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PanelWiki : MonoBehaviour
 {
+    [SerializeField] Transform panelIcon = null;
     [SerializeField] PanelInfo panelInfo = null;
     [SerializeField] GameObject wikiIconPrefab;
     [SerializeField] Toggle toggleAllTower;
@@ -22,8 +23,8 @@ public class PanelWiki : MonoBehaviour
         towerDatas = GameManager.Instance.tower.GetTowerDatas();
         for (int i = 0; i < towerDatas.Count; i++)
         {
-            TowerWikiIconElement tmp = Instantiate(wikiIconPrefab).GetComponent<TowerWikiIconElement>();
-            tmp.Init(towerDatas[i]);
+            TowerWikiIconElement tmp = Instantiate(wikiIconPrefab, panelIcon).GetComponent<TowerWikiIconElement>();
+            tmp.Init(towerDatas[i], panelInfo);
             icons.Add(tmp);
         }
 
@@ -31,6 +32,7 @@ public class PanelWiki : MonoBehaviour
         {
             if(isOn)
             {
+                ResetIcons();
                 icons.ForEach(x => x.gameObject.SetActive(isOn));
             }
         });
@@ -39,6 +41,7 @@ public class PanelWiki : MonoBehaviour
         {
             if (isOn)
             {
+                ResetIcons();
                 icons.FindAll(x => x.data.TOWERTYPE == TowerData.TowerType.Grenadier).ForEach(x => x.gameObject.SetActive(true));
             }
         });
@@ -47,6 +50,7 @@ public class PanelWiki : MonoBehaviour
         {
             if (isOn)
             {
+                ResetIcons();
                 icons.FindAll(x => x.data.TOWERTYPE == TowerData.TowerType.Laser).ForEach(x => x.gameObject.SetActive(true));
             }
         });
@@ -55,6 +59,7 @@ public class PanelWiki : MonoBehaviour
         {
             if (isOn)
             {
+                ResetIcons();
                 icons.FindAll(x => x.data.TOWERTYPE == TowerData.TowerType.Acher).ForEach(x => x.gameObject.SetActive(true));
             }
         });
@@ -63,6 +68,7 @@ public class PanelWiki : MonoBehaviour
         {
             if (isOn)
             {
+                ResetIcons();
                 icons.FindAll(x => x.data.TOWERTYPE == TowerData.TowerType.Bullet).ForEach(x => x.gameObject.SetActive(true));
             }
         });
@@ -71,9 +77,18 @@ public class PanelWiki : MonoBehaviour
         {
             if (isOn)
             {
+                ResetIcons();
                 icons.FindAll(x => x.data.TOWERTYPE == TowerData.TowerType.Buff).ForEach(x => x.gameObject.SetActive(true));
             }
         });
+    }
+
+    private void ResetIcons()
+    {
+        foreach (var item in icons)
+        {
+            item.gameObject.SetActive(false);
+        }
     }
 
     
