@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowerParent : MonoBehaviour
+public class TowerManager : MonoBehaviour
 {
     List<TowerScript> allTowerList = new List<TowerScript>();
     List<TowerScript> leftTowerList = new List<TowerScript>();
