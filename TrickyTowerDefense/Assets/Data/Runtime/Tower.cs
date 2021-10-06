@@ -40,9 +40,19 @@ public class Tower : ScriptableObject
         dataList = dataArray.ToList();
     }
 
+    public List<TowerData> GetTowerDatas()
+    {
+        return dataList;
+    }
+
     public List<TowerData> FindAllTower(TowerData.TowerType towerType)
     {
         return dataList.FindAll(x => x.TOWERTYPE == towerType);
+    }
+
+    public Sprite GetTowerSprite(TowerData.TowerType towerType, TowerData.TowerGrade towerGrade)
+    {
+        return Resources.Load(dataList.Find(x => x.TOWERTYPE == towerType && x.TOWERGRADE == towerGrade).Imagepath) as Sprite;
     }
 
     //

@@ -22,6 +22,7 @@ MonoBehaviour:
     atkspeed: 10
     range: 1.5
     ispenetrate: 0
+    idx: 0
     imagepath: 
   - towername: 1
     towertype: 0
@@ -30,6 +31,7 @@ MonoBehaviour:
     atkspeed: 20
     range: 2
     ispenetrate: 0
+    idx: 0
     imagepath: 
   - towername: 2
     towertype: 0
@@ -38,6 +40,7 @@ MonoBehaviour:
     atkspeed: 30
     range: 2.5
     ispenetrate: 0
+    idx: 0
     imagepath: 
   - towername: 3
     towertype: 0
@@ -46,6 +49,7 @@ MonoBehaviour:
     atkspeed: 40
     range: 3
     ispenetrate: 0
+    idx: 0
     imagepath: 
   - towername: 4
     towertype: 0
@@ -54,6 +58,7 @@ MonoBehaviour:
     atkspeed: 50
     range: 3.5
     ispenetrate: 0
+    idx: 0
     imagepath: 
   - towername: 5
     towertype: 0
@@ -62,4 +67,5 @@ MonoBehaviour:
     atkspeed: 60
     range: 4
     ispenetrate: 0
+    idx: 0
     imagepath: 

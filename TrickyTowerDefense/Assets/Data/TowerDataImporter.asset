@@ -18,6 +18,10 @@ MonoBehaviour:
   sheetName: TowerData.xlsx
   workSheetName: Tower
   columnHeaderList:
+  - type: 3
+    name: Idx
+    isEnable: 0
+    isArray: 0
   - type: 1
     name: towerName
     isEnable: 0
@@ -46,12 +50,12 @@ MonoBehaviour:
     name: isPenetrate
     isEnable: 0
     isArray: 0
-  - type: 3
-    name: Idx
-    isEnable: 0
-    isArray: 0
   - type: 1
     name: ImagePath
+    isEnable: 0
+    isArray: 0
+  - type: 0
+    name: TMI
     isEnable: 0
     isArray: 0
   excelFilePath: Assets/Data/TowerData.xlsx

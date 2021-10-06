@@ -28,6 +28,7 @@ public class PanelInfo : MonoBehaviour
         textRange.text = $"사거리 : {data.Range}";
         textAttackSpeed.text = $"공격속도 : {data.Atkspeed}";
         textPenetration.text = data.Ispenetrate ? "관통 여부 : O" : "관통 여부 : X";
+        textTMI.text = data.TMI;
     }
 
     private Sprite GetTowerImage(TowerData.TowerType towerType, TowerData.TowerGrade towerGrade)
