@@ -8,6 +8,11 @@ public class EnemyManager : MonoBehaviour
     List<EnemyScript> leftEnemyList = new List<EnemyScript>();
     List<EnemyScript> rightEnemyList = new List<EnemyScript>();
 
+    public List<EnemyScript>[] GetEnemyList()
+    {
+        return new List<EnemyScript>[] { leftEnemyList, allEnemyList, rightEnemyList };
+    }
+
     public EnemyScript GetLeftEnemy()
     {
         return leftEnemyList[0];
