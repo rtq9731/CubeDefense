@@ -15,57 +15,69 @@ MonoBehaviour:
   SheetName: Assets/Data/TowerData.xlsx
   WorksheetName: Tower
   dataArray:
-  - towername: 0
+  - idx: 0
+    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
     towergrade: 0
-    atk: 0
-    atkspeed: 10
-    range: 1.5
-    ispenetrate: 0
-    idx: 0
-    imagepath: 
-  - towername: 1
-    towertype: 0
-    towergrade: 0
-    atk: 0
-    atkspeed: 20
+    atk: 10
+    atkspeed: 1.5
     range: 2
     ispenetrate: 0
-    idx: 0
     imagepath: 
-  - towername: 2
+    tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\\n\uBC94\uC704\uACF5\uACA9\uC744
+      \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  - idx: 1
+    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
-    towergrade: 0
-    atk: 0
-    atkspeed: 30
-    range: 2.5
-    ispenetrate: 0
-    idx: 0
-    imagepath: 
-  - towername: 3
-    towertype: 0
-    towergrade: 0
-    atk: 0
-    atkspeed: 40
+    towergrade: 1
+    atk: 20
+    atkspeed: 2
     range: 3
     ispenetrate: 0
-    idx: 0
     imagepath: 
-  - towername: 4
+    tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\\n\uBC94\uC704\uACF5\uACA9\uC744
+      \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  - idx: 2
+    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
-    towergrade: 0
-    atk: 0
-    atkspeed: 50
-    range: 3.5
-    ispenetrate: 0
-    idx: 0
-    imagepath: 
-  - towername: 5
-    towertype: 0
-    towergrade: 0
-    atk: 0
-    atkspeed: 60
+    towergrade: 2
+    atk: 30
+    atkspeed: 2.5
     range: 4
     ispenetrate: 0
-    idx: 0
     imagepath: 
+    tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\\n\uBC94\uC704\uACF5\uACA9\uC744
+      \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  - idx: 3
+    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    towertype: 0
+    towergrade: 3
+    atk: 40
+    atkspeed: 3
+    range: 5
+    ispenetrate: 0
+    imagepath: 
+    tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\\n\uBC94\uC704\uACF5\uACA9\uC744
+      \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  - idx: 4
+    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    towertype: 0
+    towergrade: 4
+    atk: 50
+    atkspeed: 3.5
+    range: 6
+    ispenetrate: 0
+    imagepath: 
+    tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\\n\uBC94\uC704\uACF5\uACA9\uC744
+      \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+  - idx: 5
+    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    towertype: 0
+    towergrade: 5
+    atk: 60
+    atkspeed: 4
+    range: 7
+    ispenetrate: 0
+    imagepath: 
+    tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\\n\uBC94\uC704\uACF5\uACA9\uC744
+      \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."

@@ -9,6 +9,10 @@ using System.Collections;
 public class TowerData
 {
   [SerializeField]
+  int idx;
+  public int Idx { get {return idx; } set { this.idx = value;} }
+  
+  [SerializeField]
   string towername;
   public string Towername { get {return towername; } set { this.towername = value;} }
   
@@ -37,12 +41,12 @@ public class TowerData
   public bool Ispenetrate { get {return ispenetrate; } set { this.ispenetrate = value;} }
   
   [SerializeField]
-  int idx;
-  public int Idx { get {return idx; } set { this.idx = value;} }
-  
-  [SerializeField]
   string imagepath;
   public string Imagepath { get {return imagepath; } set { this.imagepath = value;} }
+  
+  [SerializeField]
+  string tmi;
+  public string TMI { get {return tmi; } set { this.tmi = value;} }
 
     public enum TowerType
     {
@@ -62,5 +66,7 @@ public class TowerData
         Unique,
         Legendary
     }
+
+
 
 }

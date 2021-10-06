@@ -54,7 +54,7 @@ MonoBehaviour:
     name: ImagePath
     isEnable: 0
     isArray: 0
-  - type: 0
+  - type: 1
     name: TMI
     isEnable: 0
     isArray: 0
