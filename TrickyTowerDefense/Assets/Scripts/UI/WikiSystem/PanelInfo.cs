@@ -48,7 +48,7 @@ public class PanelInfo : MonoBehaviour
                 break;
             case TowerData.TowerType.Buff:
                 textAttackSpeed.text = $"공격속도 : 없음";
-                textRange.text = "사거리 : 양 옆 두개";
+                textRange.text = "사거리 : 양 옆 한개 버프";
                 textATK.text = $"공격력 {data.Atk}배";
                 break;
             default:
