@@ -22,7 +22,7 @@ public class Tower : ScriptableObject
     // Note: initialize in OnEnable() not here.
     public TowerData[] dataArray;
 
-    public Dictionary<string, TowerData> towerDataDictionary = new Dictionary<string, TowerData>();
+    List<TowerData> dataList = new List<TowerData>();
     
     void OnEnable()
     {		
@@ -37,21 +37,12 @@ public class Tower : ScriptableObject
         if (dataArray == null)
             dataArray = new TowerData[0];
 
-        foreach (var item in dataArray)
-        {
-            towerDataDictionary.Add(item.Towername, item);
-        }
-
-    }
-
-    public TowerData FindTower(TowerData.TowerType towerType, TowerData.TowerGrade towerGrade)
-    {
-        return towerDataDictionary.Values.ToList().Find(x => (x.TOWERTYPE == towerType || x.TOWERGRADE == towerGrade));
+        dataList = dataArray.ToList();
     }
 
     public List<TowerData> FindAllTower(TowerData.TowerType towerType)
     {
-        return towerDataDictionary.Values.ToList().FindAll(x => x.TOWERTYPE == towerType);
+        return dataList.FindAll(x => x.TOWERTYPE == towerType);
     }
 
     //

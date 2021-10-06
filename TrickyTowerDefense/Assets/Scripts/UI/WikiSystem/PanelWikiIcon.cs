@@ -6,5 +6,9 @@ public class PanelWikiIcon : MonoBehaviour
 {
     [SerializeField] PanelInfo panelInfo = null;
 
-    
+    private void Start()
+    {
+        
+    }
+
 }

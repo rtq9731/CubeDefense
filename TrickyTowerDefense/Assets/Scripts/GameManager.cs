@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] Tower tower = null;
+
     public void SaveGame()
     {
 

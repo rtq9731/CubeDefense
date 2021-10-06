@@ -35,6 +35,14 @@ public class TowerData
   [SerializeField]
   bool ispenetrate;
   public bool Ispenetrate { get {return ispenetrate; } set { this.ispenetrate = value;} }
+  
+  [SerializeField]
+  int idx;
+  public int Idx { get {return idx; } set { this.idx = value;} }
+  
+  [SerializeField]
+  string imagepath;
+  public string Imagepath { get {return imagepath; } set { this.imagepath = value;} }
 
     public enum TowerType
     {
@@ -54,4 +62,5 @@ public class TowerData
         Unique,
         Legendary
     }
+
 }
