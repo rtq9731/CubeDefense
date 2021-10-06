@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoSingleton<GameManager>
 {
     [SerializeField] public Tower tower = null;
+    [SerializeField] public TowerParent towerParent = null;
 
     public void SaveGame()
     {
