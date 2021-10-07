@@ -6,7 +6,6 @@ public class TowerScript : MonoBehaviour
 {
     [SerializeField] SpriteRenderer sr;
 
-    TowerDir towerDir = TowerDir.Center;
     TowerData data;
     EnemyScript target = null;
     TowerManager towerManager = null;
@@ -41,21 +40,6 @@ public class TowerScript : MonoBehaviour
                     towerManager.AddMergeReadyTower(this);
                 }
             }
-            else
-            {
-                if(transform.position.x <= towerManager.leftMin)
-                {
-                    towerDir = TowerDir.Left;
-                }
-                else if(transform.position.x >= towerManager.rightMin)
-                {
-                    towerDir = TowerDir.Right;
-                }
-                else
-                {
-                    towerDir = TowerDir.Center;
-                }
-            }
         }
     }
 
@@ -85,11 +69,4 @@ public class TowerScript : MonoBehaviour
         this.target = target;
     }
 
-}
-
-enum TowerDir
-{
-    Left,
-    Center,
-    Right
 }
