@@ -9,6 +9,13 @@ public class GameManager : MonoSingleton<GameManager>
     [SerializeField] public EnemyManager enemyManager = null;
     [SerializeField] public TowerManager towerManager = null;
 
+    [SerializeField] PlayerData data;
+    
+    public PlayerData GetData()
+    {
+        return data;
+    }
+
     public void SaveGame()
     {
 

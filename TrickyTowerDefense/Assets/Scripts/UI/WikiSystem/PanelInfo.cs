@@ -16,12 +16,9 @@ public class PanelInfo : MonoBehaviour
 
     public void InitInfoPanel(TowerData data)
     {
-        Sprite towerSprite = GetTowerImage(data.TOWERTYPE, data.TOWERGRADE);
-        if (towerSprite != null)
-        {
-            towerImage.sprite = towerSprite;
-        }
+        Sprite towerSprite = GameManager.Instance.tower.GetTowerSprite(data.TOWERTYPE, data.TOWERGRADE);
 
+        towerImage.sprite = towerSprite;
         textTowerName.text = data.Towername;
         towerGradeUI.UpdateGradeUI((int)data.TOWERGRADE);
         textATK.text = $"°ø°Ý·Â : {data.Atk}";
@@ -56,10 +53,5 @@ public class PanelInfo : MonoBehaviour
         }
 
         this.gameObject.SetActive(true);
-    }
-
-    private Sprite GetTowerImage(TowerData.TowerType towerType, TowerData.TowerGrade towerGrade)
-    {
-        return null;
     }
 }

@@ -52,7 +52,7 @@ public class Tower : ScriptableObject
 
     public Sprite GetTowerSprite(TowerData.TowerType towerType, TowerData.TowerGrade towerGrade)
     {
-        return Resources.Load(dataList.Find(x => x.TOWERTYPE == towerType && x.TOWERGRADE == towerGrade).Imagepath) as Sprite;
+        return Resources.Load<Sprite>(dataList.Find(x => x.TOWERTYPE == towerType && x.TOWERGRADE == towerGrade).Imagepath);
     }
 
 

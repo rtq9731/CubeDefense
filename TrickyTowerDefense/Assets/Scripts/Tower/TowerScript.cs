@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TowerScript : MonoBehaviour
 {
+    [SerializeField] SpriteRenderer sr;
+
     TowerDir towerDir = TowerDir.Center;
     TowerData data;
     EnemyScript target = null;
@@ -11,9 +13,20 @@ public class TowerScript : MonoBehaviour
 
     public float madeTime = 0f;
 
-    private void Start()
+    private void OnEnable()
     {
-        towerManager = GameManager.Instance.towerManager;
+        if(towerManager == null)
+        {
+            towerManager = GameManager.Instance.towerManager;
+        }
+
+        madeTime = Time.time;
+        towerManager.GetTowerList().Add(this);
+    }
+
+    private void OnDisable()
+    {
+        towerManager.GetTowerList().Remove(this);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -21,27 +34,28 @@ public class TowerScript : MonoBehaviour
         if (collision.gameObject.CompareTag(tag))
         {
             TowerScript otherTower = collision.transform.GetComponent<TowerScript>();
-            if(otherTower != null)
+            if (otherTower != null)
             {
-                if(otherTower.data.Idx == data.Idx)
+                if (otherTower.data.Idx == data.Idx)
                 {
                     towerManager.AddMergeReadyTower(this);
                 }
             }
-        }
-    }
-
-    private void OnEnable()
-    {
-        madeTime = Time.time;
-        towerManager.GetTowerList()[1].Add(this);
-    }
-
-    private void OnDisable()
-    {
-        foreach (var item in towerManager.GetTowerList())
-        {
-            item.Remove(this);
+            else
+            {
+                if(transform.position.x <= towerManager.leftMin)
+                {
+                    towerDir = TowerDir.Left;
+                }
+                else if(transform.position.x >= towerManager.rightMin)
+                {
+                    towerDir = TowerDir.Right;
+                }
+                else
+                {
+                    towerDir = TowerDir.Center;
+                }
+            }
         }
     }
 
@@ -63,6 +77,7 @@ public class TowerScript : MonoBehaviour
     public void SetData(TowerData data)
     {
         this.data = data;
+        sr.sprite = GameManager.Instance.tower.GetTowerSprite(data.TOWERTYPE, data.TOWERGRADE);
     }
 
     public void SetTarget(EnemyScript target)

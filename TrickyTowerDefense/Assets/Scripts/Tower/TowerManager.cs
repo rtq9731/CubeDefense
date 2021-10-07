@@ -6,18 +6,22 @@ using UnityEngine;
 public class TowerManager : MonoBehaviour
 {
     [SerializeField] GameObject towerPrefab;
+    [SerializeField] Transform towerSpawnPoint;
 
-    List<TowerScript> allTowerList = new List<TowerScript>();
-    List<TowerScript> leftTowerList = new List<TowerScript>();
-    List<TowerScript> rightTowerList = new List<TowerScript>();
+    public float leftMin = 0f;
+    public float leftLimit = 0f;
+    public float rightMin = 0f;
+    public float rightLimit = 0f;
+
+    List<TowerScript> towerList = new List<TowerScript>();
 
     List<TowerScript> mergeReadyTowerList = new List<TowerScript>();
 
-    Queue<TowerScript> towerPool = new Queue<TowerScript>();
+    List<TowerScript> towerPool = new List<TowerScript>();
 
-    public List<TowerScript>[] GetTowerList()
+    public List<TowerScript> GetTowerList()
     {
-        return new List<TowerScript>[] { leftTowerList, allTowerList, rightTowerList };
+        return towerList;
     }
 
     private void Update()
@@ -34,21 +38,34 @@ public class TowerManager : MonoBehaviour
         mergeReadyTowerList.Add(tower);
     }
 
-    public void GetNewTower(TowerData.TowerType type, TowerData.TowerGrade grade)
+    public TowerScript GetNewTower(int idx)
     {
-        if(towerPool != null)
+        TowerScript result = null;
+        if (towerPool.Count > 1)
         {
+            result = towerPool.Find(x => x.enabled == false && x.GetTowerIdx() == idx);
 
+            if(result == null)
+            {
+                result = MakeNewTower(idx);
+            }
         }
         else
         {
-
+            result = MakeNewTower(idx);
         }
+
+        result.transform.position = towerSpawnPoint.position;
+        result.gameObject.SetActive(true);
+
+        return result;
     }
 
-    private void MakeNewTower(TowerData.TowerType type, TowerData.TowerGrade grade)
+    private TowerScript MakeNewTower(int idx)
     {
-        
+        TowerScript result = Instantiate(towerPrefab, this.transform).GetComponent<TowerScript>();
+        result.SetData(GameManager.Instance.tower.GetTowerDatas()[idx]);
+        return result;
     }
 
     public void Fire(float atk, Vector2 towerPos, Transform target)

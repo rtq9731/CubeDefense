@@ -89,7 +89,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c062085e31e59854a80ccee8dbda7393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySprite: {fileID: 0}
+  mySprite: {fileID: 6496557160200838286}
+  btn: {fileID: 0}
+  data:
+    idx: 0
+    towername: 
+    towertype: 0
+    towergrade: 0
+    atk: 0
+    atkspeed: 0
+    range: 0
+    ispenetrate: 0
+    imagepath: 
+    tmi: 
 --- !u!114 &6496557160200838288
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ MonoBehaviour:
     atkspeed: 4
     range: 2
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Grenadier/Common
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
   - idx: 1
@@ -34,7 +34,7 @@ MonoBehaviour:
     atkspeed: 3.5
     range: 3
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Grenadier/Uncommon
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
   - idx: 2
@@ -45,7 +45,7 @@ MonoBehaviour:
     atkspeed: 3
     range: 4
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Grenadier/Rare
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
   - idx: 3
@@ -56,7 +56,7 @@ MonoBehaviour:
     atkspeed: 2.5
     range: 5
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Grenadier/Epic
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
   - idx: 4
@@ -67,7 +67,7 @@ MonoBehaviour:
     atkspeed: 2
     range: 6
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Grenadier/Unique
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
   - idx: 5
@@ -78,7 +78,7 @@ MonoBehaviour:
     atkspeed: 1.5
     range: 7
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Grenadier/Legendary
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
   - idx: 6
@@ -89,7 +89,7 @@ MonoBehaviour:
     atkspeed: 4
     range: 3
     ispenetrate: 1
-    imagepath: 
+    imagepath: TowerIcon/Laser/Common
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
@@ -101,7 +101,7 @@ MonoBehaviour:
     atkspeed: 3.5
     range: 5
     ispenetrate: 1
-    imagepath: 
+    imagepath: TowerIcon/Laser/Uncommon
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
@@ -113,7 +113,7 @@ MonoBehaviour:
     atkspeed: 3
     range: 7
     ispenetrate: 1
-    imagepath: 
+    imagepath: TowerIcon/Laser/Rare
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
@@ -125,7 +125,7 @@ MonoBehaviour:
     atkspeed: 2.5
     range: 9
     ispenetrate: 1
-    imagepath: 
+    imagepath: TowerIcon/Laser/Epic
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
@@ -137,7 +137,7 @@ MonoBehaviour:
     atkspeed: 2
     range: 11
     ispenetrate: 1
-    imagepath: 
+    imagepath: TowerIcon/Laser/Unique
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
@@ -149,7 +149,7 @@ MonoBehaviour:
     atkspeed: 1.5
     range: 13
     ispenetrate: 1
-    imagepath: 
+    imagepath: TowerIcon/Laser/Legendary
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
@@ -161,7 +161,7 @@ MonoBehaviour:
     atkspeed: 4
     range: 3
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Acher/Common
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -173,7 +173,7 @@ MonoBehaviour:
     atkspeed: 3.5
     range: 5
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Acher/Uncommon
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -185,7 +185,7 @@ MonoBehaviour:
     atkspeed: 3
     range: 7
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Acher/Rare
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -197,7 +197,7 @@ MonoBehaviour:
     atkspeed: 2.5
     range: 9
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Acher/Epic
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -209,7 +209,7 @@ MonoBehaviour:
     atkspeed: 2
     range: 11
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Acher/Unique
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -221,7 +221,7 @@ MonoBehaviour:
     atkspeed: 1.5
     range: 13
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Acher/Legendary
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -233,7 +233,7 @@ MonoBehaviour:
     atkspeed: 1
     range: 2
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Bullet/Common
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -245,7 +245,7 @@ MonoBehaviour:
     atkspeed: 0.9
     range: 3
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Bullet/Uncommon
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -257,7 +257,7 @@ MonoBehaviour:
     atkspeed: 0.8
     range: 4
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Bullet/Rare
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -269,7 +269,7 @@ MonoBehaviour:
     atkspeed: 0.7
     range: 5
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Bullet/Epic
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -281,7 +281,7 @@ MonoBehaviour:
     atkspeed: 0.6
     range: 6
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Bullet/Unique
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -293,7 +293,7 @@ MonoBehaviour:
     atkspeed: 0.5
     range: 7
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Bullet/Legendary
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
@@ -305,7 +305,7 @@ MonoBehaviour:
     atkspeed: 0
     range: 2
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Buff/Common
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
@@ -318,7 +318,7 @@ MonoBehaviour:
     atkspeed: 0
     range: 2
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Buff/Uncommon
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
@@ -331,7 +331,7 @@ MonoBehaviour:
     atkspeed: 0
     range: 2
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Buff/Rare
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
@@ -344,7 +344,7 @@ MonoBehaviour:
     atkspeed: 0
     range: 2
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Buff/Epic
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
@@ -357,7 +357,7 @@ MonoBehaviour:
     atkspeed: 0
     range: 2
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Buff/Unique
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
@@ -370,7 +370,7 @@ MonoBehaviour:
     atkspeed: 0
     range: 2
     ispenetrate: 0
-    imagepath: 
+    imagepath: TowerIcon/Buff/Legendary
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825

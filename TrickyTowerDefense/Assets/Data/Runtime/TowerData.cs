@@ -48,6 +48,10 @@ public class TowerData
   string tmi;
   public string TMI { get {return tmi; } set { this.tmi = value;} }
 
+    [SerializeField]
+    Vector2 position;
+    public Vector2 Position { get { return position; } set { position = value; } }
+
     public enum TowerType
     {
         Grenadier,
