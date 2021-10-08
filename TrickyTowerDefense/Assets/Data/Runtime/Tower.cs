@@ -55,6 +55,11 @@ public class Tower : ScriptableObject
         return Resources.Load<Sprite>(dataList.Find(x => x.TOWERTYPE == towerType && x.TOWERGRADE == towerGrade).Imagepath);
     }
 
+    public Sprite GetTowerSprite(int idx)
+    {
+        return Resources.Load<Sprite>(dataList.Find(x => x.Idx == idx).Imagepath);
+    }
+
 
     //
     // Highly recommand to use LINQ to query the data sources.

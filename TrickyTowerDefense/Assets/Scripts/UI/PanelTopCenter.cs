@@ -7,6 +7,8 @@ public class PanelTopCenter : MonoBehaviour
 {
     [SerializeField] int towerPrice = 0;
 
+    [SerializeField] PanelNextTower panelNextTower = null;
+
     private List<int> oneTierTowerIdx = new List<int>();
 
     [SerializeField] Button btnTowerWiki = null;
@@ -23,6 +25,7 @@ public class PanelTopCenter : MonoBehaviour
     {
         foreach (var item in GameManager.Instance.tower.GetTowerDatas().FindAll(x => x.TOWERGRADE == TowerData.TowerGrade.Common))
         {
+            Debug.Log(item.Idx);
             oneTierTowerIdx.Add(item.Idx);
         }
 
@@ -35,15 +38,23 @@ public class PanelTopCenter : MonoBehaviour
     {
         if(NextTowerIdx == -1)
         {
-            NextTowerIdx = Random.Range(0, oneTierTowerIdx.Count);
+            NextTowerIdx = oneTierTowerIdx[Random.Range(0, oneTierTowerIdx.Count)];
+            panelNextTower.SetNewTowerImage(NextTowerIdx);
         }
 
         if(GameManager.Instance.GetData().CanBuy(towerPrice))
         {
             GameManager.Instance.GetData().Buy(towerPrice);
-            GameManager.Instance.towerManager.GetNewTower(oneTierTowerIdx[NextTowerIdx]);
+            GameManager.Instance.towerManager.GetNewTower(0);
+            NextTowerIdx = oneTierTowerIdx[Random.Range(0, oneTierTowerIdx.Count)];
+            panelNextTower.SetNewTowerImage(NextTowerIdx);
+        }
+        else
+        {
+            return;
         }
 
-        NextTowerIdx = Random.Range(0, oneTierTowerIdx.Count);
+        btnBuyTower.interactable = false;
+
     }
 }
