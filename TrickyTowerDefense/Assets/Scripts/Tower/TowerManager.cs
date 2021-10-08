@@ -41,18 +41,22 @@ public class TowerManager : MonoBehaviour
     public TowerScript GetNewTower(int idx)
     {
         TowerScript result = null;
-        if (towerPool.Count > 1)
+        if (towerPool.Count >= 1)
         {
-            result = towerPool.Find(x => x.enabled == false && x.GetTowerIdx() == idx);
+            result = towerPool.Find(x => !towerList.Contains(x) && x.GetTowerIdx() == idx);
+            Debug.Log(result);
 
             if(result == null)
             {
                 result = MakeNewTower(idx);
+                towerPool.Add(result);
             }
         }
         else
         {
             result = MakeNewTower(idx);
+
+            towerPool.Add(result);
         }
 
         result.transform.position = towerSpawnPoint.position;

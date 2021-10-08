@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class TowerScript : MonoBehaviour
 {
@@ -20,7 +21,11 @@ public class TowerScript : MonoBehaviour
         }
 
         madeTime = Time.time;
-        towerManager.GetTowerList().Add(this);
+
+        if(!towerManager.GetTowerList().Contains(this))
+        {
+            towerManager.GetTowerList().Add(this);
+        }
     }
 
     private void OnDisable()
@@ -32,6 +37,11 @@ public class TowerScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(tag))
         {
+            if(data.TOWERGRADE == TowerData.TowerGrade.Legendary)
+            {
+                return;
+            }
+
             TowerScript otherTower = collision.transform.GetComponent<TowerScript>();
             if (otherTower != null)
             {
@@ -40,6 +50,33 @@ public class TowerScript : MonoBehaviour
                     towerManager.AddMergeReadyTower(this);
                 }
             }
+        }
+    }
+
+    private void UpdateSize(TowerData.TowerGrade grade)
+    {
+        switch (grade)
+        {
+            case TowerData.TowerGrade.Common:
+                transform.DOScale(1, 0.1f);
+                break;
+            case TowerData.TowerGrade.Uncommon:
+                transform.DOScale(1.3f, 0.1f);
+                break;
+            case TowerData.TowerGrade.Rare:
+                transform.DOScale(1.8f, 0.1f);
+                break;
+            case TowerData.TowerGrade.Epic:
+                transform.DOScale(2.5f, 0.1f);
+                break;
+            case TowerData.TowerGrade.Unique:
+                transform.DOScale(3.5f, 0.1f);
+                break;
+            case TowerData.TowerGrade.Legendary:
+                transform.DOScale(5, 0.1f);
+                break;
+            default:
+                break;
         }
     }
 
@@ -61,6 +98,7 @@ public class TowerScript : MonoBehaviour
     public void SetData(TowerData data)
     {
         this.data = data;
+        UpdateSize(data.TOWERGRADE);
         sr.sprite = GameManager.Instance.tower.GetTowerSprite(data.TOWERTYPE, data.TOWERGRADE);
     }
 

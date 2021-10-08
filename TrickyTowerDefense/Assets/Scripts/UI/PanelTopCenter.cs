@@ -17,6 +17,8 @@ public class PanelTopCenter : MonoBehaviour
 
     [SerializeField] Button btnBuyTower = null;
 
+    private int NextTowerIdx = -1;
+
     private void Start()
     {
         foreach (var item in GameManager.Instance.tower.GetTowerDatas().FindAll(x => x.TOWERGRADE == TowerData.TowerGrade.Common))
@@ -31,10 +33,17 @@ public class PanelTopCenter : MonoBehaviour
 
     private void BuyTower()
     {
+        if(NextTowerIdx == -1)
+        {
+            NextTowerIdx = Random.Range(0, oneTierTowerIdx.Count);
+        }
+
         if(GameManager.Instance.GetData().CanBuy(towerPrice))
         {
             GameManager.Instance.GetData().Buy(towerPrice);
-            GameManager.Instance.towerManager.GetNewTower(oneTierTowerIdx[Random.Range(0, oneTierTowerIdx.Count)]);
+            GameManager.Instance.towerManager.GetNewTower(oneTierTowerIdx[NextTowerIdx]);
         }
+
+        NextTowerIdx = Random.Range(0, oneTierTowerIdx.Count);
     }
 }
