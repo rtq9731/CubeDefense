@@ -42,19 +42,12 @@ public class PanelTopCenter : MonoBehaviour
             panelNextTower.SetNewTowerImage(NextTowerIdx);
         }
 
-        if(GameManager.Instance.GetData().CanBuy(towerPrice))
+        if (GameManager.Instance.GetData().CanBuy(towerPrice))
         {
             GameManager.Instance.GetData().Buy(towerPrice);
-            GameManager.Instance.towerManager.GetNewTower(0);
+            GameManager.Instance.towerManager.GetNewTower(NextTowerIdx);
             NextTowerIdx = oneTierTowerIdx[Random.Range(0, oneTierTowerIdx.Count)];
             panelNextTower.SetNewTowerImage(NextTowerIdx);
         }
-        else
-        {
-            return;
-        }
-
-        btnBuyTower.interactable = false;
-
     }
 }

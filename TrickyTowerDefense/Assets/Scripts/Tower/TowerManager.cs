@@ -44,8 +44,6 @@ public class TowerManager : MonoBehaviour
         if (towerPool.Count >= 1)
         {
             result = towerPool.Find(x => !towerList.Contains(x) && x.GetTowerIdx() == idx);
-            Debug.Log(result);
-
             if(result == null)
             {
                 result = MakeNewTower(idx);
