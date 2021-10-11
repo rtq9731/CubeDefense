@@ -19,9 +19,7 @@ public class CameraMove : MonoBehaviour
         {
             movePos = transform.position;
             movePos.y += speed * Time.deltaTime * verticalAxis;
-            Debug.Log(movePos.y);
             movePos.y = Mathf.Clamp(movePos.y, 7, yPositionLimit);
-            Debug.Log(movePos.y + " " + yPositionLimit);
             transform.position = movePos;
         }
     }

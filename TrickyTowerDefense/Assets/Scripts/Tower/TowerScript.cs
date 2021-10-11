@@ -13,6 +13,7 @@ public class TowerScript : MonoBehaviour
     TowerManager towerManager = null;
 
     public Action towerPosChanged = null;
+    public bool isTowerPosChanged = false;
 
     public float madeTime = 0f;
 
@@ -23,6 +24,7 @@ public class TowerScript : MonoBehaviour
 
     private void Start()
     {
+        towerPosChanged += () => isTowerPosChanged = true;
         towerPosChanged += () => FindObjectOfType<TowerHeightChecker>().TowerHightCheck();
     }
 
@@ -34,8 +36,9 @@ public class TowerScript : MonoBehaviour
         }
 
         madeTime = Time.time;
+        isTowerPosChanged = false;
 
-        if(!towerManager.GetTowerList().Contains(this))
+        if (!towerManager.GetTowerList().Contains(this))
         {
             towerManager.GetTowerList().Add(this);
         }

@@ -19,10 +19,10 @@ public class TowerHeightChecker : MonoBehaviour
 
     public void TowerHightCheck()
     {
-        if (towerManager.GetTowerList().Find(x => x.transform.position.y > highestHeight) != null)
+        if (towerManager.GetTowerList().FindAll(x => x.isTowerPosChanged).Find(x => x.transform.position.y > highestHeight) != null)
         {
             highestHeight += towerHeightPoint;
-            cameraMove.yPositionLimit += 5f;
+            cameraMove.yPositionLimit = 7 + highestHeight;
         }
     }
 }
