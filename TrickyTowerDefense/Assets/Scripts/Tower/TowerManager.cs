@@ -8,6 +8,8 @@ public class TowerManager : MonoBehaviour
     [SerializeField] GameObject towerPrefab;
     [SerializeField] Transform towerSpawnPoint;
 
+    TowerHeightChecker heightChecker;
+
     public float leftMin = 0f;
     public float leftLimit = 0f;
     public float rightMin = 0f;
@@ -31,7 +33,7 @@ public class TowerManager : MonoBehaviour
             MergeTower(mergeReadyTowerList[0], mergeReadyTowerList[1]);
             mergeReadyTowerList.Clear();
         }
-    }   
+    }
 
     public void AddMergeReadyTower(TowerScript tower)
     {

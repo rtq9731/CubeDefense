@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,19 @@ public class TowerScript : MonoBehaviour
     EnemyScript target = null;
     TowerManager towerManager = null;
 
+    public Action towerPosChanged = null;
+
     public float madeTime = 0f;
+
+    private void Awake()
+    {
+        towerPosChanged += () => { }; // 액션 초기화
+    }
+
+    private void Start()
+    {
+        towerPosChanged += () => FindObjectOfType<TowerHeightChecker>().TowerHightCheck();
+    }
 
     private void OnEnable()
     {
@@ -37,7 +50,7 @@ public class TowerScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(tag))
         {
-            if(data.TOWERGRADE == TowerData.TowerGrade.Legendary)
+            if (data.TOWERGRADE == TowerData.TowerGrade.Legendary)
             {
                 return;
             }
@@ -48,8 +61,15 @@ public class TowerScript : MonoBehaviour
                 if (otherTower.data.Idx == data.Idx)
                 {
                     towerManager.AddMergeReadyTower(this);
+                    return;
                 }
             }
+
+            towerPosChanged();
+        }
+        else if (collision.gameObject.CompareTag("Ground"))
+        {
+            towerPosChanged();
         }
     }
 
@@ -78,6 +98,8 @@ public class TowerScript : MonoBehaviour
             default:
                 break;
         }
+
+        towerPosChanged();
     }
 
     public TowerData.TowerGrade GetTowerGrade()
