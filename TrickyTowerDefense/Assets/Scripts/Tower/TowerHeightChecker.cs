@@ -5,7 +5,7 @@ using UnityEngine;
 public class TowerHeightChecker : MonoBehaviour
 {
     [Header("게임 오브젝트 상의 단위 높이")]
-    [SerializeField] float towerHeightPoint;
+    [SerializeField] float towerHeightPoint = 5f;
     TowerManager towerManager = null;
     CameraMove cameraMove = null;
 
@@ -17,12 +17,11 @@ public class TowerHeightChecker : MonoBehaviour
         towerManager = GameManager.Instance.towerManager;
     }
 
-    public void TowerHightCheck()
+    public void TowerHeightCheck(TowerScript tower)
     {
-        if (towerManager.GetTowerList().FindAll(x => x.isTowerPosChanged).Find(x => x.transform.position.y > highestHeight) != null)
+        if(tower.transform.position.y > highestHeight)
         {
             highestHeight += towerHeightPoint;
-            cameraMove.yPositionLimit = 7 + highestHeight;
         }
     }
 }

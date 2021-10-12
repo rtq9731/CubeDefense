@@ -12,20 +12,18 @@ public class TowerScript : MonoBehaviour
     EnemyScript target = null;
     TowerManager towerManager = null;
 
-    public Action towerPosChanged = null;
-    public bool isTowerPosChanged = false;
+    public Action<TowerScript> towerPosChanged = null;
 
     public float madeTime = 0f;
 
     private void Awake()
     {
-        towerPosChanged += () => { }; // 액션 초기화
+        towerPosChanged += (x) => { }; // 액션 초기화
     }
 
     private void Start()
     {
-        towerPosChanged += () => isTowerPosChanged = true;
-        towerPosChanged += () => FindObjectOfType<TowerHeightChecker>().TowerHightCheck();
+        towerPosChanged += (x) => FindObjectOfType<TowerHeightChecker>().TowerHeightCheck(x);
     }
 
     private void OnEnable()
@@ -36,7 +34,6 @@ public class TowerScript : MonoBehaviour
         }
 
         madeTime = Time.time;
-        isTowerPosChanged = false;
 
         if (!towerManager.GetTowerList().Contains(this))
         {
@@ -68,11 +65,11 @@ public class TowerScript : MonoBehaviour
                 }
             }
 
-            towerPosChanged();
+            towerPosChanged(this);
         }
         else if (collision.gameObject.CompareTag("Ground"))
         {
-            towerPosChanged();
+            towerPosChanged(this);
         }
     }
 
@@ -101,8 +98,6 @@ public class TowerScript : MonoBehaviour
             default:
                 break;
         }
-
-        towerPosChanged();
     }
 
     public TowerData.TowerGrade GetTowerGrade()
