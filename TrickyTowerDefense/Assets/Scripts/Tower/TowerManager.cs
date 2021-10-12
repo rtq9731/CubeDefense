@@ -6,7 +6,8 @@ using UnityEngine;
 public class TowerManager : MonoBehaviour
 {
     [SerializeField] GameObject towerPrefab;
-    [SerializeField] Transform towerSpawnPoint;
+    [SerializeField] public Transform towerSpawnPoint;
+    [SerializeField] public TowerBuyUI towerBuyUI;
 
     TowerHeightChecker heightChecker;
 
@@ -70,11 +71,6 @@ public class TowerManager : MonoBehaviour
         TowerScript result = Instantiate(towerPrefab, this.transform).GetComponent<TowerScript>();
         result.SetData(GameManager.Instance.tower.GetTowerDatas()[idx]);
         return result;
-    }
-
-    public void Fire(float atk, Vector2 towerPos, Transform target)
-    {
-
     }
 
     public void MergeTower(TowerScript originTower, TowerScript secondTower)

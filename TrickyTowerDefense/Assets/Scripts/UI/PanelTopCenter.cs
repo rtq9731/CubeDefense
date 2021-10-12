@@ -25,7 +25,6 @@ public class PanelTopCenter : MonoBehaviour
     {
         foreach (var item in GameManager.Instance.tower.GetTowerDatas().FindAll(x => x.TOWERGRADE == TowerData.TowerGrade.Common))
         {
-            Debug.Log(item.Idx);
             oneTierTowerIdx.Add(item.Idx);
         }
 
@@ -45,7 +44,8 @@ public class PanelTopCenter : MonoBehaviour
         if (GameManager.Instance.GetData().CanBuy(towerPrice))
         {
             GameManager.Instance.GetData().Buy(towerPrice);
-            GameManager.Instance.towerManager.GetNewTower(NextTowerIdx);
+            GameManager.Instance.towerManager.towerBuyUI.initTowerBuyUI(NextTowerIdx, btnBuyTower);
+            btnBuyTower.interactable = false;
             NextTowerIdx = oneTierTowerIdx[Random.Range(0, oneTierTowerIdx.Count)];
             panelNextTower.SetNewTowerImage(NextTowerIdx);
         }
