@@ -8,7 +8,7 @@ public class CameraMove : MonoBehaviour
     [SerializeField] float speed;
     Vector3 movePos;
 
-    public float yPositionLimit = 7f;
+    public float yPositionLimit = 7.001f;
 
     float verticalAxis;
 
