@@ -21,7 +21,7 @@ public class TowerBuyUI : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             GameManager.Instance.towerManager.GetNewTower(towerIdx);
             gameObject.SetActive(false);
