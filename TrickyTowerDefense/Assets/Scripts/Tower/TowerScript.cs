@@ -73,6 +73,28 @@ public class TowerScript : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.CompareTag(tag))
+        {
+            if (data.TOWERGRADE == TowerData.TowerGrade.Legendary)
+            {
+                return;
+            }
+
+            TowerScript otherTower = collision.transform.GetComponent<TowerScript>();
+            if (otherTower != null)
+            {
+                if (otherTower.data.Idx == data.Idx)
+                {
+                    towerManager.AddMergeReadyTower(this);
+                    return;
+                }
+            }
+        }
+    }
+
     private void UpdateSize(TowerData.TowerGrade grade)
     {
         switch (grade)

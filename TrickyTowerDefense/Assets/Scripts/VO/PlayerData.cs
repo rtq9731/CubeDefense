@@ -6,19 +6,20 @@ using UnityEngine;
 public class PlayerData
 {
     [SerializeField] private List<TowerData> towerDatas = new List<TowerData>();
-    [SerializeField] private int money = 0;
+    [SerializeField] private int gold = 0;
+    [SerializeField] private int round = 0;
 
     public bool CanBuy(int price)
     {
-        return money - price >= 0 ? true : false;
+        return gold - price >= 0 ? true : false;
     }
 
     public void Buy(int price)
     {
-        if (money - price <= 0)
+        if (gold - price <= 0)
             return;
 
-        money -= price;
+        gold -= price;
     }
 
     public void AddTower(TowerData tower)

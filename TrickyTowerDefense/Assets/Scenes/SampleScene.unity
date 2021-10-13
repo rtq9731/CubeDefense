@@ -2589,7 +2589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  yPositionLimit: 0
+  yPositionLimit: 7
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -4825,7 +4825,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD0C0\uC6CC \uAD6C\uB9E4\uB97C \uD655\uC815\uD558\uB824\uBA74 \n\uC5D4\uD130\uB97C
+  m_Text: "\uD0C0\uC6CC \uAD6C\uB9E4\uB97C \uD655\uC815\uD558\uB824\uBA74 \n\uC2A4\uD398\uC774\uC2A4\uBC14\uB97C
     \uB20C\uB7EC\uC8FC\uC138\uC694"
 --- !u!222 &1022592482
 CanvasRenderer:

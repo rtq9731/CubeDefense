@@ -22,7 +22,7 @@ public class TowerHeightChecker : MonoBehaviour
         if(tower.transform.position.y > highestHeight)
         {
             highestHeight += towerHeightPoint;
-            towerManager.towerSpawnPoint.position = new Vector3(towerManager.towerSpawnPoint.position.x, highestHeight + towerHeightPoint + 2);
+            towerManager.towerSpawnPoint.position += new Vector3(0, highestHeight + towerHeightPoint + 2, 0);
         }
     }
 }
