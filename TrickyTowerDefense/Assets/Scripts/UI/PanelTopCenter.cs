@@ -23,7 +23,7 @@ public class PanelTopCenter : MonoBehaviour
 
     private void Start()
     {
-        foreach (var item in GameManager.Instance.tower.GetTowerDatas().FindAll(x => x.TOWERGRADE == TowerData.TowerGrade.Common))
+        foreach (var item in GameManager.Instance.towerData.GetTowerDatas().FindAll(x => x.TOWERGRADE == TowerData.TowerGrade.Common))
         {
             oneTierTowerIdx.Add(item.Idx);
         }

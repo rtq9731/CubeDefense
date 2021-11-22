@@ -6,7 +6,7 @@ public class GameManager : MonoSingleton<GameManager>
 {
     public float gameSpeed = 1f;
 
-    [SerializeField] public Tower tower = null;
+    [SerializeField] public Tower towerData = null;
 
     [SerializeField] public EnemyManager enemyManager = null;
     [SerializeField] public TowerManager towerManager = null;

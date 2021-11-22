@@ -9,6 +9,6 @@ public class PanelNextTower : MonoBehaviour
 
     public void SetNewTowerImage(int towerIdx)
     {
-        towerImage.sprite = GameManager.Instance.tower.GetTowerSprite(towerIdx);
+        towerImage.sprite = GameManager.Instance.towerData.GetTowerSprite(towerIdx);
     }
 }

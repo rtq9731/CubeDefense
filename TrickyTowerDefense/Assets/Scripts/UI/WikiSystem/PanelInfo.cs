@@ -16,7 +16,7 @@ public class PanelInfo : MonoBehaviour
 
     public void InitInfoPanel(TowerData data)
     {
-        Sprite towerSprite = GameManager.Instance.tower.GetTowerSprite(data.TOWERTYPE, data.TOWERGRADE);
+        Sprite towerSprite = GameManager.Instance.towerData.GetTowerSprite(data.TOWERTYPE, data.TOWERGRADE);
 
         towerImage.sprite = towerSprite;
         textTowerName.text = data.Towername;

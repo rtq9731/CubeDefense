@@ -17,12 +17,12 @@ public class TowerHeightChecker : MonoBehaviour
         towerManager = GameManager.Instance.towerManager;
     }
 
-    public void TowerHeightCheck(TowerScript tower)
+    public void TowerHeightCheck(TowerMerge tower)
     {
         if(tower.transform.position.y > highestHeight)
         {
             highestHeight += towerHeightPoint;
-            towerManager.towerSpawnPoint.position += new Vector3(0, highestHeight + towerHeightPoint + 2, 0);
+            towerManager.towerSpawnPoint.position = new Vector3(0, highestHeight + towerHeightPoint + 2, 0);
         }
     }
 }

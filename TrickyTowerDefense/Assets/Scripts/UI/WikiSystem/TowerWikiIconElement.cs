@@ -20,7 +20,7 @@ public class TowerWikiIconElement : MonoBehaviour
         this.data = data;
         if(mySprite != null)
         {
-            mySprite.sprite = GameManager.Instance.tower.GetTowerSprite(data.Idx);
+            mySprite.sprite = GameManager.Instance.towerData.GetTowerSprite(data.Idx);
         }
 
         btn.onClick.RemoveAllListeners();

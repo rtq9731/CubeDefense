@@ -18,9 +18,14 @@ public class PanelWiki : MonoBehaviour
     List<TowerData> towerDatas = new List<TowerData>();
     List<TowerWikiIconElement> icons = new List<TowerWikiIconElement>();
 
+    private void OnEnable()
+    {
+        toggleAllTower.isOn = true;
+    }
+
     private void Start()
     {
-        towerDatas = GameManager.Instance.tower.GetTowerDatas();
+        towerDatas = GameManager.Instance.towerData.GetTowerDatas();
         for (int i = 0; i < towerDatas.Count; i++)
         {
             TowerWikiIconElement tmp = Instantiate(wikiIconPrefab, panelIcon).GetComponent<TowerWikiIconElement>();

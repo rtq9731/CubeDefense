@@ -16,13 +16,13 @@ public class TowerManager : MonoBehaviour
     public float rightMin = 0f;
     public float rightLimit = 0f;
 
-    List<TowerScript> towerList = new List<TowerScript>();
+    List<TowerMerge> towerList = new List<TowerMerge>();
 
-    List<TowerScript> mergeReadyTowerList = new List<TowerScript>();
+    List<TowerMerge> mergeReadyTowerList = new List<TowerMerge>();
 
-    List<TowerScript> towerPool = new List<TowerScript>();
+    List<TowerMerge> towerPool = new List<TowerMerge>();
 
-    public List<TowerScript> GetTowerList()
+    public List<TowerMerge> GetTowerList()
     {
         return towerList;
     }
@@ -36,14 +36,14 @@ public class TowerManager : MonoBehaviour
         }
     }
 
-    public void AddMergeReadyTower(TowerScript tower)
+    public void AddMergeReadyTower(TowerMerge tower)
     {
         mergeReadyTowerList.Add(tower);
     }
 
-    public TowerScript GetNewTower(int idx)
+    public TowerMerge GetNewTower(int idx)
     {
-        TowerScript result = null;
+        TowerMerge result = null;
         if (towerPool.Count >= 1)
         {
             result = towerPool.Find(x => !towerList.Contains(x) && x.GetTowerIdx() == idx);
@@ -66,16 +66,16 @@ public class TowerManager : MonoBehaviour
         return result;
     }
 
-    private TowerScript MakeNewTower(int idx)
+    private TowerMerge MakeNewTower(int idx)
     {
-        TowerScript result = Instantiate(towerPrefab, this.transform).GetComponent<TowerScript>();
-        result.SetData(GameManager.Instance.tower.GetTowerDatas()[idx]);
+        TowerMerge result = Instantiate(towerPrefab, this.transform).GetComponent<TowerMerge>();
+        result.SetData(GameManager.Instance.towerData.GetTowerDatas()[idx]);
         return result;
     }
 
-    public void MergeTower(TowerScript originTower, TowerScript secondTower)
+    public void MergeTower(TowerMerge originTower, TowerMerge secondTower)
     {
         secondTower.gameObject.SetActive(false);
-        originTower.SetData(GameManager.Instance.tower.GetTowerDatas()[originTower.GetTowerIdx() + 1]); // 다음 티어의 타워를 가져옴
+        originTower.SetData(GameManager.Instance.towerData.GetTowerDatas()[originTower.GetTowerIdx() + 1]); // 다음 티어의 타워를 가져옴
     }
 }

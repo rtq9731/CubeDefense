@@ -48,7 +48,7 @@ public class TowerBuyUI : MonoBehaviour
         this.towerIdx = towerIdx;
         this.btnBuyTower = btnBuyTower;
         towerSpwan.gameObject.SetActive(true);
-        towerSpwan.GetComponent<SpriteRenderer>().sprite = GameManager.Instance.tower.GetTowerSprite(towerIdx);
+        towerSpwan.GetComponent<SpriteRenderer>().sprite = GameManager.Instance.towerData.GetTowerSprite(towerIdx);
         gameObject.SetActive(true);
     }
 
