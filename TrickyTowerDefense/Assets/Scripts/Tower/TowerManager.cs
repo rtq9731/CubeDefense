@@ -6,39 +6,44 @@ using UnityEngine;
 public class TowerManager : MonoBehaviour
 {
     [SerializeField] GameObject towerPrefab;
-    [SerializeField] public Transform towerSpawnPoint;
-    [SerializeField] public TowerBuyUI towerBuyUI;
 
-    TowerHeightChecker heightChecker;
+    System.Action newMergeTower = () => { };
 
     public float leftMin = 0f;
     public float leftLimit = 0f;
     public float rightMin = 0f;
     public float rightLimit = 0f;
 
+    private int curRandIdx = -1;
+    private int nextRandIdx = 0;
+
     List<TowerMerge> towerList = new List<TowerMerge>();
-
     List<TowerMerge> mergeReadyTowerList = new List<TowerMerge>();
-
     List<TowerMerge> towerPool = new List<TowerMerge>();
+
+    private void Start()
+    {
+        UpdateRandIdx();
+        FindObjectOfType<TowerSpawner>().UpdateTowerImage();
+        newMergeTower += () =>
+        {
+            if (mergeReadyTowerList.Count >= 2)
+            {
+                MergeTower(mergeReadyTowerList[0], mergeReadyTowerList[1]);
+                mergeReadyTowerList.Clear();
+            }
+        };
+    }
 
     public List<TowerMerge> GetTowerList()
     {
         return towerList;
     }
 
-    private void Update()
-    {
-        if(mergeReadyTowerList.Count >= 2)
-        {
-            MergeTower(mergeReadyTowerList[0], mergeReadyTowerList[1]);
-            mergeReadyTowerList.Clear();
-        }
-    }
-
     public void AddMergeReadyTower(TowerMerge tower)
     {
         mergeReadyTowerList.Add(tower);
+        newMergeTower();
     }
 
     public TowerMerge GetNewTower(int idx)
@@ -60,7 +65,6 @@ public class TowerManager : MonoBehaviour
             towerPool.Add(result);
         }
 
-        result.transform.position = towerSpawnPoint.position;
         result.gameObject.SetActive(true);
 
         return result;
@@ -71,6 +75,25 @@ public class TowerManager : MonoBehaviour
         TowerMerge result = Instantiate(towerPrefab, this.transform).GetComponent<TowerMerge>();
         result.SetData(GameManager.Instance.towerData.GetTowerDatas()[idx]);
         return result;
+    }
+
+    public TowerMerge GetRandTower()
+    {
+        TowerMerge result = GetNewTower(curRandIdx);
+        UpdateRandIdx();
+        return result;
+    }
+
+    public Sprite GetNextRandSprite()
+    {
+        return GameManager.Instance.towerData.GetTowerSprite(curRandIdx);
+    }
+
+    private void UpdateRandIdx()
+    {
+        List<TowerData> towerDatas = GameManager.Instance.towerData.FindAllTower(TowerData.TowerGrade.Common);
+        curRandIdx = nextRandIdx;
+        nextRandIdx = towerDatas[Random.Range(0, towerDatas.Count)].Idx;
     }
 
     public void MergeTower(TowerMerge originTower, TowerMerge secondTower)

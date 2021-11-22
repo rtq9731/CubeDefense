@@ -70,7 +70,4 @@ public class TowerData
       Unique,
       Legendary
   }
-
-
-
 }

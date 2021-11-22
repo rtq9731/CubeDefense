@@ -11,6 +11,13 @@ public class TowerScript : MonoBehaviour
 
     EnemyScript target = null;
     TowerManager towerManager = null;
+    TowerData towerData = null;
+
+    public TowerData TowerData
+    {
+        get { return towerData; }
+        set { towerData = value; }
+    }
 
     public float madeTime = 0f;
 
@@ -18,6 +25,7 @@ public class TowerScript : MonoBehaviour
     {
         towerAttack = GetComponent<Attackable>();
     }
+
     private void OnEnable()
     {
         if (towerManager == null)

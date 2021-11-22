@@ -41,8 +41,6 @@ public class TowerMerge : MonoBehaviour
         {
             towerManager = GameManager.Instance.towerManager;
         }
-
-        towerPosChanged += (x) => FindObjectOfType<TowerHeightChecker>().TowerHeightCheck(x);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
