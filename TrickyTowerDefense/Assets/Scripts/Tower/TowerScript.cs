@@ -11,7 +11,7 @@ public class TowerScript : MonoBehaviour
 
     EnemyScript target = null;
     TowerManager towerManager = null;
-    TowerData towerData = null;
+    public TowerData towerData = null;
 
     public TowerData TowerData
     {

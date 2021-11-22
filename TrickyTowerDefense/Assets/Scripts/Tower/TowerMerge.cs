@@ -7,7 +7,7 @@ using DG.Tweening;
 public class TowerMerge : MonoBehaviour
 {
     public Action<TowerMerge> towerPosChanged = null;
-    public TowerData data;
+    public TowerScript tower;
 
     SpriteRenderer sr = null;
     TowerManager towerManager = null;
@@ -47,7 +47,7 @@ public class TowerMerge : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(tag))
         {
-            if (data.TOWERGRADE == TowerData.TowerGrade.Legendary)
+            if (tower.TowerData.TOWERGRADE == TowerData.TowerGrade.Legendary)
             {
                 return;
             }
@@ -55,7 +55,7 @@ public class TowerMerge : MonoBehaviour
             TowerMerge otherTower = collision.transform.GetComponent<TowerMerge>();
             if (otherTower != null)
             {
-                if (otherTower.data.Idx == data.Idx)
+                if (otherTower.tower.TowerData.Idx == tower.TowerData.Idx)
                 {
                     towerManager.AddMergeReadyTower(this);
                     return;
@@ -74,7 +74,7 @@ public class TowerMerge : MonoBehaviour
 
         if (collision.gameObject.CompareTag(tag))
         {
-            if (data.TOWERGRADE == TowerData.TowerGrade.Legendary)
+            if (tower.TowerData.TOWERGRADE == TowerData.TowerGrade.Legendary)
             {
                 return;
             }
@@ -82,7 +82,7 @@ public class TowerMerge : MonoBehaviour
             TowerMerge otherTower = collision.transform.GetComponent<TowerMerge>();
             if (otherTower != null)
             {
-                if (otherTower.data.Idx == data.Idx)
+                if (otherTower.tower.TowerData.Idx == tower.TowerData.Idx)
                 {
                     towerManager.AddMergeReadyTower(this);
                     return;
@@ -119,22 +119,22 @@ public class TowerMerge : MonoBehaviour
 
     public TowerData.TowerGrade GetTowerGrade()
     {
-        return data.TOWERGRADE;
+        return tower.TowerData.TOWERGRADE;
     }
 
     public TowerData.TowerType GetTowerType()
     {
-        return data.TOWERTYPE;
+        return tower.TowerData.TOWERTYPE;
     }
 
     public int GetTowerIdx()
     {
-        return data.Idx;
+        return tower.TowerData.Idx;
     }
 
     public void SetData(TowerData data)
     {
-        this.data = data;
+        tower.TowerData = data;
         UpdateSize(data.TOWERGRADE);
         sr.sprite = GameManager.Instance.towerData.GetTowerSprite(data.TOWERTYPE, data.TOWERGRADE);
     }
