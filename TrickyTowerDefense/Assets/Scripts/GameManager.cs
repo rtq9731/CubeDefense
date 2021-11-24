@@ -5,13 +5,15 @@ using UnityEngine;
 public class GameManager : MonoSingleton<GameManager>
 {
     public float gameSpeed = 1f;
+    public bool isHeightOver = false;
 
     [SerializeField] public Tower towerData = null;
 
     [SerializeField] public EnemyManager enemyManager = null;
     [SerializeField] public TowerManager towerManager = null;
+    [SerializeField] public HeightChecker heightChecker = null;
 
-    [SerializeField] public PlayerData data;
+    [SerializeField] PlayerData data;
     
     public PlayerData GetData()
     {

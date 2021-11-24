@@ -11,7 +11,16 @@ public class TowerScript : MonoBehaviour
 
     EnemyScript target = null;
     TowerManager towerManager = null;
-    public TowerData towerData = null;
+    TowerPosChecker towerPosChecker = null;
+    TowerData towerData = new TowerData();
+
+    private bool isRanded = false; // ¶¥¿¡ ¶³¾îÁ³´Â°¡?
+
+    public bool IsRanded
+    {
+        get { return isRanded; }
+        set { isRanded = value; }
+    }
 
     public TowerData TowerData
     {
@@ -24,6 +33,7 @@ public class TowerScript : MonoBehaviour
     private void Awake()
     {
         towerAttack = GetComponent<Attackable>();
+        towerPosChecker = GetComponent<TowerPosChecker>();
     }
 
     private void OnEnable()

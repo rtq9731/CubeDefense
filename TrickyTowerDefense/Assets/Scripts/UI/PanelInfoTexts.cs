@@ -12,7 +12,7 @@ public class PanelInfoTexts : MonoBehaviour
 
     private void Start()
     {
-        InitTexts(GameManager.Instance.data);
+        InitTexts(GameManager.Instance.GetData());
     }
 
     public void InitTexts(PlayerData data)
@@ -20,6 +20,20 @@ public class PanelInfoTexts : MonoBehaviour
         textCurRound.text = $"현재 라운드 : {data.Round}";
         textCurHP.text = $"남은 체력 : {data.HP}";
         textCurGold.text = $"현재 골드 : {data.Gold}";
-        textRemainSec.text = $"다름 라운드까지 : {data.Time}";
+        textRemainSec.text = $"다음 라운드까지 : {data.Time}";
+    }
+
+    public void UpdateTexts()
+    {
+        PlayerData data = GameManager.Instance.GetData();
+        textCurRound.text = $"현재 라운드 : {data.Round}";
+        textCurHP.text = $"남은 체력 : {data.HP}";
+        textCurGold.text = $"현재 골드 : {data.Gold}";
+        textRemainSec.text = $"다음 라운드까지 : {data.Time}";
+    }
+
+    public void UpdateOnlyTime()
+    {
+        textRemainSec.text = $"다음 라운드까지 : {GameManager.Instance.GetData().Time.ToString("F2")}";
     }
 }

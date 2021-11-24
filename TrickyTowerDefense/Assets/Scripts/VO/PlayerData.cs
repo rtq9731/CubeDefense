@@ -36,17 +36,13 @@ public class PlayerData : ISerializationCallbackReceiver
         set { time = value; }
     }
 
-    public bool CanBuy(int price)
-    {
-        return gold - price >= 0 ? true : false;
-    }
-
-    public void Buy(int price)
+    public bool Buy(int price)
     {
         if (gold - price <= 0)
-            return;
+            return false;
 
         gold -= price;
+        return true;
     }
 
     public void AddTower(TowerScript tower)

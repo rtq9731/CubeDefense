@@ -6,16 +6,16 @@ using DG.Tweening;
 
 public class TowerMerge : MonoBehaviour
 {
-    public Action<TowerMerge> towerPosChanged = null;
-    public TowerScript tower;
+    Action<TowerMerge> towerPosChanged = null;
+    TowerScript tower;
 
     SpriteRenderer sr = null;
     TowerManager towerManager = null;
 
     private void Awake()
     {
-        towerPosChanged += (x) => { }; // 액션 초기화
         sr = GetComponent<SpriteRenderer>();
+        tower = GetComponent<TowerScript>();
     }
 
     private void OnEnable()
@@ -61,12 +61,6 @@ public class TowerMerge : MonoBehaviour
                     return;
                 }
             }
-
-            towerPosChanged(this);
-        }
-        else if (collision.gameObject.CompareTag("Ground"))
-        {
-            towerPosChanged(this);
         }
     }
     private void OnCollisionStay2D(Collision2D collision)

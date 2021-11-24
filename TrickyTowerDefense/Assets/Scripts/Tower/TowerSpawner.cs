@@ -6,6 +6,7 @@ using DG.Tweening;
 public class TowerSpawner : MonoBehaviour
 {
     [SerializeField] GameObject[] wallObjs = null;
+    [SerializeField] int towerPrice = 0;
 
     [Header("안전범위")]
     [SerializeField] float safePlus = 0f;
@@ -16,6 +17,7 @@ public class TowerSpawner : MonoBehaviour
     bool canBuyNewTower = true;
 
     TowerManager towerManager = null;
+    UIManager uiManager = null;
 
     SpriteRenderer sr = null;
 
@@ -29,18 +31,29 @@ public class TowerSpawner : MonoBehaviour
     private void Start()
     {
         towerManager = FindObjectOfType<TowerManager>();
+        uiManager = FindObjectOfType<UIManager>();
     }
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 mousePosOnGame = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if(IsMouseInSpawnZone(mousePosOnGame) && canBuyNewTower)
+            if(GameManager.Instance.isHeightOver || !UIStackManager.IsUIStackEmpty())
             {
-                canBuyNewTower = false;
-                GameObject newTower = towerManager.GetRandTower().gameObject;
-                MoveNewTile(newTower.transform, mousePosOnGame.x);
+                return;
+            }
+
+
+            Vector3 mousePosOnGame = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (IsMouseInSpawnZone(mousePosOnGame) && canBuyNewTower)
+            {
+                if (GameManager.Instance.GetData().Buy(towerPrice))
+                {
+                    uiManager.infoTexts.UpdateTexts();
+                    canBuyNewTower = false;
+                    GameObject newTower = towerManager.GetRandTower().gameObject;
+                    MoveNewTile(newTower.transform, mousePosOnGame.x);
+                }
             }
         }
     }
@@ -63,6 +76,7 @@ public class TowerSpawner : MonoBehaviour
                 OnComplete(() =>
                 {
                     towerTr.GetComponent<Rigidbody2D>().gravityScale = 1;
+                    rigid2D.AddForce(Vector2.down * 10, ForceMode2D.Impulse);
                 });
 
         UpdateTowerImage();
