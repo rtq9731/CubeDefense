@@ -28,6 +28,7 @@ public class GameManager : MonoSingleton<GameManager>
     public void StartGame()
     {
         gameSpeed = 1f;
+        FindObjectOfType<TowerSpawner>().gameObject.SetActive(true);
     }
 
     public void SaveGame()
@@ -37,6 +38,6 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void LoadGame()
     {
-
+        //StageManager의 stageTimer 세팅 해줄것
     }
 }

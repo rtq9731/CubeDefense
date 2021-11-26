@@ -38,7 +38,7 @@ public class PlayerData : ISerializationCallbackReceiver
 
     public bool Buy(int price)
     {
-        if (gold - price <= 0)
+        if (gold - price < 0)
             return false;
 
         gold -= price;
