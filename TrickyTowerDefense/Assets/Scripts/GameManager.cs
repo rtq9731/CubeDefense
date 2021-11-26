@@ -20,6 +20,16 @@ public class GameManager : MonoSingleton<GameManager>
         return data;
     }
 
+    private void Start()
+    {
+        gameSpeed = 0f;
+    }
+
+    public void StartGame()
+    {
+        gameSpeed = 1f;
+    }
+
     public void SaveGame()
     {
 
