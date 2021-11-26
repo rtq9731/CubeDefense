@@ -1028,6 +1028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 197238853}
+  - component: {fileID: 197238854}
   m_Layer: 0
   m_Name: StageManager
   m_TagString: Untagged
@@ -1049,6 +1050,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197238854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197238852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d7bc9788d5f734e92974a72316c5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &217841099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,7 +1745,7 @@ RectTransform:
   - {fileID: 165420310}
   - {fileID: 850310047}
   m_Father: {fileID: 770518540}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3548,9 +3561,9 @@ RectTransform:
   - {fileID: 444345678}
   - {fileID: 683750847}
   - {fileID: 856759099}
-  - {fileID: 927425659}
   - {fileID: 410622043}
   - {fileID: 1828896481}
+  - {fileID: 927425659}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4235,6 +4248,7 @@ GameObject:
   - component: {fileID: 927425661}
   - component: {fileID: 927425660}
   - component: {fileID: 927425662}
+  - component: {fileID: 927425663}
   m_Layer: 5
   m_Name: StartPanel
   m_TagString: Untagged
@@ -4256,7 +4270,7 @@ RectTransform:
   - {fileID: 558901116}
   - {fileID: 1163893410}
   m_Father: {fileID: 770518540}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4276,7 +4290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.627451}
+  m_Color: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4313,6 +4327,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &927425663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927425658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86270697217e5847bc531693604cb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &965851213
 GameObject:
   m_ObjectHideFlags: 0
@@ -7248,7 +7274,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 770518540}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
