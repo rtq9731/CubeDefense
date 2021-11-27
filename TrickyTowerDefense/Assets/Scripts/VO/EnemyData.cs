@@ -6,6 +6,8 @@ using UnityEngine;
 public class EnemyData
 {
     [SerializeField]
+    int tier;
+    [SerializeField]
     int HP;
     [SerializeField]
     float speed;
@@ -16,5 +18,10 @@ public class EnemyData
     {
         right,
         left
+    }
+
+    public void Damage(int damage)
+    {
+        HP -= damage;
     }
 }
