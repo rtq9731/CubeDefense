@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine;
 public class StageTimer : MonoBehaviour
 {
     PanelInfoTexts info = null;
+
+    private Action actCallNextStage = () => { };
 
     private void Start()
     {
