@@ -6,23 +6,41 @@ public class StageManager : MonoBehaviour
 {
     [SerializeField] int stage = 0;
     [SerializeField] float stageTime = 60f;
-    [SerializeField] float stageWaitTime = 10f;
+    [SerializeField] float stageWaitTime = 20f;
 
-    float stageTimer = 0f;
+    StageTimer stageTimer = null;
 
-    private void Start()
+    public bool IsInStage
     {
-        float originStageTimer = stageTimer;
-        while(stageTimer > 0)
-        {
-            stage ++;
-            stageTimer -= (stageTime + stageWaitTime);
-        }
-        stageTimer = originStageTimer;
+        get { return GameManager.Instance.GetData().Time % (stageTime + stageWaitTime) >= 20; }
     }
 
-    void Update()
+    private void Awake()
     {
-        stageTimer += Time.deltaTime * GameManager.Instance.gameSpeed;        
+        GetComponent<StageTimer>();
+    }
+
+    public int CheckStageOnLoad()
+    {
+        float nowTime = GameManager.Instance.GetData().Time;
+
+        stage = (int)(nowTime / (stageTime + stageWaitTime));
+        return stage;
+    }
+
+    public int CheckStage()
+    {
+        float stageTimer = GameManager.Instance.GetData().Time;
+        float originStageTimer = stageTimer;
+
+        stage = 0;
+        while (stageTimer > 0)
+        {
+            stage++;
+            stageTimer -= (stageTime + stageWaitTime);
+        }
+
+        GameManager.Instance.GetData().Round = stage;
+        return stage;
     }
 }
