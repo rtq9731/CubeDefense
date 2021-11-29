@@ -5,12 +5,7 @@ using UnityEngine;
 public abstract class Attackable : MonoBehaviour
 {
     protected bool bCanAttack = false;
-    protected float timer = 0f;
-
-    private void Update()
-    {
-        timer += Time.deltaTime * GameManager.Instance.gameSpeed;
-    }
+    protected float attackCoolTime = 0f;
 
     public abstract void Attack(int damage, EnemyScript Target);
 }
