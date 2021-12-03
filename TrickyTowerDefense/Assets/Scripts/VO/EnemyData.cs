@@ -8,7 +8,7 @@ public class EnemyData
     [SerializeField]
     int tier;
     [SerializeField]
-    int HP;
+    float HP;
     [SerializeField]
     float speed;
     [SerializeField]
@@ -20,7 +20,7 @@ public class EnemyData
         left
     }
 
-    public void Damage(int damage)
+    public void Damage(float damage)
     {
         HP -= damage;
     }
