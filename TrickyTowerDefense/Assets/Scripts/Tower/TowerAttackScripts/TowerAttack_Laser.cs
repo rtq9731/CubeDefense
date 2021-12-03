@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class TowerAttack_Laser : Attackable
 {
+    TowerScript _tower = null;
     LineRenderer _lr = null;
-    MeshCollider _meshCollider = null;
+    PolygonCollider2D _polygonCollider = null;
 
     int damage = 0;
 
-    float _attackTime = 0f;
+    float _effectTime = 0f;
     float _tickTime = 0.25f;
+    float _tickTimer = 0f;
     float _effectTimer = 0f;
 
     bool _isAttacking = false;
 
     List<EnemyScript> targets = new List<EnemyScript>();
+    List<Vector2> colliderPostions = new List<Vector2>();
 
     private void Awake()
     {
+        _tower = GetComponent<TowerScript>();
         _lr = GetComponent<LineRenderer>();
-        _meshCollider = GetComponent<MeshCollider>();
+        _polygonCollider = GetComponent<PolygonCollider2D>();
 
-        _attackTime = attackCoolTime; 
+        _effectTime = 4f; 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,7 +36,7 @@ public class TowerAttack_Laser : Attackable
             targets.Add(collision.GetComponent<EnemyScript>());
         }
     }
-
+     
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
@@ -42,15 +46,20 @@ public class TowerAttack_Laser : Attackable
         }
     }
 
-    public override void Attack(int damage, EnemyScript target)
+    public override void Attack(float damage, EnemyScript target)
     {
         if (bCanAttack)
         {
+            targets = new List<EnemyScript>();
             _lr.startWidth = transform.localScale.x;
             _lr.endWidth = transform.localScale.x;
             _lr.SetPosition(0, transform.position);
             _lr.SetPosition(1, target.transform.position);
-            _lr.BakeMesh(_meshCollider.sharedMesh, true);
+            attackTimer = 0f;
+            _effectTimer = 0f;
+            _tickTimer = 0f;
+            bCanAttack = false;
+            _isAttacking = true;
         }
     }
 
@@ -61,14 +70,20 @@ public class TowerAttack_Laser : Attackable
             _lr.startWidth = transform.localScale.x;
             _lr.endWidth = transform.localScale.x;
             _lr.SetPosition(0, transform.position);
-            _lr.SetPosition(1, target.transform.position);
-            _lr.BakeMesh(_meshCollider.sharedMesh, true);
-            Debug.Log("¤¾¤·");
+            _lr.SetPosition(1, new Vector3(target.transform.position.x, target.transform.position.y, transform.position.z));
+            attackTimer = 0f;
+            _effectTimer = 0f;
+            _tickTimer = 0f;
+            bCanAttack = false;
+            _isAttacking = true;
         }
     }
 
     private void Update()
     {
+        colliderPostions = GeneratePolygonCollider();
+        _polygonCollider.SetPath(0, colliderPostions.ConvertAll(p => (Vector2)transform.InverseTransformPoint(p)));
+
         if (!bCanAttack && !_isAttacking)
         {
             if (attackTimer >= attackCoolTime)
@@ -80,17 +95,33 @@ public class TowerAttack_Laser : Attackable
         }
         else if (!bCanAttack && _isAttacking)
         {
-            if(_effectTimer % _tickTime == 0)
+            Debug.Log(_effectTime);
+            Debug.Log(_effectTimer);
+            if(_effectTimer >= _effectTime)
+            {
+                _isAttacking = false;
+            }
+
+            if(_tickTimer >= _tickTime)
             {
                 CheckAttack();
+                _tickTimer = 0f;
             }
 
             _effectTimer += Time.deltaTime * GameManager.Instance.gameSpeed;
+            _tickTimer += Time.deltaTime * GameManager.Instance.gameSpeed;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.black;
+        if (colliderPostions != null) colliderPostions.ForEach(p => Gizmos.DrawSphere(p, 0.1f)); 
     }
 
     private void CheckAttack()
     {
+
         if (_effectTimer >= 1)
         {
             _lr.startWidth = transform.localScale.x / 2;
@@ -101,7 +132,36 @@ public class TowerAttack_Laser : Attackable
             _lr.startWidth = transform.localScale.x;
             _lr.endWidth = transform.localScale.x;
         }
-        
-        
+
+        //if(targets.Count >= 1)
+        //{
+        //    targets.ForEach(x => x.Hit(_tower.TowerData.Atk));
+        //}
+    }
+
+    private List<Vector2> GeneratePolygonCollider()
+    {
+        Vector3[] positions = new Vector3[_lr.positionCount];
+        _lr.GetPositions(positions);
+
+        float w = _lr.startWidth;
+
+        float m = (positions[1].y - positions[0].y) / (positions[1].x - positions[0].x);
+        float deltaX = (w / 2f) * (m / Mathf.Pow(m * m + 1, 0.5f));
+        float deltaY = (w / 2f) * (1 / Mathf.Pow(1 + m * m, 0.5f));
+
+        Vector3[] offsets = new Vector3[2];
+        offsets[0] = new Vector3(-deltaX, deltaY);
+        offsets[1] = new Vector3(deltaX, -deltaY);
+
+        List<Vector2> colliderPositions = new List<Vector2>
+        {
+            positions[0] + offsets[0],
+            positions[1] + offsets[0],
+            positions[1] + offsets[1],
+            positions[0] + offsets[1]
+        };
+
+        return colliderPositions;
     }
 }

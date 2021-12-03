@@ -16,4 +16,9 @@ public class EnemyScript : MonoBehaviour
     {
         health = GetComponent<EnemyHealth>();
     }
+
+    public void Hit(float damage)
+    {
+        health.Hit(damage);
+    }
 }

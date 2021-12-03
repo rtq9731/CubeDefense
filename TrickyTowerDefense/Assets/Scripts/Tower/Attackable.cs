@@ -8,5 +8,5 @@ public abstract class Attackable : MonoBehaviour
     protected float attackCoolTime = 0f;
     protected float attackTimer = 0f;
 
-    public abstract void Attack(int damage, EnemyScript target);
+    public abstract void Attack(float damage, EnemyScript target);
 }
