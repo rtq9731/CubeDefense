@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TowerAttack_Laser : Attackable
 {
-    TowerScript _tower = null;
     LineRenderer _lr = null;
     PolygonCollider2D _polygonCollider = null;
 
@@ -95,17 +94,15 @@ public class TowerAttack_Laser : Attackable
         }
         else if (!bCanAttack && _isAttacking)
         {
-            Debug.Log(_effectTime);
-            Debug.Log(_effectTimer);
-            if(_effectTimer >= _effectTime)
-            {
-                _isAttacking = false;
-            }
-
-            if(_tickTimer >= _tickTime)
+            if (_tickTimer >= _tickTime)
             {
                 CheckAttack();
                 _tickTimer = 0f;
+            }
+
+            if (_effectTimer >= _effectTime)
+            {
+                _isAttacking = false;
             }
 
             _effectTimer += Time.deltaTime * GameManager.Instance.gameSpeed;
