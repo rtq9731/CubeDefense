@@ -10,57 +10,57 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80e14a72067f1ad408ec8d661bc560ce, type: 3}
-  m_Name: TowerDataImporter
+  m_Name: DataImporter
   m_EditorClassIdentifier: 
   templatePath: QuickSheet/ExcelPlugin/Templates
   scriptFilePath: Data/Runtime
   editorScriptFilePath: Data/Editor
-  sheetName: TowerData.xlsx
+  sheetName: Datas.xlsx
   workSheetName: Tower
   columnHeaderList:
-  - type: 3
+  - type: 0
     name: Idx
     isEnable: 0
     isArray: 0
-  - type: 1
+  - type: 0
     name: towerName
     isEnable: 0
     isArray: 0
-  - type: 7
+  - type: 0
     name: TowerType
     isEnable: 0
     isArray: 0
-  - type: 7
+  - type: 0
     name: TowerGrade
     isEnable: 0
     isArray: 0
-  - type: 5
+  - type: 0
     name: atk
     isEnable: 0
     isArray: 0
-  - type: 5
+  - type: 0
     name: atkSpeed
     isEnable: 0
     isArray: 0
-  - type: 5
+  - type: 0
     name: range
     isEnable: 0
     isArray: 0
-  - type: 8
+  - type: 0
     name: isPenetrate
     isEnable: 0
     isArray: 0
-  - type: 1
+  - type: 0
     name: ImagePath
     isEnable: 0
     isArray: 0
-  - type: 1
+  - type: 0
     name: TMI
     isEnable: 0
     isArray: 0
-  excelFilePath: Assets/Data/TowerData.xlsx
+  excelFilePath: Assets/Data/Datas.xlsx
   SheetNames:
   - Tower
-  - Sheet2
-  - Sheet3
+  - Enemy
+  - EnemyData
   currentSelectedSheet: 0

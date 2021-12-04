@@ -53,7 +53,7 @@ public class TowerAttack_Laser : Attackable
             _lr.startWidth = transform.localScale.x;
             _lr.endWidth = transform.localScale.x;
             _lr.SetPosition(0, transform.position);
-            _lr.SetPosition(1, target.transform.position);
+            _lr.SetPosition(1, new Vector3(target.transform.position.x, target.transform.position.y, transform.position.z));
             attackTimer = 0f;
             _effectTimer = 0f;
             _tickTimer = 0f;
@@ -81,7 +81,10 @@ public class TowerAttack_Laser : Attackable
     private void Update()
     {
         colliderPostions = GeneratePolygonCollider();
-        _polygonCollider.SetPath(0, colliderPostions.ConvertAll(p => (Vector2)transform.InverseTransformPoint(p)));
+        if (_isAttacking)
+        {
+            _polygonCollider.SetPath(0, colliderPostions.ConvertAll(p => (Vector2)transform.InverseTransformPoint(p)));
+        }
 
         if (!bCanAttack && !_isAttacking)
         {
@@ -102,6 +105,9 @@ public class TowerAttack_Laser : Attackable
 
             if (_effectTimer >= _effectTime)
             {
+                _lr.startWidth = 0;
+                _lr.endWidth = 0; 
+                _polygonCollider.SetPath(0, colliderPostions.ConvertAll(p => (Vector2)transform.InverseTransformPoint(p)));
                 _isAttacking = false;
             }
 
@@ -130,10 +136,10 @@ public class TowerAttack_Laser : Attackable
             _lr.endWidth = transform.localScale.x;
         }
 
-        //if(targets.Count >= 1)
-        //{
-        //    targets.ForEach(x => x.Hit(_tower.TowerData.Atk));
-        //}
+        if(targets.Count >= 1)
+        {
+            targets.ForEach(x => x.Hit(_tower.TowerData.Atk));
+        }
     }
 
     private List<Vector2> GeneratePolygonCollider()
