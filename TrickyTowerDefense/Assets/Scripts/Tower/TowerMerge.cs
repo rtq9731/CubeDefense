@@ -6,7 +6,6 @@ using DG.Tweening;
 
 public class TowerMerge : MonoBehaviour
 {
-    Action<TowerMerge> towerPosChanged = null;
     TowerScript tower;
 
     SpriteRenderer sr = null;

@@ -10,7 +10,6 @@ public class PlayerData : ISerializationCallbackReceiver
     [SerializeField] private int gold = 10;
     [SerializeField] private int round = 0;
     [SerializeField] private int hp = 0;
-    [SerializeField] private float time = 0f;
 
     public int Gold
     {
@@ -30,12 +29,6 @@ public class PlayerData : ISerializationCallbackReceiver
         set { hp = value; }
     }
 
-    public float Time
-    {
-        get { return time; }
-        set { time = value; }
-    }
-
     public bool Buy(int price)
     {
         if (gold - price < 0)
@@ -44,6 +37,8 @@ public class PlayerData : ISerializationCallbackReceiver
         gold -= price;
         return true;
     }
+
+    public List<TowerData> TowerDatas => towerDatas;
 
     public void AddTower(TowerScript tower)
     {

@@ -9,6 +9,11 @@ public class EnemyHealth : MonoBehaviour, IHitable
     public void Hit(float damage)
     {
         enemyScript.Data.Damage(damage);
+        if(enemyScript.Data.Hp <= 0)
+        {
+            enemyScript.onEnemyDeath();
+            gameObject.SetActive(false);
+        }
     }
 
     private void Awake()
