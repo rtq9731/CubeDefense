@@ -80,7 +80,7 @@ public class TowerSpawner : MonoBehaviour
                 });
 
         UpdateTowerImage();
-        transform.DOScale(Vector3.one, 1f).OnComplete(() => canBuyNewTower = true);
+        transform.DOScale(Vector3.one, 2f).OnComplete(() => canBuyNewTower = true);
     }
 
     public void UpdateTowerImage()
