@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class TowerAttack_Bullet : Attackable
 {
+    TowerBulletPool _bulletPool = null;
     private void Awake()
     {
-        _tower = GetComponent<TowerScript>();
+        tower = GetComponent<TowerScript>();
+    }
+
+    private void Start()
+    {
+        _bulletPool = FindObjectOfType<TowerBulletPool>();
     }
 
     public override void Attack(float damage, EnemyScript target)
     {
-
+        _bulletPool.GetBullet(transform.position).Fire(target, damage);
     }
 
     private void Update()

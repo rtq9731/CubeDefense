@@ -21,7 +21,7 @@ public class TowerAttack_Laser : Attackable
 
     private void Awake()
     {
-        _tower = GetComponent<TowerScript>();
+        tower = GetComponent<TowerScript>();
         _lr = GetComponent<LineRenderer>();
         _polygonCollider = GetComponent<PolygonCollider2D>();
 
@@ -138,7 +138,7 @@ public class TowerAttack_Laser : Attackable
 
         if(targets.Count >= 1)
         {
-            targets.ForEach(x => x.Hit(_tower.TowerData.Atk));
+            targets.ForEach(x => x.Hit(tower.TowerData.Atk));
         }
     }
 
