@@ -8,7 +8,7 @@ public class PanelInfoTexts : MonoBehaviour
     [SerializeField] Text textCurRound = null;
     [SerializeField] Text textCurHP = null;
     [SerializeField] Text textCurGold = null;
-    [SerializeField] Text textRemainSec = null;
+    [SerializeField] Text textIsOnRound = null;
 
     private void Start()
     {
@@ -20,7 +20,7 @@ public class PanelInfoTexts : MonoBehaviour
         textCurRound.text = $"현재 라운드 : {data.Round++}";
         textCurHP.text = $"남은 체력 : {data.HP}";
         textCurGold.text = $"현재 골드 : {data.Gold}";
-        textRemainSec.text = $"다음 라운드까지 : {data.Time}";
+        textIsOnRound.text = $"스테이지 준비 시간입니다.";
     }
 
     public void UpdateTexts()
@@ -29,11 +29,15 @@ public class PanelInfoTexts : MonoBehaviour
         textCurRound.text = $"현재 라운드 : {data.Round}";
         textCurHP.text = $"남은 체력 : {data.HP}";
         textCurGold.text = $"현재 골드 : {data.Gold}";
-        textRemainSec.text = $"다음 라운드까지 : {data.Time}";
     }
 
-    public void UpdateOnlyTime()
+    public void UpdateStageTextOnStartStage()
     {
-        textRemainSec.text = $"다음 라운드까지 : {GameManager.Instance.GetData().Time.ToString("F1")}";
+        textIsOnRound.text = $"! 스테이지가 진행 중 입니다 !";
+    }
+
+    public void UpdateStageTextOnEndStage()
+    {
+        textIsOnRound.text = $"스테이지 준비 시간입니다.";
     }
 }
