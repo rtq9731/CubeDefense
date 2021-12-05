@@ -1065,7 +1065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stage: 0
   stageTime: 60
-  stageWaitTime: 10
+  stageWaitTime: 20
 --- !u!114 &197238855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3473,7 +3473,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2E4\uC74C \uB77C\uC6B4\uB4DC \uAE4C\uC9C0 : { secondes }"
+  m_Text: "! \uD604\uC7AC \uB77C\uC6B4\uB4DC \uC9C4\uD589\uC911 !"
 --- !u!222 &752789270
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5458,7 +5458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 416, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1132150793
@@ -5554,7 +5554,7 @@ MonoBehaviour:
   textCurRound: {fileID: 1079179008}
   textCurHP: {fileID: 1209774734}
   textCurGold: {fileID: 880193297}
-  textRemainSec: {fileID: 752789269}
+  textIsOnRound: {fileID: 752789269}
 --- !u!1 &1133538940
 GameObject:
   m_ObjectHideFlags: 0
@@ -6563,7 +6563,6 @@ MonoBehaviour:
     gold: 10
     round: 0
     hp: 100
-    time: 0
 --- !u!114 &1349150405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8009,7 +8008,7 @@ GameObject:
   - component: {fileID: 2098763489}
   - component: {fileID: 2098763488}
   m_Layer: 5
-  m_Name: PanelNextRoundTime
+  m_Name: PanelIsOnRound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

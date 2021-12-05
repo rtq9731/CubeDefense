@@ -10,37 +10,9 @@ public class StageManager : MonoBehaviour
 
     StageTimer stageTimer = null;
 
-    public bool IsInStage
-    {
-        get { return GameManager.Instance.GetData().Time % (stageTime + stageWaitTime) >= 20; }
-    }
-
     private void Awake()
     {
-        GetComponent<StageTimer>();
-    }
-
-    public int CheckStageOnLoad()
-    {
-        float nowTime = GameManager.Instance.GetData().Time;
-
-        stage = (int)(nowTime / (stageTime + stageWaitTime));
-        return stage;
-    }
-
-    public int CheckStage()
-    {
-        float stageTimer = GameManager.Instance.GetData().Time;
-        float originStageTimer = stageTimer;
-
-        stage = 0;
-        while (stageTimer > 0)
-        {
-            stage++;
-            stageTimer -= (stageTime + stageWaitTime);
-        }
-
-        GameManager.Instance.GetData().Round = stage;
-        return stage;
+        stageTimer = GetComponent<StageTimer>();
+        stageTimer.SetStageTimer(stageTime, stageWaitTime);
     }
 }
