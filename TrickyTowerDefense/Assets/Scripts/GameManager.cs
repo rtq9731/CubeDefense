@@ -27,6 +27,7 @@ public class GameManager : MonoSingleton<GameManager>
 
     private void Start()
     {
+        LoadGame();
         gameSpeed = 0f;
     }
 
@@ -34,30 +35,31 @@ public class GameManager : MonoSingleton<GameManager>
     {
         gameSpeed = 1f;
 
-        LoadGame(() => {
-            FindObjectOfType<StageManager>().CheckStage(); 
-        });
-
         FindObjectOfType<TowerSpawner>().gameObject.SetActive(true);
     }
 
     public void SaveGame()
     {
-        data.Round = FindObjectOfType<StageManager>().CheckStage();
         using (StreamWriter sw = new StreamWriter(filePath + "/save" + fileExtension))
         {
             sw.Write(JsonUtility.ToJson(data));
         }
     }
 
-    public void LoadGame(Action loadCallback)
+    public void LoadGame()
     {
-        using (StreamReader sr = new StreamReader(filePath + "/save" + fileExtension))
+        try
         {
-            data = JsonUtility.FromJson<PlayerData>(sr.ReadToEnd());
+            using (StreamReader sr = new StreamReader(filePath + "/save" + fileExtension))
+            {
+                data = JsonUtility.FromJson<PlayerData>(sr.ReadToEnd());
+            }
+            TowerManager towerManager = FindObjectOfType<TowerManager>();
+            data.TowerDatas.ForEach(x => towerManager.GetNewTower(x.Idx).transform.position = x.Position);
         }
+        catch
+        {
 
-        loadCallback();
-        //StageManager의 stageTimer 세팅 해줄것
+        }
     }
 }
