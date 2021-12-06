@@ -13,16 +13,24 @@ public class GameManager : MonoSingleton<GameManager>
     string filePath = "";
 
     [SerializeField] public Tower towerData = null;
+    [SerializeField] public Enemy enemyData = null;
+    [SerializeField] public StageData stageData = null;
 
     [SerializeField] public EnemyManager enemyManager = null;
     [SerializeField] public TowerManager towerManager = null;
+    [SerializeField] public StageManager stageManaer = null;
     [SerializeField] public HeightChecker heightChecker = null;
 
-    [SerializeField] PlayerData data;
+    [SerializeField] PlayerData data = new PlayerData();
     
     public PlayerData GetData()
     {
         return data;
+    }
+
+    private void Awake()
+    {
+        filePath = Application.dataPath;
     }
 
     private void Start()
