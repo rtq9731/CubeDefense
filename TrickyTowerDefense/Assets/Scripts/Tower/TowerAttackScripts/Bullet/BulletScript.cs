@@ -11,7 +11,7 @@ public class BulletScript : MonoBehaviour
     public void Fire(EnemyScript target, float damage)
     {
         co = StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage));
-        target.onEnemyDeath += RemoveBullet;
+        target.OnEnmeyDeath += RemoveBullet; // 어차피 켜질 때 초기화 해줘서 상관 없음
     }
 
     private void RemoveBullet()
