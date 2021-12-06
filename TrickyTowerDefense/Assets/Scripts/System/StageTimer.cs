@@ -35,14 +35,15 @@ public class StageTimer : MonoBehaviour
             _isClearRound = true;
         }
 
-        _onStageEnd += _gameManager.SaveGame;
-        _onStageEnd += _info.UpdateStageTextOnEndStage;
+        //_onStageEnd += _gameManager.SaveGame;
         _onStageStart += _info.UpdateStageTextOnStartStage;
+        _onStageEnd += _info.UpdateStageTextOnEndStage;
     }
 
     private void Update()
     {
-        if(_isFirstRound)
+        _timer += Time.deltaTime * _gameManager.gameSpeed;
+        if (_isFirstRound)
         {
             if (_timer >= _readyTime && _isClearRound && _gameManager.GetData().Round <= 0)
             {
@@ -51,17 +52,18 @@ public class StageTimer : MonoBehaviour
             }
             else if (_timer >= _readyTime + _stageTime && !_isClearRound)
             {
-                _gameManager.GetData().Round++;
                 _isClearRound = true;
+                _gameManager.GetData().Round++;
                 _onStageEnd();
             }
             else if (_timer >= (_readyTime * 2) + _stageTime && _isClearRound)
             {
                 _isClearRound = false;
                 _isFirstRound = false;
-                _onStageStart();
                 _timer = 0f;
+                _onStageStart();
             }
+            return;
         }
 
         if (_timer >= _stageTime && !_isClearRound)
@@ -77,8 +79,6 @@ public class StageTimer : MonoBehaviour
             _timer = 0f;
         }
 
-        _timer += Time.deltaTime * _gameManager.gameSpeed;
-        Debug.Log(_timer);
     }
 
 }
