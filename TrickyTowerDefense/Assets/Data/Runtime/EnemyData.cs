@@ -23,17 +23,10 @@ public class EnemyData
   [SerializeField]
   float speed;
   public float Speed { get {return speed; } set { this.speed = value;} }
-
-    [SerializeField]
-    EnemyDirection dir;
-    public EnemyDirection Dir { get { return dir; } set { dir = value; } }
-
-
-    public enum EnemyDirection
-    {
-        right,
-        left
-    }
+  
+  [SerializeField]
+  string imagepath;
+  public string Imagepath { get {return imagepath; } set { this.imagepath = value;} }
 
     public void Damage(float damage)
     {

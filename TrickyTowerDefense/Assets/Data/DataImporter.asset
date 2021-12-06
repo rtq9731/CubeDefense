@@ -34,6 +34,10 @@ MonoBehaviour:
     name: speed
     isEnable: 0
     isArray: 0
+  - type: 1
+    name: ImagePath
+    isEnable: 0
+    isArray: 0
   excelFilePath: Assets/Data/Datas.xlsx
   SheetNames:
   - Tower
