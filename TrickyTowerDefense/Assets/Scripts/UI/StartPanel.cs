@@ -25,6 +25,6 @@ public class StartPanel : MonoBehaviour
 
     public void RemoveStartPanel()
     {
-        GetComponent<Image>().DOFade(0, 0.5f).OnComplete(() => { Destroy(gameObject); });
+        GetComponent<Image>().DOFade(0, 0.5f).OnComplete(() => { GameManager.Instance.StartGame(); Destroy(gameObject); });
     }
 }
