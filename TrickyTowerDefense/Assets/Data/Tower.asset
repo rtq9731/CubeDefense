@@ -99,7 +99,7 @@ MonoBehaviour:
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -0.31701642, y: -4.21836}
   - idx: 7
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
@@ -177,7 +177,7 @@ MonoBehaviour:
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -2.8310294, y: -4.120018}
   - idx: 13
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
@@ -190,7 +190,7 @@ MonoBehaviour:
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 0.27332085, y: -3.968366}
   - idx: 14
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
@@ -255,7 +255,7 @@ MonoBehaviour:
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -1.8409098, y: -4.1162515}
   - idx: 19
     towername: "\uD0C4\uD658 \uD0C0\uC6CC"
     towertype: 3
@@ -334,7 +334,7 @@ MonoBehaviour:
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 1.9706538, y: -4.120001}
   - idx: 25
     towername: "\uBC84\uD504 \uD0C0\uC6CC"
     towertype: 4

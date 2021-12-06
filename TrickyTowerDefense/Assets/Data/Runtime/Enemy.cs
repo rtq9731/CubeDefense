@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -20,7 +21,9 @@ public class Enemy : ScriptableObject
     
     // Note: initialize in OnEnable() not here.
     public EnemyData[] dataArray;
-    
+
+    List<EnemyData> dataList = new List<EnemyData>();
+
     void OnEnable()
     {		
 //#if UNITY_EDITOR
@@ -34,8 +37,18 @@ public class Enemy : ScriptableObject
         if (dataArray == null)
             dataArray = new EnemyData[0];
 
+        dataList = dataArray.ToList();
     }
-    
+
+    public Sprite GetEnemySprite(int idx)
+    {
+        return Resources.Load<Sprite>(dataList.Find(x => x.Idx == idx).Imagepath);
+    }
+
+    public EnemyData GetEnemyData(int idx)
+    {
+        return dataList[idx];
+    }
     //
     // Highly recommand to use LINQ to query the data sources.
     //

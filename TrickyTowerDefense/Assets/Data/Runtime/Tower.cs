@@ -49,6 +49,7 @@ public class Tower : ScriptableObject
     {
         return dataList.FindAll(x => x.TOWERTYPE == towerType);
     }
+
     public List<TowerData> FindAllTower(TowerData.TowerGrade towerGrade)
     {
         return dataList.FindAll(x => x.TOWERGRADE == towerGrade);
