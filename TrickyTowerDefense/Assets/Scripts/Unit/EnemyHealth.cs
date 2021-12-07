@@ -11,7 +11,7 @@ public class EnemyHealth : MonoBehaviour, IHitable
         enemyScript.Data.Damage(damage);
         if(enemyScript.Data.Hp <= 0)
         {
-            enemyScript.onEnemyDeath();
+            enemyScript.OnEnmeyDeath();
             gameObject.SetActive(false);
         }
     }

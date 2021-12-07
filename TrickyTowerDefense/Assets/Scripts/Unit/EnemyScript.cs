@@ -5,28 +5,54 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    EnemyData data = new EnemyData();
-    EnemyHealth health = null;
+    SpriteRenderer _sr = null;
+    EnemyData _data = new EnemyData();
+    EnemyHealth _health = null;
 
-    public Action onEnemyDeath = () => { };
+    Vector2 _dir = Vector2.zero;
+
+    private Action _onEnemyDeath = () => { };
+    public Action OnEnmeyDeath
+    {
+        get { return _onEnemyDeath; } set { _onEnemyDeath = value; }
+    }
 
     public EnemyData Data
     {
-        get { return data; }
+        get { return _data; }
+    }
+
+    private void Awake()
+    {
+        _sr = GetComponent<SpriteRenderer>();
     }
 
     private void OnEnable()
     {
-        onEnemyDeath = () => { }; // 연결된 이벤트 전부 초기화
+        _onEnemyDeath = () => { }; // 연결된 이벤트 전부 초기화
+
+        _dir = transform.position.x >= 0 ? Vector2.left : Vector2.right;
+        _sr.flipX = _dir == Vector2.left ? true : false;
     }
 
     private void Start()
     {
-        health = GetComponent<EnemyHealth>();
+        _health = GetComponent<EnemyHealth>();
+    }
+
+    private void Update()
+    {   
+        transform.Translate(_dir * Time.deltaTime * GameManager.Instance.gameSpeed * _data.Speed);
+    }
+
+    public void SetData(EnemyData data, Vector2 dir)
+    {
+        _data = data;
+        _dir = dir;
     }
 
     public void Hit(float damage)
     {
-        health.Hit(damage);
+        _health.Hit(damage);
     }
 }

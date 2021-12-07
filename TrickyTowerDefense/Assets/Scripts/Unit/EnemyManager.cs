@@ -4,22 +4,41 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    List<EnemyScript> allEnemyList = new List<EnemyScript>();
-    List<EnemyScript> leftEnemyList = new List<EnemyScript>();
-    List<EnemyScript> rightEnemyList = new List<EnemyScript>();
+    [SerializeField] EnemyScript enemyPrefab = null;
 
-    public List<EnemyScript>[] GetEnemyList()
+    [SerializeField] Transform[] spawnPoints = null;
+
+    List<EnemyScript> enemies = new List<EnemyScript>();
+
+    public List<EnemyScript> Enemies => enemies;
+
+    public EnemyScript SpawnEnemy(Vector2 dir, int tier)
     {
-        return new List<EnemyScript>[] { leftEnemyList, allEnemyList, rightEnemyList };
+        if (tier == -1)
+            return null;
+
+        EnemyScript result = enemies.Find(x => !x.gameObject.activeSelf);
+
+        if (result == null)
+        {
+            result = MakeNewEnemy();
+        }
+        result.transform.position = dir == Vector2.left ? spawnPoints[0].position : spawnPoints[1].position;
+        result.SetData(GameManager.Instance.enemyData.GetEnemyData(tier), -dir);
+
+        return result;
     }
 
-    public EnemyScript GetLeftEnemy()
+    public void SpawnBoss(int idx)
     {
-        return leftEnemyList[0];
+        
     }
 
-    public EnemyScript GetRigthEnemy()
+    private EnemyScript MakeNewEnemy()
     {
-        return rightEnemyList[0];
+        EnemyScript result = Instantiate(enemyPrefab, this.transform).GetComponent<EnemyScript>();
+        enemies.Add(result);
+        return result;
     }
+
 }
