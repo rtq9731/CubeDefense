@@ -6,13 +6,12 @@ using DG.Tweening;
 
 public class TowerScript : MonoBehaviour
 {
-    TowerMerge towerMerge = null;
-    Attackable towerAttack = null;
+    Attackable _towerAttack = null;
 
-    EnemyScript target = null;
-    TowerManager towerManager = null;
-    TowerPosChecker towerPosChecker = null;
-    TowerData towerData = new TowerData();
+    TowerManager _towerManager = null;
+    TowerData _data = new TowerData();
+
+    List<EnemyScript> _targetList = new List<EnemyScript>();
 
     private bool isRanded = false; // ¶¥¿¡ ¶³¾îÁ³´Â°¡?
 
@@ -24,31 +23,47 @@ public class TowerScript : MonoBehaviour
 
     public TowerData TowerData
     {
-        get { return towerData; }
-        set { towerData = value; }
+        get { return _data; }
+        set { _data = value; }
     }
 
     public float madeTime = 0f;
 
+    public void Attack(EnemyScript enemy)
+    {
+        _targetList.Add(enemy);
+        enemy.OnEnmeyDeath += () => { _targetList.Remove(enemy); };
+    }
+
+    public void RemoveTarget(EnemyScript enemy)
+    {
+        _targetList.Remove(enemy);
+    }
+
     private void Awake()
     {
-        towerAttack = GetComponent<Attackable>();
-        towerPosChecker = GetComponent<TowerPosChecker>();
+        _towerAttack = GetComponent<Attackable>();
+    }
+
+    private void Update()
+    {
+        if(_targetList.Count > 1)
+        {
+            if(_towerAttack.CanAttack)
+            {
+                _towerAttack.Attack(_data.Atk, _targetList[0]);
+            }
+        }
     }
 
     private void OnEnable()
     {
-        if (towerManager == null)
+        if (_towerManager == null)
         {
-            towerManager = GameManager.Instance.towerManager;
+            _towerManager = GameManager.Instance.towerManager;
         }
 
         madeTime = Time.time;
-    }
-
-    public void SetTarget(EnemyScript target)
-    {
-        this.target = target;
     }
 
 }

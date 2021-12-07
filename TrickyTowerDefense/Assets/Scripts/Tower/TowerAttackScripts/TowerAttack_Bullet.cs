@@ -8,6 +8,7 @@ public class TowerAttack_Bullet : Attackable
     private void Awake()
     {
         tower = GetComponent<TowerScript>();
+        towerType = TowerData.TowerType.Bullet;
     }
 
     private void Start()
@@ -17,7 +18,7 @@ public class TowerAttack_Bullet : Attackable
 
     public override void Attack(float damage, EnemyScript target)
     {
-        _bulletPool.GetBullet(transform.position).Fire(target, damage);
+        _bulletPool.GetBullet(transform.position).Fire(target, damage, transform.localScale);
     }
 
     private void Update()
@@ -27,6 +28,7 @@ public class TowerAttack_Bullet : Attackable
             if (attackTimer >= attackCoolTime)
             {
                 bCanAttack = true;
+                attackTimer = 0f;
             }
 
             attackTimer += Time.deltaTime * GameManager.Instance.gameSpeed;

@@ -18,7 +18,7 @@ public class GameManager : MonoSingleton<GameManager>
 
     [SerializeField] public EnemyManager enemyManager = null;
     [SerializeField] public TowerManager towerManager = null;
-    [SerializeField] public StageManager stageManaer = null;
+    [SerializeField] public StageManager stageManager = null;
     [SerializeField] public HeightChecker heightChecker = null;
 
     [SerializeField] PlayerData data = new PlayerData();

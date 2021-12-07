@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(LineRenderer), typeof(PolygonCollider2D))]
 public class TowerAttack_Laser : Attackable
 {
     LineRenderer _lr = null;
@@ -21,7 +22,8 @@ public class TowerAttack_Laser : Attackable
 
     private void Awake()
     {
-        tower = GetComponent<TowerScript>();
+        towerType = TowerData.TowerType.Laser;
+        tower = transform.parent.GetComponent<TowerScript>();
         _lr = GetComponent<LineRenderer>();
         _polygonCollider = GetComponent<PolygonCollider2D>();
 
