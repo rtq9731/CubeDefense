@@ -1,4 +1,4 @@
-using 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,18 +11,25 @@ public class TowerAttackModeManager : MonoBehaviour
 
     TowerScript _tower = null;
 
-    private void Awake()
+    bool _isFirst = true;
+
+    private void Start()
     {
         _tower = transform.parent.GetComponent<TowerScript>();
         foreach (var item in GetComponents<Attackable>())
         {
-            attackTypeDict.Add(_tower.TowerData.TOWERTYPE, item);
+            attackTypeDict.Add(item.TowerType, item);
         }
+        SwitchMode(_tower.TowerData.TOWERTYPE);
+        _isFirst = false;
     }
 
     private void OnEnable()
     {
-        SwitchMode(_tower.TowerData.TOWERTYPE);
+        if(!_isFirst)
+        {
+            SwitchMode(_tower.TowerData.TOWERTYPE);
+        }
     }
 
     public void SwitchMode(TowerData.TowerType towerType)

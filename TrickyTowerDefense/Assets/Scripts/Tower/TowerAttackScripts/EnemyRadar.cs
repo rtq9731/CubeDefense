@@ -13,7 +13,6 @@ public class EnemyRadar : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log(_tower.TowerData.Range);
         GetComponents<CircleCollider2D>()[1].radius = _tower.TowerData.Range;
     }
 
