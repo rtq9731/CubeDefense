@@ -12,394 +12,424 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0b7aac4be05d64598f6a273fea77ae, type: 3}
   m_Name: Tower
   m_EditorClassIdentifier: 
-  SheetName: Assets/Data/TowerData.xlsx
+  SheetName: Assets/Data/Datas.xlsx
   WorksheetName: Tower
   dataArray:
   - idx: 0
-    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    imagepath: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    towername: Grenadier
     towertype: 0
     towergrade: 0
-    atk: 10
-    atkspeed: 4
-    range: 2
+    atk: 4
+    atkspeed: 2
+    range: 1
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Grenadier/BoomTower1
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 1
-    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    imagepath: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    towername: Grenadier
     towertype: 0
-    towergrade: 1
-    atk: 20
-    atkspeed: 3.5
-    range: 3
+    towergrade: 0
+    atk: 3.5
+    atkspeed: 3
+    range: 1
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Grenadier/BoomTower2
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 2
-    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    imagepath: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    towername: Grenadier
     towertype: 0
-    towergrade: 2
-    atk: 30
-    atkspeed: 3
-    range: 4
+    towergrade: 0
+    atk: 3
+    atkspeed: 4
+    range: 1
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Grenadier/BoomTower3
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 3
-    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    imagepath: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    towername: Grenadier
     towertype: 0
-    towergrade: 3
-    atk: 40
-    atkspeed: 2.5
-    range: 5
+    towergrade: 0
+    atk: 2.5
+    atkspeed: 5
+    range: 1
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Grenadier/BoomTower4
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 4
-    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    imagepath: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    towername: Grenadier
     towertype: 0
-    towergrade: 4
-    atk: 50
-    atkspeed: 2
-    range: 6
+    towergrade: 0
+    atk: 2
+    atkspeed: 6
+    range: 1
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Grenadier/BoomTower5
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 5
-    towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    imagepath: "\uD3ED\uD0C4 \uD0C0\uC6CC"
+    towername: Grenadier
     towertype: 0
-    towergrade: 5
-    atk: 60
-    atkspeed: 1.5
-    range: 7
+    towergrade: 0
+    atk: 1.5
+    atkspeed: 7
+    range: 1
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Grenadier/BoomTower6
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 6
-    towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
-    towertype: 1
+    imagepath: "\uB808\uC774\uC800 \uD0C0\uC6CC"
+    towername: Laser
+    towertype: 0
     towergrade: 0
-    atk: 10
-    atkspeed: 4
-    range: 3
-    ispenetrate: 1
-    imagepath: TowerIcon/Laser/LazerTower1
+    atk: 4
+    atkspeed: 3
+    range: 0
+    splashrange: 0
+    ispenetrate: 0
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
-    position: {x: -0.31701642, y: -4.21836}
+    position: {x: 0, y: 0}
   - idx: 7
-    towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
-    towertype: 1
-    towergrade: 1
-    atk: 15
-    atkspeed: 3.5
-    range: 5
-    ispenetrate: 1
-    imagepath: TowerIcon/Laser/LazerTower2
+    imagepath: "\uB808\uC774\uC800 \uD0C0\uC6CC"
+    towername: Laser
+    towertype: 0
+    towergrade: 0
+    atk: 3.5
+    atkspeed: 5
+    range: 0
+    splashrange: 0
+    ispenetrate: 0
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 8
-    towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
-    towertype: 1
-    towergrade: 2
-    atk: 20
-    atkspeed: 3
-    range: 7
-    ispenetrate: 1
-    imagepath: TowerIcon/Laser/LazerTower3
+    imagepath: "\uB808\uC774\uC800 \uD0C0\uC6CC"
+    towername: Laser
+    towertype: 0
+    towergrade: 0
+    atk: 3
+    atkspeed: 7
+    range: 0
+    splashrange: 0
+    ispenetrate: 0
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 9
-    towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
-    towertype: 1
-    towergrade: 3
-    atk: 25
-    atkspeed: 2.5
-    range: 9
-    ispenetrate: 1
-    imagepath: TowerIcon/Laser/LazerTower4
+    imagepath: "\uB808\uC774\uC800 \uD0C0\uC6CC"
+    towername: Laser
+    towertype: 0
+    towergrade: 0
+    atk: 2.5
+    atkspeed: 9
+    range: 0
+    splashrange: 0
+    ispenetrate: 0
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 10
-    towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
-    towertype: 1
-    towergrade: 4
-    atk: 30
-    atkspeed: 2
-    range: 11
-    ispenetrate: 1
-    imagepath: TowerIcon/Laser/LazerTower5
+    imagepath: "\uB808\uC774\uC800 \uD0C0\uC6CC"
+    towername: Laser
+    towertype: 0
+    towergrade: 0
+    atk: 2
+    atkspeed: 11
+    range: 0
+    splashrange: 0
+    ispenetrate: 0
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 11
-    towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
-    towertype: 1
-    towergrade: 5
-    atk: 35
-    atkspeed: 1.5
-    range: 13
-    ispenetrate: 1
-    imagepath: TowerIcon/Laser/LazerTower6
+    imagepath: "\uB808\uC774\uC800 \uD0C0\uC6CC"
+    towername: Laser
+    towertype: 0
+    towergrade: 0
+    atk: 1.5
+    atkspeed: 13
+    range: 0
+    splashrange: 0
+    ispenetrate: 0
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 12
-    towername: "\uD654\uC0B4 \uD0C0\uC6CC"
-    towertype: 2
+    imagepath: "\uD654\uC0B4 \uD0C0\uC6CC"
+    towername: Acher
+    towertype: 0
     towergrade: 0
-    atk: 20
-    atkspeed: 4
-    range: 3
-    ispenetrate: 0
-    imagepath: TowerIcon/Acher/ArrowTower1
-    tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
-      \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
-      \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: -2.8310294, y: -4.120018}
-  - idx: 13
-    towername: "\uD654\uC0B4 \uD0C0\uC6CC"
-    towertype: 2
-    towergrade: 1
-    atk: 30
-    atkspeed: 3.5
-    range: 5
-    ispenetrate: 0
-    imagepath: TowerIcon/Acher/ArrowTower2
-    tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
-      \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
-      \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0.27332085, y: -3.968366}
-  - idx: 14
-    towername: "\uD654\uC0B4 \uD0C0\uC6CC"
-    towertype: 2
-    towergrade: 2
-    atk: 40
+    atk: 4
     atkspeed: 3
-    range: 7
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Acher/ArrowTower3
+    tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
+      \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
+      \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+    position: {x: 0, y: 0}
+  - idx: 13
+    imagepath: "\uD654\uC0B4 \uD0C0\uC6CC"
+    towername: Acher
+    towertype: 0
+    towergrade: 0
+    atk: 3.5
+    atkspeed: 5
+    range: 0
+    splashrange: 0
+    ispenetrate: 0
+    tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
+      \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
+      \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+    position: {x: 0, y: 0}
+  - idx: 14
+    imagepath: "\uD654\uC0B4 \uD0C0\uC6CC"
+    towername: Acher
+    towertype: 0
+    towergrade: 0
+    atk: 3
+    atkspeed: 7
+    range: 0
+    splashrange: 0
+    ispenetrate: 0
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 15
-    towername: "\uD654\uC0B4 \uD0C0\uC6CC"
-    towertype: 2
-    towergrade: 3
-    atk: 50
-    atkspeed: 2.5
-    range: 9
+    imagepath: "\uD654\uC0B4 \uD0C0\uC6CC"
+    towername: Acher
+    towertype: 0
+    towergrade: 0
+    atk: 2.5
+    atkspeed: 9
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Acher/ArrowTower4
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 16
-    towername: "\uD654\uC0B4 \uD0C0\uC6CC"
-    towertype: 2
-    towergrade: 4
-    atk: 60
-    atkspeed: 2
-    range: 11
+    imagepath: "\uD654\uC0B4 \uD0C0\uC6CC"
+    towername: Acher
+    towertype: 0
+    towergrade: 0
+    atk: 2
+    atkspeed: 11
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Acher/ArrowTower5
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 17
-    towername: "\uD654\uC0B4 \uD0C0\uC6CC"
-    towertype: 2
-    towergrade: 5
-    atk: 80
-    atkspeed: 1.5
-    range: 13
+    imagepath: "\uD654\uC0B4 \uD0C0\uC6CC"
+    towername: Acher
+    towertype: 0
+    towergrade: 0
+    atk: 1.5
+    atkspeed: 13
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Acher/ArrowTower6
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 18
-    towername: "\uD0C4\uD658 \uD0C0\uC6CC"
-    towertype: 3
+    imagepath: "\uD0C4\uD658 \uD0C0\uC6CC"
+    towername: Bullet
+    towertype: 0
     towergrade: 0
-    atk: 5
-    atkspeed: 1
-    range: 2
+    atk: 1
+    atkspeed: 2
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Bullet/BulletTower1
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: -1.8409098, y: -4.1162515}
+    position: {x: 0, y: 0}
   - idx: 19
-    towername: "\uD0C4\uD658 \uD0C0\uC6CC"
-    towertype: 3
-    towergrade: 1
-    atk: 10
-    atkspeed: 0.9
-    range: 3
+    imagepath: "\uD0C4\uD658 \uD0C0\uC6CC"
+    towername: Bullet
+    towertype: 0
+    towergrade: 0
+    atk: 0.9
+    atkspeed: 3
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Bullet/BulletTower2
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 20
-    towername: "\uD0C4\uD658 \uD0C0\uC6CC"
-    towertype: 3
-    towergrade: 2
-    atk: 15
-    atkspeed: 0.8
-    range: 4
+    imagepath: "\uD0C4\uD658 \uD0C0\uC6CC"
+    towername: Bullet
+    towertype: 0
+    towergrade: 0
+    atk: 0.8
+    atkspeed: 4
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Bullet/BulletTower3
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 21
-    towername: "\uD0C4\uD658 \uD0C0\uC6CC"
-    towertype: 3
-    towergrade: 3
-    atk: 20
-    atkspeed: 0.7
-    range: 5
+    imagepath: "\uD0C4\uD658 \uD0C0\uC6CC"
+    towername: Bullet
+    towertype: 0
+    towergrade: 0
+    atk: 0.7
+    atkspeed: 5
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Bullet/BulletTower4
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 22
-    towername: "\uD0C4\uD658 \uD0C0\uC6CC"
-    towertype: 3
-    towergrade: 4
-    atk: 25
-    atkspeed: 0.6
-    range: 6
+    imagepath: "\uD0C4\uD658 \uD0C0\uC6CC"
+    towername: Bullet
+    towertype: 0
+    towergrade: 0
+    atk: 0.6
+    atkspeed: 6
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Bullet/BulletTower5
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 23
-    towername: "\uD0C4\uD658 \uD0C0\uC6CC"
-    towertype: 3
-    towergrade: 5
-    atk: 40
-    atkspeed: 0.5
-    range: 7
+    imagepath: "\uD0C4\uD658 \uD0C0\uC6CC"
+    towername: Bullet
+    towertype: 0
+    towergrade: 0
+    atk: 0.5
+    atkspeed: 7
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Bullet/BulletTower6
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 24
-    towername: "\uBC84\uD504 \uD0C0\uC6CC"
-    towertype: 4
+    imagepath: "\uBC84\uD504 \uD0C0\uC6CC"
+    towername: Buff
+    towertype: 0
     towergrade: 0
-    atk: 1.1
-    atkspeed: 0
-    range: 2
+    atk: 0
+    atkspeed: 2
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Buff/SupTower1
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
-    position: {x: 1.9706538, y: -4.120001}
+    position: {x: 0, y: 0}
   - idx: 25
-    towername: "\uBC84\uD504 \uD0C0\uC6CC"
-    towertype: 4
-    towergrade: 1
-    atk: 1.2
-    atkspeed: 0
-    range: 2
+    imagepath: "\uBC84\uD504 \uD0C0\uC6CC"
+    towername: Buff
+    towertype: 0
+    towergrade: 0
+    atk: 0
+    atkspeed: 2
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Buff/SupTower2
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 26
-    towername: "\uBC84\uD504 \uD0C0\uC6CC"
-    towertype: 4
-    towergrade: 2
-    atk: 1.3
-    atkspeed: 0
-    range: 2
+    imagepath: "\uBC84\uD504 \uD0C0\uC6CC"
+    towername: Buff
+    towertype: 0
+    towergrade: 0
+    atk: 0
+    atkspeed: 2
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Buff/SupTower3
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 27
-    towername: "\uBC84\uD504 \uD0C0\uC6CC"
-    towertype: 4
-    towergrade: 3
-    atk: 1.4
-    atkspeed: 0
-    range: 2
+    imagepath: "\uBC84\uD504 \uD0C0\uC6CC"
+    towername: Buff
+    towertype: 0
+    towergrade: 0
+    atk: 0
+    atkspeed: 2
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Buff/SupTower4
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 28
-    towername: "\uBC84\uD504 \uD0C0\uC6CC"
-    towertype: 4
-    towergrade: 4
-    atk: 1.5
-    atkspeed: 0
-    range: 2
+    imagepath: "\uBC84\uD504 \uD0C0\uC6CC"
+    towername: Buff
+    towertype: 0
+    towergrade: 0
+    atk: 0
+    atkspeed: 2
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Buff/SupTower5
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
     position: {x: 0, y: 0}
   - idx: 29
-    towername: "\uBC84\uD504 \uD0C0\uC6CC"
-    towertype: 4
-    towergrade: 5
-    atk: 1.6
-    atkspeed: 0
-    range: 2
+    imagepath: "\uBC84\uD504 \uD0C0\uC6CC"
+    towername: Buff
+    towertype: 0
+    towergrade: 0
+    atk: 0
+    atkspeed: 2
+    range: 0
+    splashrange: 0
     ispenetrate: 0
-    imagepath: TowerIcon/Buff/SupTower6
     tmi: "\uC8FC\uBCC0 \uD0C0\uC6CC\uC5D0\uAC8C \uC774\uB85C\uC6B4 \uD6A8\uACFC\uB97C
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825

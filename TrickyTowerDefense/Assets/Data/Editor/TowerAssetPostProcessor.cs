@@ -9,7 +9,7 @@ using UnityQuickSheet;
 ///
 public class TowerAssetPostprocessor : AssetPostprocessor 
 {
-    private static readonly string filePath = "Assets/Data/TowerData.xlsx";
+    private static readonly string filePath = "Assets/Data/Datas.xlsx";
     private static readonly string assetFilePath = "Assets/Data/Tower.asset";
     private static readonly string sheetName = "Tower";
     

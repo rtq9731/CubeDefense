@@ -16,7 +16,7 @@ MonoBehaviour:
   WorksheetName: StageData
   dataArray:
   - idx: 0
-    enemycount1: 0
+    enemycount1: 10
     enemycount2: 0
     enemycount3: 0
     enemycount4: 0
@@ -24,66 +24,66 @@ MonoBehaviour:
     enemycount6: 0
     isbossround: 0
   - idx: 1
-    enemycount1: 0
-    enemycount2: 0
+    enemycount1: 10
+    enemycount2: 10
     enemycount3: 0
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
     isbossround: 0
   - idx: 2
-    enemycount1: 0
-    enemycount2: 0
+    enemycount1: 20
+    enemycount2: 10
     enemycount3: 0
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
     isbossround: 0
   - idx: 3
-    enemycount1: 0
-    enemycount2: 0
-    enemycount3: 0
+    enemycount1: 30
+    enemycount2: 20
+    enemycount3: 10
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
     isbossround: 0
   - idx: 4
-    enemycount1: 0
-    enemycount2: 0
-    enemycount3: 0
+    enemycount1: 40
+    enemycount2: 20
+    enemycount3: 15
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
     isbossround: 0
   - idx: 5
-    enemycount1: 0
-    enemycount2: 0
-    enemycount3: 0
+    enemycount1: 50
+    enemycount2: 20
+    enemycount3: 20
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
     isbossround: 0
   - idx: 6
-    enemycount1: 0
-    enemycount2: 0
-    enemycount3: 0
+    enemycount1: 50
+    enemycount2: 30
+    enemycount3: 20
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
     isbossround: 0
   - idx: 7
-    enemycount1: 0
-    enemycount2: 0
-    enemycount3: 0
-    enemycount4: 0
+    enemycount1: 50
+    enemycount2: 30
+    enemycount3: 20
+    enemycount4: 5
     enemycount5: 0
     enemycount6: 0
     isbossround: 0
   - idx: 8
-    enemycount1: 0
-    enemycount2: 0
-    enemycount3: 0
-    enemycount4: 0
+    enemycount1: 50
+    enemycount2: 30
+    enemycount3: 20
+    enemycount4: 8
     enemycount5: 0
     enemycount6: 0
     isbossround: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
-    isbossround: 0
+    isbossround: 1
   - idx: 10
     enemycount1: 0
     enemycount2: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
-    isbossround: 1
+    isbossround: 0
   - idx: 11
     enemycount1: 0
     enemycount2: 0
@@ -254,7 +254,7 @@ MonoBehaviour:
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
-    isbossround: 0
+    isbossround: 1
   - idx: 30
     enemycount1: 0
     enemycount2: 0
@@ -262,7 +262,7 @@ MonoBehaviour:
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
-    isbossround: 1
+    isbossround: 0
   - idx: 31
     enemycount1: 0
     enemycount2: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
-    isbossround: 0
+    isbossround: 1
   - idx: 40
     enemycount1: 0
     enemycount2: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
     enemycount4: 0
     enemycount5: 0
     enemycount6: 0
-    isbossround: 1
+    isbossround: 0
   - idx: 41
     enemycount1: 0
     enemycount2: 0

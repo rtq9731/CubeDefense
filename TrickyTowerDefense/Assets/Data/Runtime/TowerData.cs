@@ -37,6 +37,10 @@ public class TowerData
   public float Range { get {return range; } set { this.range = value;} }
   
   [SerializeField]
+  float splashrange;
+  public float Splashrange { get {return splashrange; } set { this.splashrange = value;} }
+  
+  [SerializeField]
   bool ispenetrate;
   public bool Ispenetrate { get {return ispenetrate; } set { this.ispenetrate = value;} }
   
@@ -70,4 +74,5 @@ public class TowerData
       Unique,
       Legendary
   }
+  
 }

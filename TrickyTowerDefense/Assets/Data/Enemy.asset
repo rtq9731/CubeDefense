@@ -18,30 +18,30 @@ MonoBehaviour:
   - idx: 0
     tier: 0
     hp: 30
-    speed: 0
-    imagepath: ImageIcon/0
+    speed: 1.5
+    imagepath: EnemyIcon/0
   - idx: 1
     tier: 1
     hp: 50
-    speed: 0
-    imagepath: ImageIcon/1
+    speed: 2
+    imagepath: EnemyIcon/1
   - idx: 2
     tier: 2
     hp: 100
-    speed: 0
-    imagepath: ImageIcon/2
+    speed: 2.5
+    imagepath: EnemyIcon/2
   - idx: 3
     tier: 3
     hp: 140
-    speed: 0
-    imagepath: ImageIcon/3
+    speed: 2.5
+    imagepath: EnemyIcon/3
   - idx: 4
     tier: 4
     hp: 180
-    speed: 0
-    imagepath: ImageIcon/4
+    speed: 2.5
+    imagepath: EnemyIcon/4
   - idx: 5
     tier: 5
     hp: 250
-    speed: 0
-    imagepath: ImageIcon/5
+    speed: 2.5
+    imagepath: EnemyIcon/5
