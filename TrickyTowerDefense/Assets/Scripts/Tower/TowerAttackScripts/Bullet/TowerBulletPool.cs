@@ -7,17 +7,17 @@ public class TowerBulletPool : MonoBehaviour
     [SerializeField] GameObject bulletPrefab = null;
     List<BulletScript> bulletPool = new List<BulletScript>();
 
-    public BulletScript GetBullet(Vector2 position)
+    public BulletScript GetBullet(Vector2 startPos)
     {
         BulletScript result = bulletPool.Find(x => !x.gameObject.activeSelf);
 
         if (result == null)
         {
-            result = MakeNewBullet(position);
+            result = MakeNewBullet(startPos);
         }
         else
         {
-            result.transform.position = position;
+            result.transform.position = startPos;
         }
 
         return result;
