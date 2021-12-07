@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
-[RequireComponent(typeof(BoxCollider2D))]
 public class HeightChecker : MonoBehaviour
 {
     [SerializeField] float gameOverTime = 1f;
+    [SerializeField] LayerMask whatIsEnemy;
 
     LineRenderer lr = null;
-    TowerManager towerManager = null;
 
     List<GameObject> overHeightTowerList = new List<GameObject>();
     float overHeightTimer = 0f;
@@ -21,48 +20,13 @@ public class HeightChecker : MonoBehaviour
         lr.SetPosition(1, new Vector2(5, transform.position.y));
     }
 
-    private void Start()
+    private void Update()
     {
-        towerManager = GameManager.Instance.towerManager;
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Tower"))
+        RaycastHit2D hit;
+        Debug.DrawRay(lr.GetPosition(0), Vector2.right, Color.green, 10);
+        if (hit = Physics2D.Raycast(lr.GetPosition(0), Vector2.right, 10, whatIsEnemy))
         {
-            overHeightTowerList.Add(collision.gameObject);
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Tower"))
-        {
-            if (overHeightTowerList.Count > 0)
-            {
-                overHeightTimer += Time.deltaTime * GameManager.Instance.gameSpeed;
-
-                if(gameOverTime <= overHeightTimer)
-                {
-                    GameManager.Instance.isHeightOver = true;
-                    gameObject.SetActive(false);
-                }
-            }
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Tower"))
-        {
-            if(overHeightTowerList.Contains(collision.gameObject))
-            {
-                overHeightTowerList.Remove(collision.gameObject);
-            }
-
-            if(overHeightTowerList.Count < 1)
-            {
-                overHeightTimer = 0f;
-            }
+            Debug.Log(hit.transform.gameObject.name);
         }
     }
 
