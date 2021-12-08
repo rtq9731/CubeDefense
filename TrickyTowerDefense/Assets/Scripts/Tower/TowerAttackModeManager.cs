@@ -21,6 +21,7 @@ public class TowerAttackModeManager : MonoBehaviour
             attackTypeDict.Add(item.TowerType, item);
         }
         SwitchMode(_tower.TowerData.TOWERTYPE);
+        SetAttackCool(_tower.TowerData.Atkspeed);
         _isFirst = false;
     }
 
@@ -29,6 +30,15 @@ public class TowerAttackModeManager : MonoBehaviour
         if(!_isFirst)
         {
             SwitchMode(_tower.TowerData.TOWERTYPE);
+            SetAttackCool(_tower.TowerData.Atkspeed);
+        }
+    }
+
+    public void SetAttackCool(float coolTime)
+    {
+        foreach (var item in attackTypeDict)
+        {
+            item.Value.SetAttackCoolTime(coolTime);
         }
     }
 
@@ -40,6 +50,7 @@ public class TowerAttackModeManager : MonoBehaviour
         }
         GetComponent<LineRenderer>().enabled = false;
         GetComponent<PolygonCollider2D>().enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
 
         switch (towerType)
         {
@@ -48,15 +59,19 @@ public class TowerAttackModeManager : MonoBehaviour
                 GetComponent<LineRenderer>().enabled = true;
                 GetComponent<PolygonCollider2D>().enabled = true;
                 break;
+            case TowerData.TowerType.Buff:
+                GetComponent<CircleCollider2D>().enabled = true;
+                attackTypeDict[towerType].enabled = true;
+                break;
             case TowerData.TowerType.Grenadier:
             case TowerData.TowerType.Acher:
             case TowerData.TowerType.Bullet:
-            case TowerData.TowerType.Buff:
                 attackTypeDict[towerType].enabled = true;
                 break;
             default:
                 break;
         }
+        _tower.SetAttackMode(attackTypeDict[towerType]);
     }
 
 }

@@ -65,6 +65,7 @@ public class TowerManager : MonoBehaviour
             towerPool.Add(result);
         }
 
+        result.SetData(GameManager.Instance.towerData.GetTowerDatas()[idx]);
         result.gameObject.SetActive(true);
 
         return result;
@@ -100,5 +101,9 @@ public class TowerManager : MonoBehaviour
     {
         secondTower.gameObject.SetActive(false);
         originTower.SetData(GameManager.Instance.towerData.GetTowerDatas()[originTower.GetTowerIdx() + 1]); // 다음 티어의 타워를 가져옴
+
+        originTower.gameObject.SetActive(false);
+        originTower.gameObject.SetActive(true);
+        // 안에있는 OnEnable과 OnDisable이 작동하도록 함.
     }
 }

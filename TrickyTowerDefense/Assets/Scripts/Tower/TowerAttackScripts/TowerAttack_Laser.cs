@@ -61,22 +61,7 @@ public class TowerAttack_Laser : Attackable
             _tickTimer = 0f;
             bCanAttack = false;
             _isAttacking = true;
-        }
-    }
-
-    public void Attack(int damage, Transform target)
-    {
-        if (bCanAttack)
-        {
-            _lr.startWidth = transform.localScale.x;
-            _lr.endWidth = transform.localScale.x;
-            _lr.SetPosition(0, transform.position);
-            _lr.SetPosition(1, new Vector3(target.transform.position.x, target.transform.position.y, transform.position.z));
-            attackTimer = 0f;
-            _effectTimer = 0f;
-            _tickTimer = 0f;
-            bCanAttack = false;
-            _isAttacking = true;
+            _polygonCollider.enabled = true;
         }
     }
 
@@ -108,7 +93,8 @@ public class TowerAttack_Laser : Attackable
             if (_effectTimer >= _effectTime)
             {
                 _lr.startWidth = 0;
-                _lr.endWidth = 0; 
+                _lr.endWidth = 0;
+                _polygonCollider.enabled = false;
                 _polygonCollider.SetPath(0, colliderPostions.ConvertAll(p => (Vector2)transform.InverseTransformPoint(p)));
                 _isAttacking = false;
             }
@@ -140,7 +126,7 @@ public class TowerAttack_Laser : Attackable
 
         if(targets.Count >= 1)
         {
-            targets.ForEach(x => x.Hit(tower.TowerData.Atk));
+            targets.FindAll(x => x.gameObject.activeSelf).ForEach(x => x.Hit(tower.TowerData.Atk));
         }
     }
 

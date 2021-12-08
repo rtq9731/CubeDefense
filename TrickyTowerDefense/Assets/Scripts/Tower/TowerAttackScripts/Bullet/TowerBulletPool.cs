@@ -20,6 +20,7 @@ public class TowerBulletPool : MonoBehaviour
             result.transform.position = startPos;
         }
 
+        result.gameObject.SetActive(true);
         return result;
     }
 

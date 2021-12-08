@@ -14,4 +14,9 @@ public abstract class Attackable : MonoBehaviour
     public bool CanAttack => bCanAttack;
 
     public abstract void Attack(float damage, EnemyScript target);
+    
+    public void SetAttackCoolTime(float attackCoolTime)
+    {
+        this.attackCoolTime = attackCoolTime;
+    }
 }

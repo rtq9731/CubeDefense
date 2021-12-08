@@ -7,7 +7,7 @@ public class TowerAttack_Bullet : Attackable
     TowerBulletPool _bulletPool = null;
     private void Awake()
     {
-        tower = GetComponent<TowerScript>();
+        tower = transform.parent.GetComponent<TowerScript>();
         towerType = TowerData.TowerType.Bullet;
     }
 
@@ -18,7 +18,11 @@ public class TowerAttack_Bullet : Attackable
 
     public override void Attack(float damage, EnemyScript target)
     {
+        if (!bCanAttack)
+            return;
+
         _bulletPool.GetBullet(transform.position).Fire(target, damage, transform.localScale);
+        bCanAttack = false;
     }
 
     private void Update()

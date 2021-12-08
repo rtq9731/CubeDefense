@@ -7,11 +7,11 @@ using DG.Tweening;
 public class TowerScript : MonoBehaviour
 {
     Attackable _towerAttack = null;
-
+    EnemyRadar _rader = null;
     TowerManager _towerManager = null;
     TowerData _data = new TowerData();
 
-    List<EnemyScript> _targetList = new List<EnemyScript>();
+    public List<EnemyScript> _targetList = new List<EnemyScript>();
 
     private bool isRanded = false; // ¶¥¿¡ ¶³¾îÁ³´Â°¡?
 
@@ -24,15 +24,22 @@ public class TowerScript : MonoBehaviour
     public TowerData TowerData
     {
         get { return _data; }
-        set { _data = value; }
+
+        set {
+            _rader.SetRange(_data.Range);
+            _data = value; 
+        }
     }
 
     public float madeTime = 0f;
 
     public void Attack(EnemyScript enemy)
     {
-        _targetList.Add(enemy);
-        enemy.OnEnmeyDeath += () => { _targetList.Remove(enemy); };
+        if(!_targetList.Contains(enemy))
+        {
+            _targetList.Add(enemy);
+            enemy.OnEnmeyDeath += () => { _targetList.Remove(enemy); };
+        }
     }
 
     public void RemoveTarget(EnemyScript enemy)
@@ -42,16 +49,21 @@ public class TowerScript : MonoBehaviour
 
     private void Awake()
     {
-        _towerAttack = GetComponent<Attackable>();
+        _rader = GetComponentInChildren<EnemyRadar>();
+    }
+
+    public void SetAttackMode(Attackable attack)
+    {
+        _towerAttack = attack;
     }
 
     private void Update()
     {
-        if(_targetList.Count > 1)
+        if(_targetList.Count > 0)
         {
             if(_towerAttack.CanAttack)
             {
-                _towerAttack.Attack(_data.Atk, _targetList[0]);
+                _towerAttack.Attack(_data.Atk + _data.PlusATK, _targetList[0]);
             }
         }
     }
@@ -62,6 +74,7 @@ public class TowerScript : MonoBehaviour
         {
             _towerManager = GameManager.Instance.towerManager;
         }
+        _targetList = new List<EnemyScript>();
 
         madeTime = Time.time;
     }

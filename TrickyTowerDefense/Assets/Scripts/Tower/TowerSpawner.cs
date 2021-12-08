@@ -75,7 +75,7 @@ public class TowerSpawner : MonoBehaviour
         towerTr.DOMoveX(mouseXPos, 0.5f).
                 OnComplete(() =>
                 {
-                    towerTr.GetComponent<Rigidbody2D>().gravityScale = 1;
+                    rigid2D.gravityScale = 1;
                     rigid2D.AddForce(Vector2.down * 10, ForceMode2D.Impulse);
                 });
 

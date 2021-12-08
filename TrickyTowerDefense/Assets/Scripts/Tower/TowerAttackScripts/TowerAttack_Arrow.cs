@@ -7,7 +7,7 @@ public class TowerAttack_Arrow : Attackable
     TowerArrowPool _arrowPool = null;
     private void Awake()
     {
-        tower = GetComponent<TowerScript>();
+        tower = transform.parent.GetComponent<TowerScript>();
         towerType = TowerData.TowerType.Acher;
     }
 
@@ -18,7 +18,11 @@ public class TowerAttack_Arrow : Attackable
 
     public override void Attack(float damage, EnemyScript target)
     {
+        if (!bCanAttack)
+            return;
+
         _arrowPool.GetArrow(transform.position).Fire(target, damage, transform.localScale);
+        bCanAttack = false;
     }
 
     private void Update()

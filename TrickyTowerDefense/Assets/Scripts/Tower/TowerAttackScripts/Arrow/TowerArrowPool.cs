@@ -20,6 +20,7 @@ public class TowerArrowPool : MonoBehaviour
             result.transform.position = startPos;
         }
 
+        result.gameObject.SetActive(true);
         return result;
     }
 

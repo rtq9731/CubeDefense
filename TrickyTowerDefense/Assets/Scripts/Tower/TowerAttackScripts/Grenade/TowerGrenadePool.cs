@@ -20,6 +20,7 @@ public class TowerGrenadePool : MonoBehaviour
             result.transform.position = startPos;
         }
 
+        result.gameObject.SetActive(true);
         return result;
     }
 

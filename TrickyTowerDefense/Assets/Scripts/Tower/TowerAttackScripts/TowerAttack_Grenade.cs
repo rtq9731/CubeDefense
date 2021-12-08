@@ -7,7 +7,7 @@ public class TowerAttack_Grenade : Attackable
     TowerGrenadePool _GrenadePool = null;
     private void Awake()
     {
-        tower = GetComponent<TowerScript>();
+        tower = transform.parent.GetComponent<TowerScript>();
         towerType = TowerData.TowerType.Grenadier;
     }
 
@@ -18,7 +18,11 @@ public class TowerAttack_Grenade : Attackable
 
     public override void Attack(float damage, EnemyScript target)
     {
+        if (!bCanAttack)
+            return;
+
         _GrenadePool.GetGrenade(transform.position).Fire(target, damage, transform.localScale, tower.TowerData.Splashrange);
+        bCanAttack = false;
     }
 
     private void Update()

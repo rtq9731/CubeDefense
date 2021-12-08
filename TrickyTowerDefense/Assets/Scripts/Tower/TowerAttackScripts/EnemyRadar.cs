@@ -8,24 +8,22 @@ public class EnemyRadar : MonoBehaviour
 
     private void Awake()
     {
-        _tower = GetComponent<TowerScript>();
+        _tower = transform.GetComponentInParent<TowerScript>();
     }
 
-    private void OnEnable()
+    public void SetRange(float range)
     {
-        GetComponents<CircleCollider2D>()[1].radius = _tower.TowerData.Range;
+        GetComponent<CircleCollider2D>().radius = range;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject);
-        // 레이저 타워의 경우를 해결할 필요가 있슴.
         if (collision.CompareTag("Enemy"))
         {
             EnemyScript target = collision.GetComponent<EnemyScript>();
-            if(target != null)
+            if (target != null)
             {
-                _tower.Attack(target);
+                _tower. Attack(target);
             }
         }
     }
