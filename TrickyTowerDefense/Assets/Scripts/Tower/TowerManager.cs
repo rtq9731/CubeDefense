@@ -65,7 +65,7 @@ public class TowerManager : MonoBehaviour
             towerPool.Add(result);
         }
 
-        result.SetData(GameManager.Instance.towerData.GetTowerDatas()[idx]);
+        result.SetData(GameManager.Instance.towerData.GetTowerDatas()[idx].GetCopiedTowerData());
         result.gameObject.SetActive(true);
 
         return result;

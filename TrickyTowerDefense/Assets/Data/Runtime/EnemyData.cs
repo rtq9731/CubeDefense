@@ -32,4 +32,20 @@ public class EnemyData
     {
         hp -= damage;
     }
+
+    public EnemyData GetCopiedData()
+    {
+        EnemyData result = new EnemyData();
+        Copy(result);
+        return result;
+    }
+
+    public void Copy(EnemyData data)
+    {
+        data.idx = idx;
+        data.tier = tier;
+        data.hp = hp;
+        data.speed = speed;
+        data.imagepath = imagepath;
+    }
 }

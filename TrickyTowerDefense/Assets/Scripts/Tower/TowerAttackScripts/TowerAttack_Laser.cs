@@ -87,6 +87,7 @@ public class TowerAttack_Laser : Attackable
             if (_tickTimer >= _tickTime)
             {
                 CheckAttack();
+                Debug.Log(_tickTimer);
                 _tickTimer = 0f;
             }
 

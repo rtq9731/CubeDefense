@@ -34,7 +34,6 @@ public class GrenadeScript : MonoBehaviour
 
         if ((colliders = Physics2D.OverlapCircleAll(transform.position, splashRadius, whatIsEnemy)).Length >= 0)
         {
-            Debug.Log(colliders.Length);
             foreach (var item in colliders)
             {
                 item.GetComponent<EnemyScript>().Hit(damage);

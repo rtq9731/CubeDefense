@@ -24,7 +24,7 @@ public class EnemyManager : MonoBehaviour
             result = MakeNewEnemy();
         }
         result.transform.position = dir == Vector2.left ? spawnPoints[0].position : spawnPoints[1].position;
-        result.SetData(GameManager.Instance.enemyData.GetEnemyData(tier), -dir);
+        result.SetData(GameManager.Instance.enemyData.GetEnemyData(tier).GetCopiedData(), -dir);
         result.gameObject.SetActive(true);
 
         return result;

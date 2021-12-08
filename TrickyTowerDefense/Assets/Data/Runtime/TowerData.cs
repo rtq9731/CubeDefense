@@ -78,4 +78,23 @@ public class TowerData
       Legendary
   }
   
+    public TowerData GetCopiedTowerData()
+    {
+        return new TowerData
+        {
+            idx = this.idx,
+            atk = this.atk,
+            atkspeed = this.atkspeed,
+            imagepath = this.imagepath,
+            ispenetrate = this.ispenetrate,
+            plusATK = this.plusATK,
+            position = this.position,
+            range = this.range,
+            splashrange = this.splashrange,
+            tmi = this.tmi,
+            towergrade = this.towergrade,
+            towername = this.towername,
+            towertype = this.towertype
+        };
+    }
 }
