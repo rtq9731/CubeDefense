@@ -48,6 +48,7 @@ public class EnemyScript : MonoBehaviour
     public void SetData(EnemyData data, Vector2 dir)
     {
         _data = data;
+        _sr.sprite = Resources.Load<Sprite>(data.Imagepath);
         _dir = dir;
     }
 
