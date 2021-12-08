@@ -9,6 +9,8 @@ public class HeightChecker : MonoBehaviour
     [SerializeField] LayerMask whatIsEnemy;
 
     LineRenderer lr = null;
+    RaycastHit2D lasthit;
+    RaycastHit2D hit;
 
     List<GameObject> overHeightTowerList = new List<GameObject>();
     float overHeightTimer = 0f;
@@ -22,11 +24,23 @@ public class HeightChecker : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit2D hit;
         Debug.DrawRay(lr.GetPosition(0), Vector2.right, Color.green, 10);
         if (hit = Physics2D.Raycast(lr.GetPosition(0), Vector2.right, 10, whatIsEnemy))
         {
-            Debug.Log(hit.transform.gameObject.name);
+            if (lasthit == hit)
+            {
+                overHeightTimer += Time.deltaTime * GameManager.Instance.gameSpeed;
+
+                if(overHeightTimer >= gameOverTime)
+                {
+                    // 타워 쌓기 중지
+                }
+            }
+            else
+            {
+                overHeightTimer = 0f;
+                lasthit = hit;
+            }
         }
     }
 
