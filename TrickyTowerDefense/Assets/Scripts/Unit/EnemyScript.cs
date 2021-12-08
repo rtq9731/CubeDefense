@@ -54,6 +54,8 @@ public class EnemyScript : MonoBehaviour
 
     public void Hit(float damage)
     {
+        Debug.Log(damage);
+        Debug.Log(_data.Hp);
         _health.Hit(damage);
     }
 }
