@@ -26,7 +26,7 @@ public class TowerData
   
   [SerializeField]
   float atk;
-  public float Atk { get {return atk; } set { this.atk = value;} }
+  public float Atk { get { return atk; } set { this.atk = value; } }
   
   [SerializeField]
   float atkspeed;
@@ -56,7 +56,10 @@ public class TowerData
   Vector2 position;
   public Vector2 Position { get { return position; } set { position = value; } }
 
-  public enum TowerType
+    float plusATK;
+    public float PlusATK { get { return plusATK; } set { plusATK = value; } }
+
+    public enum TowerType
   {
       Grenadier,
       Laser,

@@ -21,7 +21,7 @@ MonoBehaviour:
     towergrade: 0
     atk: 10
     atkspeed: 4
-    range: 2
+    range: 6
     splashrange: 1
     ispenetrate: 0
     imagepath: TowerIcon/Grenadier/BoomTower1
@@ -34,7 +34,7 @@ MonoBehaviour:
     towergrade: 1
     atk: 20
     atkspeed: 3.5
-    range: 3
+    range: 7
     splashrange: 1
     ispenetrate: 0
     imagepath: TowerIcon/Grenadier/BoomTower2
@@ -47,7 +47,7 @@ MonoBehaviour:
     towergrade: 2
     atk: 30
     atkspeed: 3
-    range: 4
+    range: 8
     splashrange: 1
     ispenetrate: 0
     imagepath: TowerIcon/Grenadier/BoomTower2
@@ -60,7 +60,7 @@ MonoBehaviour:
     towergrade: 3
     atk: 40
     atkspeed: 2.5
-    range: 5
+    range: 9
     splashrange: 1
     ispenetrate: 0
     imagepath: TowerIcon/Grenadier/BoomTower4
@@ -73,7 +73,7 @@ MonoBehaviour:
     towergrade: 4
     atk: 50
     atkspeed: 2
-    range: 6
+    range: 10
     splashrange: 1
     ispenetrate: 0
     imagepath: TowerIcon/Grenadier/BoomTower5
@@ -86,7 +86,7 @@ MonoBehaviour:
     towergrade: 5
     atk: 60
     atkspeed: 1.5
-    range: 7
+    range: 11
     splashrange: 1
     ispenetrate: 0
     imagepath: TowerIcon/Grenadier/BoomTower6
@@ -99,7 +99,7 @@ MonoBehaviour:
     towergrade: 0
     atk: 10
     atkspeed: 4
-    range: 3
+    range: 6
     splashrange: 0
     ispenetrate: 1
     imagepath: TowerIcon/Laser/LazerTower1
@@ -113,7 +113,7 @@ MonoBehaviour:
     towergrade: 1
     atk: 15
     atkspeed: 3.5
-    range: 5
+    range: 8
     splashrange: 0
     ispenetrate: 1
     imagepath: TowerIcon/Laser/LazerTower2
@@ -127,7 +127,7 @@ MonoBehaviour:
     towergrade: 2
     atk: 20
     atkspeed: 3
-    range: 7
+    range: 11
     splashrange: 0
     ispenetrate: 1
     imagepath: TowerIcon/Laser/LazerTower3
@@ -141,7 +141,7 @@ MonoBehaviour:
     towergrade: 3
     atk: 25
     atkspeed: 2.5
-    range: 9
+    range: 13
     splashrange: 0
     ispenetrate: 1
     imagepath: TowerIcon/Laser/LazerTower4
@@ -155,7 +155,7 @@ MonoBehaviour:
     towergrade: 4
     atk: 30
     atkspeed: 2
-    range: 11
+    range: 15
     splashrange: 0
     ispenetrate: 1
     imagepath: TowerIcon/Laser/LazerTower5
@@ -169,7 +169,7 @@ MonoBehaviour:
     towergrade: 5
     atk: 35
     atkspeed: 1.5
-    range: 13
+    range: 17
     splashrange: 0
     ispenetrate: 1
     imagepath: TowerIcon/Laser/LazerTower6
@@ -183,7 +183,7 @@ MonoBehaviour:
     towergrade: 0
     atk: 20
     atkspeed: 4
-    range: 3
+    range: 6
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Acher/ArrowTower1
@@ -197,7 +197,7 @@ MonoBehaviour:
     towergrade: 1
     atk: 30
     atkspeed: 3.5
-    range: 5
+    range: 8
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Acher/ArrowTower2
@@ -211,7 +211,7 @@ MonoBehaviour:
     towergrade: 2
     atk: 40
     atkspeed: 3
-    range: 7
+    range: 10
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Acher/ArrowTower3
@@ -225,7 +225,7 @@ MonoBehaviour:
     towergrade: 3
     atk: 50
     atkspeed: 2.5
-    range: 9
+    range: 12
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Acher/ArrowTower4
@@ -239,7 +239,7 @@ MonoBehaviour:
     towergrade: 4
     atk: 60
     atkspeed: 2
-    range: 11
+    range: 13
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Acher/ArrowTower5
@@ -253,7 +253,7 @@ MonoBehaviour:
     towergrade: 5
     atk: 80
     atkspeed: 1.5
-    range: 13
+    range: 15
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Acher/ArrowTower6
@@ -267,7 +267,7 @@ MonoBehaviour:
     towergrade: 0
     atk: 5
     atkspeed: 1
-    range: 2
+    range: 6
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Bullet/BulletTower1
@@ -281,7 +281,7 @@ MonoBehaviour:
     towergrade: 1
     atk: 10
     atkspeed: 0.9
-    range: 3
+    range: 7
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Bullet/BulletTower2
@@ -295,7 +295,7 @@ MonoBehaviour:
     towergrade: 2
     atk: 15
     atkspeed: 0.8
-    range: 4
+    range: 8
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Bullet/BulletTower3
@@ -309,7 +309,7 @@ MonoBehaviour:
     towergrade: 3
     atk: 20
     atkspeed: 0.7
-    range: 5
+    range: 9
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Bullet/BulletTower4
@@ -323,7 +323,7 @@ MonoBehaviour:
     towergrade: 4
     atk: 25
     atkspeed: 0.6
-    range: 6
+    range: 10
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Bullet/BulletTower5
@@ -337,7 +337,7 @@ MonoBehaviour:
     towergrade: 5
     atk: 40
     atkspeed: 0.5
-    range: 7
+    range: 11
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Bullet/BulletTower6
@@ -366,7 +366,7 @@ MonoBehaviour:
     towergrade: 1
     atk: 1.2
     atkspeed: 0
-    range: 2
+    range: 3
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Buff/SupTower2
@@ -381,7 +381,7 @@ MonoBehaviour:
     towergrade: 2
     atk: 1.3
     atkspeed: 0
-    range: 2
+    range: 4
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Buff/SupTower3
@@ -396,7 +396,7 @@ MonoBehaviour:
     towergrade: 3
     atk: 1.4
     atkspeed: 0
-    range: 2
+    range: 5
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Buff/SupTower4
@@ -411,7 +411,7 @@ MonoBehaviour:
     towergrade: 4
     atk: 1.5
     atkspeed: 0
-    range: 2
+    range: 6
     splashrange: 0
     ispenetrate: 0
     imagepath: TowerIcon/Buff/SupTower5
