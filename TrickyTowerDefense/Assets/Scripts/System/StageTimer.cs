@@ -13,7 +13,6 @@ public class StageTimer : MonoBehaviour
 
     float _stageTime = 60f;
     float _readyTime = 20f;
-
     float _timer = 0f;
 
     bool _isClearRound = false;
@@ -79,6 +78,20 @@ public class StageTimer : MonoBehaviour
             _timer = 0f;
         }
 
+    }
+
+    public void SkipStage()
+    {
+        if (_isFirstRound)
+        {
+            _timer = _readyTime + _stageTime;
+        }
+
+        _timer = _stageTime;
+        _gameManager.GetData().Round++;
+        _isClearRound = true;
+        _onStageEnd();
+        _info.UpdateTexts();
     }
 
 }

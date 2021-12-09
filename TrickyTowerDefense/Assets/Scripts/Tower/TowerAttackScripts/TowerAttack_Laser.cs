@@ -34,7 +34,12 @@ public class TowerAttack_Laser : Attackable
     {
         if (collision.CompareTag("Enemy"))
         {
-            targets.Add(collision.GetComponent<EnemyScript>());
+            EnemyScript curEnemy = collision.GetComponent<EnemyScript>();
+            if (!targets.Contains(curEnemy))
+            {
+                targets.Add(curEnemy);
+                curEnemy.OnEnmeyDeath += () => targets.Remove(curEnemy);
+            }
         }
     }
      
@@ -43,7 +48,9 @@ public class TowerAttack_Laser : Attackable
         if (collision.CompareTag("Enemy"))
         {
             if(targets.Contains(collision.GetComponent<EnemyScript>()))
-            targets.Remove(collision.GetComponent<EnemyScript>());
+            {
+                targets.Remove(collision.GetComponent<EnemyScript>());
+            }
         }
     }
 
@@ -87,7 +94,6 @@ public class TowerAttack_Laser : Attackable
             if (_tickTimer >= _tickTime)
             {
                 CheckAttack();
-                Debug.Log(_tickTimer);
                 _tickTimer = 0f;
             }
 

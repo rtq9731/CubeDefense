@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,9 +12,9 @@ public class EnemySpawner : MonoBehaviour
     EnemyManager _enemyManager = null;
 
     StageDataData _curStageData = new StageDataData();
-    int _curEnemyCount = 0;
     Vector2 _spawnDir = Vector2.right;
 
+    public bool isOverRound = false;
     private void Awake()
     {
         _stageTimer = GetComponent<StageTimer>();
@@ -26,7 +27,7 @@ public class EnemySpawner : MonoBehaviour
         int stage = GameManager.Instance.GetData().Round;
 
         GameManager.Instance.stageData.dataArray[stage].Copy(out _curStageData);
-        _curEnemyCount = _curStageData.EnemyCount();
+        isOverRound = false;
         StartCoroutine(SpawnEnemiesOnTime());
     }
 
@@ -38,5 +39,6 @@ public class EnemySpawner : MonoBehaviour
             _spawnDir *= -1;
             yield return new WaitForSeconds(_enemySpawnTerm / GameManager.Instance.gameSpeed);
         }
+        isOverRound = true;
     }
 }

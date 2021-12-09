@@ -38,7 +38,9 @@ public class TowerScript : MonoBehaviour
         if(!_targetList.Contains(enemy))
         {
             _targetList.Add(enemy);
-            enemy.OnEnmeyDeath += () => { _targetList.Remove(enemy); };
+            enemy.OnEnmeyDeath += () => { 
+                _targetList.Remove(enemy);
+            };
         }
     }
 

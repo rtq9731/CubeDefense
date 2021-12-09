@@ -7,7 +7,12 @@ public class StageManager : MonoBehaviour
     [SerializeField] int stage = 0;
     [SerializeField] float stageTime = 100f;
     [SerializeField] float stageWaitTime = 20f;
-    public int plusGold = 0; // 라운드 끝날때까지 기다린다음 골드 지급
+    private int plusGold = 0; // 라운드 끝날때까지 기다린다음 골드 지급
+    public int PlusGold
+    {
+        get { return plusGold; }
+        set { plusGold = value; }
+    }
 
     StageTimer stageTimer = null;
 
@@ -15,6 +20,10 @@ public class StageManager : MonoBehaviour
     {
         stageTimer = GetComponent<StageTimer>();
         stageTimer.SetStageTimer(stageTime, stageWaitTime);
-        stageTimer._onStageStart += () => { GameManager.Instance.GetData().Gold += plusGold; };
+        
+        stageTimer._onStageEnd += () => { 
+            GameManager.Instance.GetData().Gold += plusGold;
+            plusGold = 0;
+        };
     }
 }

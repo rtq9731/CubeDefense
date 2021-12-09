@@ -7,6 +7,7 @@ TagManager:
   - Tower
   - Ground
   - Enemy
+  - EnemyGoal
   layers:
   - Default
   - TransparentFX
