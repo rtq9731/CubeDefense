@@ -5,22 +5,15 @@ using UnityEngine;
 
 public class GrenadeScript : MonoBehaviour
 {
-    [SerializeField] float speed = 1f;
+    [SerializeField] float _speed = 1f;
     [SerializeField] LayerMask whatIsEnemy;    
-    Coroutine co = null;
+    Coroutine _co = null;
 
     public void Fire(EnemyScript target, float damage, Vector3 scale, float splashRadius)
     {
         transform.localScale = scale;
-        co = StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage, splashRadius));
+        _co = StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage, splashRadius));
         target.OnEnmeyDeath += RemoveArrow; // 어차피 켜질 때 초기화 해줘서 상관 없음
-        target.OnEnmeyDeath += () =>
-        {
-            if (co != null)
-            {
-                StopCoroutine(co);
-            }
-        };
     }
 
     private void RemoveArrow()
@@ -47,7 +40,14 @@ public class GrenadeScript : MonoBehaviour
         {
             Vector3 dir = target.transform.position - transform.position;
 
-            transform.Translate(speed * Time.deltaTime * GameManager.Instance.gameSpeed * dir.normalized);
+            transform.Translate(_speed * Time.deltaTime * GameManager.Instance.gameSpeed * dir.normalized);
+
+            if (!target.gameObject.activeSelf)
+            {
+                gameObject.SetActive(false);
+                StopCoroutine(_co);
+            }
+
             yield return null;
         }
         Boom(damage, splashRadius);

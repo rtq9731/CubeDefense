@@ -5,15 +5,23 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    [SerializeField] float speed = 1f;
-    Coroutine co = null;
+    [SerializeField] float _speed = 1f;
+    Coroutine _co = null;
+
+    SpriteRenderer _sr;
+
+    private void Awake()
+    {
+        _sr = GetComponent<SpriteRenderer>();
+    }
 
     public void Fire(EnemyScript target, float damage, Vector3 scale)
     {
+        Vector2 targetVector = target.transform.position - transform.position;
+        _sr.flipX = targetVector.x >= 0 ? true : false;
+
         transform.localScale = scale;
-        co = StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage));
-        target.OnEnmeyDeath += RemoveBullet; // 어차피 켜질 때 초기화 해줘서 상관 없음
-        target.OnEnmeyDeath += () => StopCoroutine(co);
+        _co = StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage));
     }
 
     private void RemoveBullet()
@@ -27,7 +35,14 @@ public class BulletScript : MonoBehaviour
         {
             Vector3 dir = target.transform.position - transform.position;
 
-            transform.Translate(speed * Time.deltaTime * GameManager.Instance.gameSpeed * dir.normalized);
+            transform.Translate(_speed * Time.deltaTime * GameManager.Instance.gameSpeed * dir.normalized);
+
+            if (!target.gameObject.activeSelf)
+            {
+                gameObject.SetActive(false);
+                StopCoroutine(_co);
+            }
+
             yield return null;
         }
         target.Hit(damage);

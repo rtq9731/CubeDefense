@@ -5,6 +5,7 @@ using UnityEngine;
 public class TowerBulletPool : MonoBehaviour
 {
     [SerializeField] GameObject bulletPrefab = null;
+    [SerializeField] Transform poolParent = null;
     List<BulletScript> bulletPool = new List<BulletScript>();
 
     public BulletScript GetBullet(Vector2 startPos)
@@ -26,7 +27,7 @@ public class TowerBulletPool : MonoBehaviour
 
     private BulletScript MakeNewBullet(Vector2 startPos)
     {
-        BulletScript result = Instantiate(bulletPrefab, startPos, Quaternion.identity, transform).GetComponent<BulletScript>();
+        BulletScript result = Instantiate(bulletPrefab, startPos, Quaternion.identity, poolParent).GetComponent<BulletScript>();
         bulletPool.Add(result);
         return result;
     }
