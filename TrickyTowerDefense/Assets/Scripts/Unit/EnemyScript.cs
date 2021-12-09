@@ -8,6 +8,7 @@ public class EnemyScript : MonoBehaviour
     SpriteRenderer _sr = null;
     EnemyData _data = new EnemyData();
     EnemyHealth _health = null;
+    StageManager _stageManager = null;
 
     Vector2 _dir = Vector2.zero;
 
@@ -54,8 +55,6 @@ public class EnemyScript : MonoBehaviour
 
     public void Hit(float damage)
     {
-        Debug.Log(damage);
-        Debug.Log(_data.Hp);
         _health.Hit(damage);
     }
 }

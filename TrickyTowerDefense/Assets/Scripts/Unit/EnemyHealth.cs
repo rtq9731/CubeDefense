@@ -4,20 +4,32 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour, IHitable
 {
-    EnemyScript enemyScript = null;
+    EnemyScript _enemyScript = null;
+    StageManager _stageManager = null;
 
     public void Hit(float damage)
     {
-        enemyScript.Data.Damage(damage);
-        if(enemyScript.Data.Hp <= 0)
+        _enemyScript.Data.Damage(damage);
+        if(_enemyScript.Data.Hp <= 0)
         {
-            enemyScript.OnEnmeyDeath();
+            _stageManager.PlusGold++;
             gameObject.SetActive(false);
         }
     }
 
+
     private void Awake()
     {
-        enemyScript = GetComponent<EnemyScript>();
+        _enemyScript = GetComponent<EnemyScript>();
+    }
+
+    private void OnDisable()
+    {
+        _enemyScript.OnEnmeyDeath();
+    }
+
+    private void Start()
+    {
+        _stageManager = GameManager.Instance.stageManager;
     }
 }
