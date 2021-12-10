@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2226b73e10585f847a0bc445bca419ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  _speed: 30
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 256
