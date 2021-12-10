@@ -2,9 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StageTimer : MonoBehaviour
 {
+    private BtnSkipBreak skipBreakBtn = null;
+
     PanelInfoTexts _info = null;
     GameManager _gameManager = null;
 
@@ -27,6 +30,7 @@ public class StageTimer : MonoBehaviour
     private void Start()
     {
         _info = FindObjectOfType<PanelInfoTexts>();
+        skipBreakBtn = FindObjectOfType<BtnSkipBreak>();
         _gameManager = GameManager.Instance;
         if(_gameManager.GetData().Round <= 0)
         {
@@ -34,9 +38,14 @@ public class StageTimer : MonoBehaviour
             _isClearRound = true;
         }
 
+        skipBreakBtn.ShowSkipBtn();
+
         //_onStageEnd += _gameManager.SaveGame;
         _onStageStart += _info.UpdateStageTextOnStartStage;
         _onStageEnd += _info.UpdateStageTextOnEndStage;
+
+        _onStageEnd += skipBreakBtn.ShowSkipBtn;
+        _onStageStart += skipBreakBtn.RemoveSkipBtn;
     }
 
     private void Update()
@@ -80,18 +89,30 @@ public class StageTimer : MonoBehaviour
 
     }
 
+    public void SkipBreak()
+    {
+        _isClearRound = false;
+        _onStageStart();
+        _timer = 0f;
+
+        if (_gameManager.GetData().Round <= 0)
+        {
+            _timer = _readyTime;
+        }
+    }
+
     public void SkipStage()
     {
-        if (_isFirstRound)
-        {
-            _timer = _readyTime + _stageTime;
-        }
-
         _timer = _stageTime;
         _gameManager.GetData().Round++;
         _isClearRound = true;
         _onStageEnd();
         _info.UpdateTexts();
+
+        if (_isFirstRound)
+        {
+            _timer = _readyTime + _stageTime;
+        }
     }
 
 }
