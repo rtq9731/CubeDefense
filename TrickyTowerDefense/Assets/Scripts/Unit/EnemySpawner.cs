@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
     StageDataData _curStageData = new StageDataData();
     Vector2 _spawnDir = Vector2.right;
 
-    public bool isOverRound = false;
+    public bool isOverSpawn = false;
     private void Awake()
     {
         _stageTimer = GetComponent<StageTimer>();
@@ -27,7 +27,7 @@ public class EnemySpawner : MonoBehaviour
         int stage = GameManager.Instance.GetData().Round;
 
         GameManager.Instance.stageData.dataArray[stage].Copy(out _curStageData);
-        isOverRound = false;
+        isOverSpawn = false;
         StartCoroutine(SpawnEnemiesOnTime());
     }
 
@@ -39,6 +39,6 @@ public class EnemySpawner : MonoBehaviour
             _spawnDir *= -1;
             yield return new WaitForSeconds(_enemySpawnTerm / GameManager.Instance.gameSpeed);
         }
-        isOverRound = true;
+        isOverSpawn = true;
     }
 }

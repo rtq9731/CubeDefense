@@ -6,7 +6,7 @@ using UnityEngine;
 public class HeightChecker : MonoBehaviour
 {
     [SerializeField] float gameOverTime = 1f;
-    [SerializeField] LayerMask whatIsEnemy;
+    [SerializeField] LayerMask whatIsTower;
 
     LineRenderer lr = null;
     RaycastHit2D lasthit;
@@ -25,7 +25,7 @@ public class HeightChecker : MonoBehaviour
     private void Update()
     {
         Debug.DrawRay(lr.GetPosition(0), Vector2.right, Color.green, 10);
-        if (hit = Physics2D.Raycast(lr.GetPosition(0), Vector2.right, 10, whatIsEnemy))
+        if (hit = Physics2D.Raycast(lr.GetPosition(0), Vector2.right, 10, whatIsTower))
         {
             if (lasthit == hit)
             {
@@ -33,6 +33,8 @@ public class HeightChecker : MonoBehaviour
 
                 if(overHeightTimer >= gameOverTime)
                 {
+                    GameManager.Instance.isHeightOver = true;
+                    gameObject.SetActive(false);
                     // 타워 쌓기 중지
                 }
             }

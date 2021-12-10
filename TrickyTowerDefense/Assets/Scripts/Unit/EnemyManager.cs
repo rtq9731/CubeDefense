@@ -49,12 +49,12 @@ public class EnemyManager : MonoBehaviour
 
     private void CheckStageClear()
     {
-        if (!enemies.Find(x => x.gameObject.activeSelf) && _enemySpawner.isOverRound)
+        if (!enemies.Find(x => x.gameObject.activeSelf) && _enemySpawner.isOverSpawn)
         {
             _btnSkipRound.ShowSkipBtn();
         }
     }
-
+    
     private EnemyScript MakeNewEnemy()
     {
         EnemyScript result = Instantiate(_enemyPrefab, poolParent).GetComponent<EnemyScript>();
