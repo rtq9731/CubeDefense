@@ -10,6 +10,15 @@ public class PlayerData : ISerializationCallbackReceiver
     [SerializeField] private int gold = 10;
     [SerializeField] private int round = 0;
     [SerializeField] private int hp = 0;
+    [SerializeField]private Dictionary<TowerData.TowerType, int> upgradeCountDict = new Dictionary<TowerData.TowerType, int>() 
+    { 
+        { TowerData.TowerType.Grenadier, 0 }, 
+        { TowerData.TowerType.Laser, 0 }, 
+        { TowerData.TowerType.Acher, 0 }, 
+        { TowerData.TowerType.Bullet, 0 }, 
+        { TowerData.TowerType.Buff, 0 } 
+    };
+
 
     public int Gold
     {
@@ -38,19 +47,21 @@ public class PlayerData : ISerializationCallbackReceiver
         return true;
     }
 
-    public List<TowerData> TowerDatas => towerDatas;
-
-    public void AddTower(TowerScript tower)
+    public Dictionary<TowerData.TowerType, int> UpgradeCountDict
     {
-        towerDatas.Add(tower.TowerData);
+        get { return upgradeCountDict; }
     }
+
+    public List<TowerData> TowerDatas => towerDatas;
 
     public void OnBeforeSerialize()
     {
+        towerDatas = GameManager.Instance.towerManager.GetAllLivingTowerData();
         for (int i = 0; i < towerDatas.Count; i++)
         {
             towerDatas[i].Position = towers[i].transform.position;
         }
+
     }
 
     public void OnAfterDeserialize()

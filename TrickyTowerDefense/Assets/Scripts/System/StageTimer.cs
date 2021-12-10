@@ -42,7 +42,7 @@ public class StageTimer : MonoBehaviour
 
         //_onStageEnd += _gameManager.SaveGame;
         _onStageStart += _info.UpdateStageTextOnStartStage;
-        _onStageEnd += _info.UpdateStageTextOnEndStage;
+        _onStageEnd += _info.UpdateStageTextOnEndStage; 
 
         _onStageEnd += skipBreakBtn.ShowSkipBtn;
         _onStageStart += skipBreakBtn.RemoveSkipBtn;
