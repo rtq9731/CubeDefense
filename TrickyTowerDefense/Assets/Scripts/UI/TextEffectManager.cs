@@ -15,12 +15,12 @@ public class TextEffectManager : MonoBehaviour
         myCamera = Camera.main;
     }
 
-    public Text GetTextEffect(string msg, Color textColor, Vector3 position, bool isAnchoredPos, int fontSize = 24, Ease easingMode = Ease.InBack, float fadeTime = 0.5f, float moveTime = 0.5f)
+    public Text GetTextEffect(string msg, Color textColor, Vector3 position, bool isScreenPos, int fontSize = 32, Ease easingMode = Ease.InBack, float fadeTime = 0.5f, float moveTime = 0.5f)
     {
         Text result = textPool.Find(x => !x.gameObject.activeSelf);
-        if(!isAnchoredPos)
+        if(!isScreenPos)
         {
-            position = myCamera.WorldToScreenPoint(position);
+            position = myCamera.ScreenToWorldPoint(position);
         }
 
         if(result == null)
@@ -28,7 +28,7 @@ public class TextEffectManager : MonoBehaviour
             result = MakeNewText();
         }
 
-        result.rectTransform.anchoredPosition = position;
+        result.transform.position = position;
         result.text = msg;
         result.color = textColor;
         result.fontSize = fontSize;

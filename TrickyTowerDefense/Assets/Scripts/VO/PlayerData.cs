@@ -57,6 +57,15 @@ public class PlayerData
 
         gold -= price;
         GameManager.Instance.uiManager.infoTexts.UpdateTexts();
+
+        Debug.Log(GameManager.Instance.uiManager.infoTexts.textCurGold.rectTransform.position);
+
+        GameManager.Instance.textEffectManager.GetTextEffect
+            ($"- {price}", 
+            Color.white,
+            GameManager.Instance.uiManager.infoTexts.textCurGold.transform.position, 
+            true);
+
         return true;
     }
 

@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class PanelInfoTexts : MonoBehaviour
 {
-    [SerializeField] Text textCurRound = null;
-    [SerializeField] Text textCurHP = null;
-    [SerializeField] Text textCurGold = null;
-    [SerializeField] Text textIsOnRound = null;
+    public Text textCurRound = null;
+    public Text textCurHP = null;
+    public Text textCurGold = null;
+    public Text textIsOnRound = null;
 
     private void Start()
     {

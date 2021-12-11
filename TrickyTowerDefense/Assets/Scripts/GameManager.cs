@@ -12,15 +12,16 @@ public class GameManager : MonoSingleton<GameManager>
     string fileExtension = ".sav";
     string filePath = "";
 
-    [SerializeField] public Tower towerData = null;
-    [SerializeField] public Enemy enemyData = null;
-    [SerializeField] public StageData stageData = null;
+    public Tower towerData = null;
+    public Enemy enemyData = null;
+    public StageData stageData = null;
 
-    [SerializeField] public EnemyManager enemyManager = null;
-    [SerializeField] public TowerManager towerManager = null;
-    [SerializeField] public StageManager stageManager = null;
-    [SerializeField] public HeightChecker heightChecker = null;
-    [SerializeField] public UIManager uiManager = null;
+    public EnemyManager enemyManager = null;
+    public TowerManager towerManager = null;
+    public StageManager stageManager = null;
+    public HeightChecker heightChecker = null;
+    public UIManager uiManager = null;
+    public TextEffectManager textEffectManager = null;
 
     private PlayerData data = new PlayerData();
     

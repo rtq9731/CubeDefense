@@ -7530,6 +7530,7 @@ MonoBehaviour:
   stageManager: {fileID: 197238854}
   heightChecker: {fileID: 1238943340}
   uiManager: {fileID: 770518541}
+  textEffectManager: {fileID: 64593368}
 --- !u!1 &1372783241
 GameObject:
   m_ObjectHideFlags: 0
