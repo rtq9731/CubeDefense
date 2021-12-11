@@ -20,8 +20,9 @@ public class GameManager : MonoSingleton<GameManager>
     [SerializeField] public TowerManager towerManager = null;
     [SerializeField] public StageManager stageManager = null;
     [SerializeField] public HeightChecker heightChecker = null;
+    [SerializeField] public UIManager uiManager = null;
 
-    [SerializeField] PlayerData data = new PlayerData();
+    private PlayerData data = new PlayerData();
     
     public PlayerData GetData()
     {
@@ -35,8 +36,8 @@ public class GameManager : MonoSingleton<GameManager>
 
     private void Start()
     {
-        LoadGame();
         gameSpeed = 0f;
+        LoadGame();
     }
 
     public void StartGame()
