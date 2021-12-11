@@ -7,12 +7,11 @@ public class GrenadeScript : MonoBehaviour
 {
     [SerializeField] float _speed = 1f;
     [SerializeField] LayerMask whatIsEnemy;    
-    Coroutine _co = null;
 
     public void Fire(EnemyScript target, float damage, Vector3 scale, float splashRadius)
     {
         transform.localScale = scale;
-        _co = StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage, splashRadius));
+        StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage, splashRadius));
         target.OnEnmeyDeath += RemoveArrow; // 어차피 켜질 때 초기화 해줘서 상관 없음
     }
 
@@ -45,7 +44,7 @@ public class GrenadeScript : MonoBehaviour
             if (!target.gameObject.activeSelf)
             {
                 gameObject.SetActive(false);
-                StopCoroutine(_co);
+                yield break;
             }
 
             yield return null;

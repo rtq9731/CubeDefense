@@ -46,6 +46,7 @@ public class StageTimer : MonoBehaviour
 
         _onStageEnd += skipBreakBtn.ShowSkipBtn;
         _onStageStart += skipBreakBtn.RemoveSkipBtn;
+        _onStageEnd += GameManager.Instance.SaveGame;
     }
 
     private void Update()

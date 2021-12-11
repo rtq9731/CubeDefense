@@ -25,7 +25,10 @@ public class EnemyHealth : MonoBehaviour, IHitable
 
     private void OnDisable()
     {
-        _enemyScript.OnEnmeyDeath();
+        if (GameManager.Instance != null)
+        {
+            _enemyScript.OnEnmeyDeath();
+        }
     }
 
     private void Start()

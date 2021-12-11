@@ -30,8 +30,6 @@ public class EnemyScript : MonoBehaviour
 
     private void OnEnable()
     {
-        _onEnemyDeath = () => { }; // 연결된 이벤트 전부 초기화
-
         _dir = transform.position.x >= 0 ? Vector2.left : Vector2.right;
         _sr.flipX = _dir == Vector2.left ? true : false;
     }

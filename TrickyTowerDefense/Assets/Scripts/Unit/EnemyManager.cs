@@ -37,6 +37,7 @@ public class EnemyManager : MonoBehaviour
         result.transform.position = dir == Vector2.left ? _spawnPoints[0].position : _spawnPoints[1].position;
         result.SetData(GameManager.Instance.enemyData.GetEnemyData(tier).GetCopiedData(), -dir);
         result.gameObject.SetActive(true);
+        result.OnEnmeyDeath = () => { };
         result.OnEnmeyDeath += () => _info.UpdateTexts();
         result.OnEnmeyDeath += CheckStageClear;
         return result;

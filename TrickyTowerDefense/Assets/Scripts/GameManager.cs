@@ -49,6 +49,14 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void SaveGame()
     {
+        data.Towers = Instance.towerManager.GetAllLivingTowerData();
+
+        foreach (var item in data.Towers)
+        {
+            item.TowerData.Position = item.transform.position;
+            data.TowerDatas.Add(item.TowerData);
+        } 
+
         using (StreamWriter sw = new StreamWriter(filePath + "/save" + fileExtension))
         {
             sw.Write(JsonUtility.ToJson(data));
@@ -63,8 +71,16 @@ public class GameManager : MonoSingleton<GameManager>
             {
                 data = JsonUtility.FromJson<PlayerData>(sr.ReadToEnd());
             }
-            TowerManager towerManager = FindObjectOfType<TowerManager>();
-            data.TowerDatas.ForEach(x => towerManager.GetNewTower(x.Idx).transform.position = x.Position);
+
+            if(data == null)
+            {
+                data = new PlayerData();
+                return;
+            }
+
+            towerManager.MakeAllLoadedTower(data.TowerDatas);
+            uiManager.infoTexts.UpdateTexts();
+            
         }
         catch
         {

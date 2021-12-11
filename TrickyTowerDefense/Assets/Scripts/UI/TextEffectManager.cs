@@ -8,11 +8,11 @@ public class TextEffectManager : MonoBehaviour
 {
     [SerializeField] Text textPrefab = null;
     List<Text> textPool = new List<Text>();
-    Camera camera = null;
+    Camera myCamera = null;
 
     private void Start()
     {
-        camera = Camera.main;
+        myCamera = Camera.main;
     }
 
     public Text GetTextEffect(string msg, Color textColor, Vector3 position, bool isAnchoredPos, int fontSize = 24, Ease easingMode = Ease.InBack, float fadeTime = 0.5f, float moveTime = 0.5f)
@@ -20,7 +20,7 @@ public class TextEffectManager : MonoBehaviour
         Text result = textPool.Find(x => !x.gameObject.activeSelf);
         if(!isAnchoredPos)
         {
-            position = camera.WorldToScreenPoint(position);
+            position = myCamera.WorldToScreenPoint(position);
         }
 
         if(result == null)
@@ -41,6 +41,6 @@ public class TextEffectManager : MonoBehaviour
 
     public Text MakeNewText()
     {
-        return Instantiate<Text>(textPrefab, transform);
+        return Instantiate(textPrefab.gameObject, transform).GetComponent<Text>();
     }
 }

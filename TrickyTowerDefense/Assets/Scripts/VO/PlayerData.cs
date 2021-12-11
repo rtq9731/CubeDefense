@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerData : ISerializationCallbackReceiver
+public class PlayerData
 {
     private List<TowerScript> towers = new List<TowerScript>();
     [SerializeField] private List<TowerData> towerDatas = new List<TowerData>();
@@ -70,28 +70,11 @@ public class PlayerData : ISerializationCallbackReceiver
         get { return upgradePriceDict; }
     }
 
+    public List<TowerScript> Towers
+    {
+        get { return towers; }
+        set { towers = value; }
+    }
+
     public List<TowerData> TowerDatas => towerDatas;
-
-    public void OnBeforeSerialize()
-    {
-        if (Application.isPlaying)
-        {
-            if (GameManager.Instance != null)
-            {
-                towers = GameManager.Instance.towerManager.GetAllLivingTowerData();
-                foreach (var item in towers)
-                {
-                    item.TowerData.Position = item.transform.position;
-                }
-            }
-        }
-    }
-
-    public void OnAfterDeserialize()
-    {
-        foreach (var item in towers)
-        {
-            GameObject.FindObjectOfType<TowerManager>().GetNewTower(item.TowerData.Idx).transform.position = item.TowerData.Position;
-        }
-    }
 }

@@ -17,9 +17,8 @@ public class TowerManager : MonoBehaviour
     private int curRandIdx = -1;
     private int nextRandIdx = 0;
 
-    List<TowerMerge> towerList = new List<TowerMerge>();
     List<TowerMerge> mergeReadyTowerList = new List<TowerMerge>();
-    List<TowerMerge> towerPool = new List<TowerMerge>();
+    List<TowerScript> towerPool = new List<TowerScript>();
 
     private void Start()
     {
@@ -35,15 +34,10 @@ public class TowerManager : MonoBehaviour
         };
     }
 
-    public List<TowerMerge> GetTowerList()
-    {
-        return towerList;
-    }
-
     public List<TowerScript> GetAllLivingTowerData()
     {
         List<TowerScript> result = new List<TowerScript>();
-        towerList.FindAll(x => x.gameObject.activeSelf).ForEach(x => result.Add(x.GetComponent<TowerScript>()));
+        towerPool.FindAll(x => x.gameObject.activeSelf).ForEach(x => result.Add(x));
         return result;
     }
 
@@ -53,12 +47,30 @@ public class TowerManager : MonoBehaviour
         newMergeTower();
     }
 
-    public TowerMerge GetNewTower(int idx)
+    public void MakeAllLoadedTower(List<TowerData> towerDatas)
     {
-        TowerMerge result = null;
+        Time.timeScale = 0; 
+        foreach (var item in towerDatas)
+        {
+            MakeLoadedTower(item).SetData(item.GetCopiedTowerData());
+        }
+        Time.timeScale = 1;
+    }
+
+    public TowerScript MakeLoadedTower(TowerData data)
+    {
+        TowerScript result = Instantiate(towerPrefab, this.transform).GetComponent<TowerScript>();
+        result.transform.position = data.Position;
+
+        return result;
+    }
+
+    public TowerScript GetNewTower(int idx)
+    {
+        TowerScript result = null;
         if (towerPool.Count >= 1)
         {
-            result = towerPool.Find(x => !towerList.Contains(x) && x.GetTowerIdx() == idx);
+            result = towerPool.Find(x => x.TowerData.Idx == idx && !x.gameObject.activeSelf);
             if(result == null)
             {
                 result = MakeNewTower(idx);
@@ -78,16 +90,15 @@ public class TowerManager : MonoBehaviour
         return result;
     }
 
-    private TowerMerge MakeNewTower(int idx)
+    private TowerScript MakeNewTower(int idx)
     {
-        TowerMerge result = Instantiate(towerPrefab, this.transform).GetComponent<TowerMerge>();
-        result.SetData(GameManager.Instance.towerData.GetTowerDatas()[idx]);
+        TowerScript result = Instantiate(towerPrefab, this.transform).GetComponent<TowerScript>();
         return result;
     }
 
-    public TowerMerge GetRandTower()
+    public TowerScript GetRandTower()
     {
-        TowerMerge result = GetNewTower(curRandIdx);
+        TowerScript result = GetNewTower(curRandIdx);
         UpdateRandIdx();
         return result;
     }
@@ -107,7 +118,7 @@ public class TowerManager : MonoBehaviour
     public void MergeTower(TowerMerge originTower, TowerMerge secondTower)
     {
         secondTower.gameObject.SetActive(false);
-        originTower.SetData(GameManager.Instance.towerData.GetTowerDatas()[originTower.GetTowerIdx() + 1]); // 다음 티어의 타워를 가져옴
+        originTower.GetComponent<TowerScript>().SetData(GameManager.Instance.towerData.GetTowerDatas()[originTower.GetTowerIdx() + 1]); // 다음 티어의 타워를 가져옴
 
         originTower.gameObject.SetActive(false);
         originTower.gameObject.SetActive(true);

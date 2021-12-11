@@ -120,7 +120,7 @@ MonoBehaviour:
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
-    position: {x: -2.836763, y: -3.969604}
+    position: {x: 0, y: 0}
   - idx: 8
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1

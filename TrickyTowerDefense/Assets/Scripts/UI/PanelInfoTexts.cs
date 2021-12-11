@@ -26,9 +26,13 @@ public class PanelInfoTexts : MonoBehaviour
     public void UpdateTexts()
     {
         PlayerData data = GameManager.Instance.GetData();
-        textCurRound.text = $"현재 라운드 : {data.Round + 1}";
-        textCurHP.text = $"남은 체력 : {data.HP}";
-        textCurGold.text = $"현재 골드 : {data.Gold} + {GameManager.Instance.stageManager.PlusGold} (대기)";
+
+        if (data != null)
+        {
+            textCurRound.text = $"현재 라운드 : {data.Round + 1}";
+            textCurHP.text = $"남은 체력 : {data.HP}";
+            textCurGold.text = $"현재 골드 : {data.Gold} + {GameManager.Instance.stageManager.PlusGold} (대기)";
+        }
     }
 
     public void UpdateStageTextOnStartStage()
