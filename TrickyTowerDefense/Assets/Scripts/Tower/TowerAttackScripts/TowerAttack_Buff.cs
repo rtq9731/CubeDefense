@@ -33,7 +33,7 @@ public class TowerAttack_Buff : Attackable
                 if (towersInBuff.Count < 2 && !towersInBuff.Contains(curTower))
                 {
                     towersInBuff.Add(curTower);
-                    curTower.TowerData.PlusATK += _tower.TowerData.Atk;
+                    curTower.TowerData.PlusATK += _tower.TowerData.Atk + _tower.TowerData.Atk * (GameManager.Instance.GetData().UpgradeCountDict[_tower.TowerData.TOWERTYPE] / 100);
                 }
             }
 
@@ -50,7 +50,7 @@ public class TowerAttack_Buff : Attackable
                 if (towersInBuff.Count < 2 && !towersInBuff.Contains(curTower))
                 {
                     towersInBuff.Add(curTower);
-                    curTower.TowerData.PlusATK += _tower.TowerData.Atk;
+                    curTower.TowerData.PlusATK += _tower.TowerData.Atk + _tower.TowerData.Atk * ( GameManager.Instance.GetData().UpgradeCountDict[_tower.TowerData.TOWERTYPE] / 100);
                 }
             }
         }

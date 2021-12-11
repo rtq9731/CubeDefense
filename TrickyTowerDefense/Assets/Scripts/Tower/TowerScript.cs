@@ -65,7 +65,7 @@ public class TowerScript : MonoBehaviour
         {
             if(_towerAttack.CanAttack)
             {
-                _towerAttack.Attack(_data.Atk + _data.PlusATK, _targetList[0]);
+                _towerAttack.Attack(_data.Atk + _data.PlusATK + _data.Atk * ( GameManager.Instance.GetData().UpgradeCountDict[_data.TOWERTYPE] / 100 ), _targetList[0]);
             }
         }
     }
