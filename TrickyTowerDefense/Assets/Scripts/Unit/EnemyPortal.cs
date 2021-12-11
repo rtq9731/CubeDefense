@@ -7,7 +7,7 @@ public class EnemyPortal : MonoBehaviour
     PanelInfoTexts _info;
     private void Start()
     {
-        _info = FindObjectOfType<PanelInfoTexts>();
+        _info = GameManager.Instance.uiManager.infoTexts;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

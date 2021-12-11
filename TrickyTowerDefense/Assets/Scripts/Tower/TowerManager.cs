@@ -40,10 +40,10 @@ public class TowerManager : MonoBehaviour
         return towerList;
     }
 
-    public List<TowerData> GetAllLivingTowerData()
+    public List<TowerScript> GetAllLivingTowerData()
     {
-        List<TowerData> result = new List<TowerData>();
-        towerList.FindAll(x => x.gameObject.activeSelf).ForEach(x => result.Add(x.GetComponent<TowerScript>().TowerData));
+        List<TowerScript> result = new List<TowerScript>();
+        towerList.FindAll(x => x.gameObject.activeSelf).ForEach(x => result.Add(x.GetComponent<TowerScript>()));
         return result;
     }
 

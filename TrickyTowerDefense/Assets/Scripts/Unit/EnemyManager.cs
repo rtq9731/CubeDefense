@@ -19,7 +19,7 @@ public class EnemyManager : MonoBehaviour
 
     private void Start()
     {
-        _info = FindObjectOfType<PanelInfoTexts>();
+        _info = GameManager.Instance.uiManager.infoTexts;
         _enemySpawner = FindObjectOfType<EnemySpawner>();
     }
 

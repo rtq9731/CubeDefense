@@ -29,10 +29,10 @@ public class StageTimer : MonoBehaviour
 
     private void Start()
     {
-        _info = FindObjectOfType<PanelInfoTexts>();
         skipBreakBtn = FindObjectOfType<BtnSkipBreak>();
         _gameManager = GameManager.Instance;
-        if(_gameManager.GetData().Round <= 0)
+        _info = _gameManager.uiManager.infoTexts;
+        if (_gameManager.GetData().Round <= 0)
         {
             _isFirstRound = true;
             _isClearRound = true;

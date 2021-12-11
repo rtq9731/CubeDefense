@@ -17,7 +17,6 @@ public class TowerSpawner : MonoBehaviour
     bool canBuyNewTower = true;
 
     TowerManager towerManager = null;
-    UIManager uiManager = null;
 
     SpriteRenderer sr = null;
 
@@ -31,7 +30,6 @@ public class TowerSpawner : MonoBehaviour
     private void Start()
     {
         towerManager = FindObjectOfType<TowerManager>();
-        uiManager = FindObjectOfType<UIManager>();
     }
 
     private void Update()
@@ -49,7 +47,6 @@ public class TowerSpawner : MonoBehaviour
             {
                 if (GameManager.Instance.GetData().Buy(towerPrice))
                 {
-                    uiManager.infoTexts.UpdateTexts();
                     canBuyNewTower = false;
                     GameObject newTower = towerManager.GetRandTower().gameObject;
                     MoveNewTile(newTower.transform, mousePosOnGame.x);

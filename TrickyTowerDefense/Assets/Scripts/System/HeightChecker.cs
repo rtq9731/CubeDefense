@@ -24,8 +24,8 @@ public class HeightChecker : MonoBehaviour
 
     private void Update()
     {
-        Debug.DrawRay(lr.GetPosition(0), Vector2.right, Color.green, 10);
-        if (hit = Physics2D.Raycast(lr.GetPosition(0), Vector2.right, 10, whatIsTower))
+        Debug.DrawRay(lr.GetPosition(0), Vector2.right, Color.green, 100);
+        if (hit = Physics2D.Raycast(lr.GetPosition(0), Vector2.right, 100, whatIsTower))
         {
             if (lasthit == hit)
             {
