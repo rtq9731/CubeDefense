@@ -59,13 +59,15 @@ public class GameManager : MonoSingleton<GameManager>
     {
         gameSpeed = 1f;
         data = new PlayerData();
+        towerManager.ResetALLTowers();
         SaveGame();
     }
 
     public void SaveGame()
     {
-        data.Towers = Instance.towerManager.GetAllLivingTowerData();
+        data.Towers = towerManager.GetAllLivingTowerData();
 
+        data.TowerDatas = new List<TowerData>();
         foreach (var item in data.Towers)
         {
             item.TowerData.Position = item.transform.position;

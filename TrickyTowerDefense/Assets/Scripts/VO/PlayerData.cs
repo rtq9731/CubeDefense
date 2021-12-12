@@ -89,5 +89,9 @@ public class PlayerData
         set { towers = value; }
     }
 
-    public List<TowerData> TowerDatas => towerDatas;
+    public List<TowerData> TowerDatas
+    {
+        get { return towerDatas; }
+        set { towerDatas = value; }
+    }
 }

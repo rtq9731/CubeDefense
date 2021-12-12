@@ -16,26 +16,28 @@ public class TimeSetPanel : MonoBehaviour
         for (int i = 0; i < buttons.Length; i++)
         {
             int timeSpeed = i + 1;
+            int y = i;
 
             buttons[i].onClick.AddListener(() =>
             {
                 GameManager.Instance.gameSpeed = timeSpeed;
-                MoveArrow(timeSpeed > 1 ? (timeSpeed - 1) * 32 : -32);
+                MoveArrow(buttons[y].transform.position);
             });
         }
 
+        arrowRect.anchoredPosition = new Vector2(buttons[0].transform.position.x - 24, buttons[0].transform.position.y - 72); // 8 32
         arrowTween = arrowRect.DOAnchorPosY(arrowRect.anchoredPosition.y - 10, 0.3f);
         arrowTween.SetLoops(-1, LoopType.Yoyo);
     }
 
-    public void MoveArrow(float xPos)
+    public void MoveArrow(Vector2 Pos)
     {
         if (arrowTween != null)
         {
             arrowTween.Kill();
         }
 
-        arrowRect.anchoredPosition = new Vector2(xPos, -48);
+        arrowRect.anchoredPosition = new Vector2(Pos.x -24, Pos.y - 72); // 8 32
         arrowTween = arrowRect.DOAnchorPosY(arrowRect.anchoredPosition.y - 10, 0.3f);
         arrowTween.SetLoops(-1, LoopType.Yoyo);
     }

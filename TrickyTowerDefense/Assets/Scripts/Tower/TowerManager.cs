@@ -36,6 +36,7 @@ public class TowerManager : MonoBehaviour
 
     public void ResetALLTowers()
     {
+        Debug.Log("¤¾¤·");
         towerPool.ForEach(x => x.gameObject.SetActive(false));
     }
 
@@ -78,13 +79,13 @@ public class TowerManager : MonoBehaviour
             result = towerPool.Find(x => x.TowerData.Idx == idx && !x.gameObject.activeSelf);
             if(result == null)
             {
-                result = MakeNewTower(idx);
+                result = MakeNewTower();
                 towerPool.Add(result);
             }
         }
         else
         {
-            result = MakeNewTower(idx);
+            result = MakeNewTower();
 
             towerPool.Add(result);
         }
@@ -95,7 +96,7 @@ public class TowerManager : MonoBehaviour
         return result;
     }
 
-    private TowerScript MakeNewTower(int idx)
+    private TowerScript MakeNewTower()
     {
         TowerScript result = Instantiate(towerPrefab, this.transform).GetComponent<TowerScript>();
         return result;

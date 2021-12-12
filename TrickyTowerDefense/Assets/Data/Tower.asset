@@ -40,7 +40,7 @@ MonoBehaviour:
     imagepath: TowerIcon/Grenadier/BoomTower2
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -2.9816267, y: -4.1687384}
   - idx: 2
     towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
     imagepath: TowerIcon/Grenadier/BoomTower3
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -2.8494823, y: -3.6140115}
   - idx: 3
     towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
     imagepath: TowerIcon/Grenadier/BoomTower4
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -2.6992834, y: -2.7129843}
   - idx: 4
     towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 0.5920225, y: -3.9714358}
   - idx: 8
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 0.051001675, y: -3.6374907}
   - idx: 9
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
@@ -148,7 +148,7 @@ MonoBehaviour:
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 0.63555276, y: -3.7989275}
   - idx: 10
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
@@ -162,7 +162,7 @@ MonoBehaviour:
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 1.0271344, y: -4.2619133}
   - idx: 11
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
@@ -176,7 +176,7 @@ MonoBehaviour:
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 1.6694834, y: -7.745567}
   - idx: 12
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
@@ -204,7 +204,7 @@ MonoBehaviour:
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -2.2715406, y: -4.2209907}
   - idx: 14
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
@@ -218,7 +218,7 @@ MonoBehaviour:
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -1.8312321, y: -3.9033248}
   - idx: 15
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
@@ -232,7 +232,7 @@ MonoBehaviour:
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -2.0882487, y: -3.604916}
   - idx: 16
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
@@ -288,7 +288,7 @@ MonoBehaviour:
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -0.7116795, y: -3.9700363}
   - idx: 20
     towername: "\uD0C4\uD658 \uD0C0\uC6CC"
     towertype: 3
@@ -302,7 +302,7 @@ MonoBehaviour:
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -0.2300446, y: -2.8681989}
   - idx: 21
     towername: "\uD0C4\uD658 \uD0C0\uC6CC"
     towertype: 3
@@ -374,7 +374,7 @@ MonoBehaviour:
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 1.6799625, y: -4.120001}
   - idx: 26
     towername: "\uBC84\uD504 \uD0C0\uC6CC"
     towertype: 4
@@ -389,7 +389,7 @@ MonoBehaviour:
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 1.6799625, y: -4.120001}
   - idx: 27
     towername: "\uBC84\uD504 \uD0C0\uC6CC"
     towertype: 4
@@ -404,7 +404,7 @@ MonoBehaviour:
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 1.7276422, y: -3.545697}
   - idx: 28
     towername: "\uBC84\uD504 \uD0C0\uC6CC"
     towertype: 4

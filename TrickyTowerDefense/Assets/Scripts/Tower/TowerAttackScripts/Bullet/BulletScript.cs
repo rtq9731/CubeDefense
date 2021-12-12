@@ -6,7 +6,6 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     [SerializeField] float _speed = 1f;
-    Coroutine _co = null;
 
     SpriteRenderer _sr;
 
@@ -21,7 +20,7 @@ public class BulletScript : MonoBehaviour
         _sr.flipX = targetVector.x >= 0 ? true : false;
 
         transform.localScale = scale;
-        _co = StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage));
+        StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage));
     }
 
     IEnumerator GotoTarget(EnemyScript target, Action callBack, float damage)
@@ -35,10 +34,7 @@ public class BulletScript : MonoBehaviour
             if (!target.gameObject.activeSelf)
             {
                 gameObject.SetActive(false);
-                if (_co != null)
-                {
-                    StopCoroutine(_co);
-                }
+                yield break;
             }
 
             yield return null;

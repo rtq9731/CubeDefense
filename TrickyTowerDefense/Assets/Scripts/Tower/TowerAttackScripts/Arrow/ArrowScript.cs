@@ -6,7 +6,6 @@ using UnityEngine;
 public class ArrowScript : MonoBehaviour
 {
     [SerializeField] float _speed = 1f;
-    Coroutine _co = null;
 
     SpriteRenderer _sr;
 
@@ -21,7 +20,7 @@ public class ArrowScript : MonoBehaviour
         _sr.flipX = targetVector.x >= 0 ? true : false;
 
         transform.localScale = scale;
-        _co = StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage));
+        StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage));
     }
 
     IEnumerator GotoTarget(EnemyScript target, Action callBack, float damage)
@@ -35,7 +34,7 @@ public class ArrowScript : MonoBehaviour
             if (!target.gameObject.activeSelf)
             {
                 gameObject.SetActive(false);
-                StopCoroutine(_co);
+                yield break;
             }
 
             yield return null;
