@@ -26,7 +26,7 @@ public class BulletScript : MonoBehaviour
 
     IEnumerator GotoTarget(EnemyScript target, Action callBack, float damage)
     {
-        while (Vector2.Distance(target.transform.position, transform.position) >= 0.01f)
+        while (Vector2.Distance(target.transform.position, transform.position) >= 0.1f)
         {
             Vector3 dir = target.transform.position - transform.position;
 
@@ -35,7 +35,10 @@ public class BulletScript : MonoBehaviour
             if (!target.gameObject.activeSelf)
             {
                 gameObject.SetActive(false);
-                StopCoroutine(_co);
+                if (_co != null)
+                {
+                    StopCoroutine(_co);
+                }
             }
 
             yield return null;

@@ -26,7 +26,7 @@ public class ArrowScript : MonoBehaviour
 
     IEnumerator GotoTarget(EnemyScript target, Action callBack, float damage)
     {
-        while (Vector2.Distance(target.transform.position, transform.position) >= 0.01f)
+        while (Vector2.Distance(target.transform.position, transform.position) >= 0.1f)
         {
             Vector3 dir = target.transform.position - transform.position;
 
