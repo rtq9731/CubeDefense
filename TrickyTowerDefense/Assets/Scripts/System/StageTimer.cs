@@ -46,6 +46,10 @@ public class StageTimer : MonoBehaviour
 
         _onStageEnd += skipBreakBtn.ShowSkipBtn;
         _onStageStart += skipBreakBtn.RemoveSkipBtn;
+
+        _onStageStart += () => GameManager.Instance.canSpawnTower = false;
+        _onStageEnd += () => GameManager.Instance.canSpawnTower = true;
+
         _onStageEnd += GameManager.Instance.SaveGame;
     }
 
