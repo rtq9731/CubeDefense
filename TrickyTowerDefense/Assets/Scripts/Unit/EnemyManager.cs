@@ -48,6 +48,11 @@ public class EnemyManager : MonoBehaviour
         
     }
 
+    public void ResetAllEnemies()
+    {
+        enemies.ForEach(x => x.gameObject.SetActive(false));
+    }
+
     private void CheckStageClear()
     {
         if (!enemies.Find(x => x.gameObject.activeSelf) && _enemySpawner.isOverSpawn)

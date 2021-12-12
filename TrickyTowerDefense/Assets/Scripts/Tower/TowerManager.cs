@@ -36,7 +36,6 @@ public class TowerManager : MonoBehaviour
 
     public void ResetALLTowers()
     {
-        Debug.Log(towerPool);
         towerPool.ForEach(x => x.gameObject.SetActive(false));
     }
 

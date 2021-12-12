@@ -17,31 +17,31 @@ MonoBehaviour:
   dataArray:
   - idx: 0
     tier: 0
-    hp: 30
-    speed: 1.5
+    hp: 20
+    speed: 2
     imagepath: EnemyIcon/0
   - idx: 1
     tier: 1
-    hp: 50
+    hp: 40
     speed: 2
     imagepath: EnemyIcon/1
   - idx: 2
     tier: 2
-    hp: 100
-    speed: 2.5
+    hp: 75
+    speed: 2
     imagepath: EnemyIcon/2
   - idx: 3
     tier: 3
-    hp: 140
-    speed: 2.5
+    hp: 100
+    speed: 1.85
     imagepath: EnemyIcon/3
   - idx: 4
     tier: 4
-    hp: 180
-    speed: 2.5
+    hp: 125
+    speed: 1.85
     imagepath: EnemyIcon/4
   - idx: 5
     tier: 5
-    hp: 250
-    speed: 2.5
+    hp: 200
+    speed: 1.85
     imagepath: EnemyIcon/5
