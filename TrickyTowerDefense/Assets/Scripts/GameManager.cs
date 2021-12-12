@@ -60,6 +60,7 @@ public class GameManager : MonoSingleton<GameManager>
         gameSpeed = 1f;
         data = new PlayerData();
         towerManager.ResetALLTowers();
+        uiManager.infoTexts.UpdateTexts();
         SaveGame();
     }
 

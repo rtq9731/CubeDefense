@@ -36,7 +36,7 @@ public class TowerManager : MonoBehaviour
 
     public void ResetALLTowers()
     {
-        Debug.Log("¤¾¤·");
+        Debug.Log(towerPool);
         towerPool.ForEach(x => x.gameObject.SetActive(false));
     }
 
@@ -67,7 +67,7 @@ public class TowerManager : MonoBehaviour
     {
         TowerScript result = Instantiate(towerPrefab, this.transform).GetComponent<TowerScript>();
         result.transform.position = data.Position;
-
+        towerPool.Add(result);
         return result;
     }
 

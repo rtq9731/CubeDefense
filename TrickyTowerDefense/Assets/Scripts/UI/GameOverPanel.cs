@@ -27,6 +27,6 @@ public class GameOverPanel : MonoBehaviour
         Sequence seq = DOTween.Sequence();
         gameOverMsg.text = "";
         seq.Append(gameOverMsg.DOText(msg, 3f));
-        seq.Append(gameOverMsg.DOText($"에러를 막았던 라운드 : {GameManager.Instance.GetData().Round} 라운드", 2f));
+        seq.Append(gameOverInfo.DOText($"에러를 막았던 라운드 : {GameManager.Instance.GetData().Round} 라운드", 2f));
     }
 }
