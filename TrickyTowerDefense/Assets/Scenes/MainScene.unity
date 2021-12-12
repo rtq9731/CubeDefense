@@ -8886,7 +8886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverMsg: {fileID: 1367398904}
-  gameOverInfo: {fileID: 0}
+  gameOverInfo: {fileID: 49719434}
   buttons:
   - {fileID: 1505226173}
   - {fileID: 1762691446}
