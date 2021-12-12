@@ -20,7 +20,7 @@ public class TextEffectManager : MonoBehaviour
         Text result = textPool.Find(x => !x.gameObject.activeSelf);
         if(!isScreenPos)
         {
-            position = myCamera.ScreenToWorldPoint(position);
+            position = myCamera.WorldToScreenPoint(position);
         }
 
         if(result == null)
@@ -33,14 +33,19 @@ public class TextEffectManager : MonoBehaviour
         result.color = textColor;
         result.fontSize = fontSize;
 
-        result.rectTransform.DOAnchorPosY(position.y += 100, moveTime).SetEase(easingMode);
-        result.DOFade(0, fadeTime);
+        Sequence seq = DOTween.Sequence();
+        seq.Append(result.rectTransform.DOAnchorPosY(position.y += 100, moveTime).SetEase(easingMode));
+        seq.Join(result.DOFade(0, fadeTime));
+        seq.OnComplete(() => result.gameObject.SetActive(false));
+        result.gameObject.SetActive(true);
 
         return result;
     }
 
     public Text MakeNewText()
     {
-        return Instantiate(textPrefab.gameObject, transform).GetComponent<Text>();
+        Text result = Instantiate(textPrefab.gameObject, transform).GetComponent<Text>();
+        textPool.Add(result);
+        return result;
     }
 }

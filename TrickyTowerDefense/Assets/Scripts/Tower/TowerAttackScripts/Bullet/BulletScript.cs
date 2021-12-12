@@ -24,11 +24,6 @@ public class BulletScript : MonoBehaviour
         _co = StartCoroutine(GotoTarget(target, () => { gameObject.SetActive(false); }, damage));
     }
 
-    private void RemoveBullet()
-    {
-        gameObject.SetActive(false);
-    }
-
     IEnumerator GotoTarget(EnemyScript target, Action callBack, float damage)
     {
         while (Vector2.Distance(target.transform.position, transform.position) >= 0.01f)

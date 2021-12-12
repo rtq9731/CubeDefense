@@ -46,7 +46,10 @@ public class PlayerData
         get { return hp; }
         set { 
             hp = value;
-
+            if (hp < 0)
+            {
+                GameManager.Instance.GameOver();
+            }
         }
     }
 
@@ -58,12 +61,13 @@ public class PlayerData
         gold -= price;
         GameManager.Instance.uiManager.infoTexts.UpdateTexts();
 
-        Debug.Log(GameManager.Instance.uiManager.infoTexts.textCurGold.rectTransform.position);
+        Vector3 textPos = GameManager.Instance.uiManager.infoTexts.textCurGold.transform.position;
+        textPos.x += 100;
 
         GameManager.Instance.textEffectManager.GetTextEffect
             ($"- {price}", 
-            Color.white,
-            GameManager.Instance.uiManager.infoTexts.textCurGold.transform.position, 
+            Color.black,
+            textPos, 
             true);
 
         return true;

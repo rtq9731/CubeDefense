@@ -34,6 +34,11 @@ public class TowerManager : MonoBehaviour
         };
     }
 
+    public void ResetALLTowers()
+    {
+        towerPool.ForEach(x => x.gameObject.SetActive(false));
+    }
+
     public List<TowerScript> GetAllLivingTowerData()
     {
         List<TowerScript> result = new List<TowerScript>();

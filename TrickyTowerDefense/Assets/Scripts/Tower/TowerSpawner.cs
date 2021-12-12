@@ -36,7 +36,7 @@ public class TowerSpawner : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(GameManager.Instance.isHeightOver || !UIStackManager.IsUIStackEmpty())
+            if(GameManager.Instance.isHeightOver || !UIStackManager.IsUIStackEmpty() || !GameManager.Instance.canSpawnTower)
             {
                 return;
             }

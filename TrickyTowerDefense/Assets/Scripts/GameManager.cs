@@ -8,6 +8,7 @@ public class GameManager : MonoSingleton<GameManager>
 {
     public float gameSpeed = 1f;
     public bool isHeightOver = false;
+    public bool canSpawnTower = true;  
 
     string fileExtension = ".sav";
     string filePath = "";
@@ -22,6 +23,7 @@ public class GameManager : MonoSingleton<GameManager>
     public HeightChecker heightChecker = null;
     public UIManager uiManager = null;
     public TextEffectManager textEffectManager = null;
+    public GameOverPanel gameOverPanel = null;
 
     private PlayerData data = new PlayerData();
     
@@ -44,8 +46,20 @@ public class GameManager : MonoSingleton<GameManager>
     public void StartGame()
     {
         gameSpeed = 1f;
-
         FindObjectOfType<TowerSpawner>().gameObject.SetActive(true);
+    }
+
+    public void GameOver()
+    {
+        gameOverPanel.gameObject.SetActive(true);
+        gameSpeed = 0;
+    }
+
+    public void NewGame()
+    {
+        gameSpeed = 1f;
+        data = new PlayerData();
+        SaveGame();
     }
 
     public void SaveGame()
