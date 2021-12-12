@@ -10,7 +10,7 @@ public class EnemyScript : MonoBehaviour
     EnemyHealth _health = null;
     StageManager _stageManager = null;
 
-    Vector2 _dir = Vector2.zero;
+    public Vector2 _dir = Vector2.zero;
 
     private Action _onEnemyDeath = () => { };
     public Action OnEnmeyDeath
@@ -53,6 +53,7 @@ public class EnemyScript : MonoBehaviour
 
     public void Hit(float damage)
     {
+        GameManager.Instance.textEffectManager.GetTextEffect($"-{damage}", Color.red, transform.position, false);
         _health.Hit(damage);
     }
 }
