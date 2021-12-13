@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [System.Serializable]
@@ -11,7 +12,7 @@ public class PlayerData
     [SerializeField] private int round = 0;
     [SerializeField] private int hp = 100;
 
-    [SerializeField] private Dictionary<TowerData.TowerType, int> upgradeCountDict = new Dictionary<TowerData.TowerType, int>()
+    private Dictionary<TowerData.TowerType, int> upgradeCountDict = new Dictionary<TowerData.TowerType, int>()
     { 
         { TowerData.TowerType.Grenadier, 0 }, 
         { TowerData.TowerType.Laser, 0 }, 
@@ -19,8 +20,10 @@ public class PlayerData
         { TowerData.TowerType.Bullet, 0 }, 
         { TowerData.TowerType.Buff, 0 } 
     };
+    [SerializeField] TowerData.TowerType[] upgradeCountKeys;
+    [SerializeField] int[] upgradeCountValues;
 
-    [SerializeField] private Dictionary<TowerData.TowerType, int> upgradePriceDict = new Dictionary<TowerData.TowerType, int>()
+    private Dictionary<TowerData.TowerType, int> upgradePriceDict = new Dictionary<TowerData.TowerType, int>()
     {
         { TowerData.TowerType.Grenadier, 1 },
         { TowerData.TowerType.Laser, 1 },
@@ -28,6 +31,8 @@ public class PlayerData
         { TowerData.TowerType.Bullet, 1 },
         { TowerData.TowerType.Buff, 1 }
     };
+    [SerializeField] TowerData.TowerType[] upgradePriceKeys;
+    [SerializeField] int[] upgradePriceValues;
 
     public int Gold
     {
@@ -52,6 +57,31 @@ public class PlayerData
             }
         }
     }
+
+    public void BackUPUpgrade()
+    {
+        upgradeCountKeys = upgradeCountDict.Keys.ToArray();
+        upgradeCountValues = upgradeCountDict.Values.ToArray();
+
+        upgradePriceKeys = upgradePriceDict.Keys.ToArray();
+        upgradePriceValues = upgradePriceDict.Values.ToArray();
+    }
+
+    public void LoadUpgrade()
+    {
+        upgradeCountDict.Clear();
+        for (int i = 0; i < upgradeCountKeys.Length; i++)
+        {
+            upgradeCountDict.Add(upgradeCountKeys[i], upgradeCountValues[i]);
+        }
+
+        upgradePriceDict.Clear();
+        for (int i = 0; i < upgradePriceKeys.Length; i++)
+        {
+            upgradePriceDict.Add(upgradePriceKeys[i], upgradePriceValues[i]);
+        }
+    }
+
 
     public bool Buy(int price)
     {

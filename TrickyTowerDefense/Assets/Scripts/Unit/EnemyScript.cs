@@ -31,7 +31,6 @@ public class EnemyScript : MonoBehaviour
     private void OnEnable()
     {
         _dir = transform.position.x >= 0 ? Vector2.left : Vector2.right;
-        _sr.flipX = _dir == Vector2.left ? true : false;
     }
 
     private void Start()

@@ -72,6 +72,7 @@ public class GameManager : MonoSingleton<GameManager>
     public void SaveGame()
     {
         data.Towers = towerManager.GetAllLivingTowerData();
+        data.BackUPUpgrade();
 
         data.TowerDatas = new List<TowerData>();
         foreach (var item in data.Towers)
@@ -101,6 +102,7 @@ public class GameManager : MonoSingleton<GameManager>
                 return;
             }
 
+            data.LoadUpgrade();
             towerManager.MakeAllLoadedTower(data.TowerDatas);
             uiManager.infoTexts.UpdateTexts();
             

@@ -17,8 +17,9 @@ public class EnemyHealth : MonoBehaviour, IHitable
             if(_enemyScript.Data.Tier > 0)
             {
                 Vector3 enemyPos = transform.position;
-                GameManager.Instance.enemyManager.SpawnEnemy(transform.position.x >= 0 ? Vector2.right : Vector2.left, _enemyScript.Data.Tier - 1).transform.position = enemyPos + Vector3.right * 0.5f;
-                GameManager.Instance.enemyManager.SpawnEnemy(transform.position.x >= 0 ? Vector2.right : Vector2.left, _enemyScript.Data.Tier - 1).transform.position = enemyPos + Vector3.left * 0.5f;
+                EnemyManager enemyManager = GameManager.Instance.enemyManager;
+                enemyManager.SpawnEnemy(transform.position.x >= 0 ? Vector2.right : Vector2.left, _enemyScript.Data.Tier - 1).transform.position = enemyPos + Vector3.right * 0.5f;
+                enemyManager.SpawnEnemy(transform.position.x >= 0 ? Vector2.right : Vector2.left, _enemyScript.Data.Tier - 1).transform.position = enemyPos + Vector3.left * 0.5f;
             }
 
             gameObject.SetActive(false);
