@@ -1585,7 +1585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stage: 0
   stageTime: 100
-  stageWaitTime: 20
+  stageWaitTime: 40
 --- !u!114 &197238855
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using DG.Tweening;
 
 public class TowerSpawner : MonoBehaviour
@@ -34,7 +35,7 @@ public class TowerSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             if(GameManager.Instance.isHeightOver || !UIStackManager.IsUIStackEmpty() || !GameManager.Instance.canSpawnTower)
             {
