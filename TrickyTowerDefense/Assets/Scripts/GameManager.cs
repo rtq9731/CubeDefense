@@ -63,6 +63,7 @@ public class GameManager : MonoSingleton<GameManager>
         canSpawnTower = true;
         towerManager.ResetALLTowers();
         enemyManager.ResetAllEnemies();
+        stageManager.PlusGold = 0;
         uiManager.infoTexts.UpdateTexts();
         SaveGame();
     }
