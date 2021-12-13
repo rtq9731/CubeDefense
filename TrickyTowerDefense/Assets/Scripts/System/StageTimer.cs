@@ -27,6 +27,12 @@ public class StageTimer : MonoBehaviour
         _readyTime = readyTime;
     }
 
+    public void ResetStageTimer()
+    {
+        _timer = 0f;
+        _onStageEnd();
+    }
+
     private void Start()
     {
         skipBreakBtn = FindObjectOfType<BtnSkipBreak>();
