@@ -46,7 +46,7 @@ public class PlayerData
         get { return hp; }
         set { 
             hp = value;
-            if (hp < 0)
+            if (hp <= 0)
             {
                 GameManager.Instance.GameOver();
             }
