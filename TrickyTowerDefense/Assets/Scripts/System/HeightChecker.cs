@@ -29,7 +29,7 @@ public class HeightChecker : MonoBehaviour
         {
             if (lasthit == hit)
             {
-                overHeightTimer += Time.deltaTime * GameManager.Instance.gameSpeed;
+                overHeightTimer += Time.deltaTime;
 
                 if(overHeightTimer >= gameOverTime)
                 {
