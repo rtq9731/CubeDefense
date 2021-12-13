@@ -8724,8 +8724,8 @@ MonoBehaviour:
   isHeightOver: 0
   canSpawnTower: 1
   towerData: {fileID: 11400000, guid: 36ab6411f665a1d4995ef3cb0a70aa15, type: 2}
-  enemyData: {fileID: 11400000, guid: 3e13f2802ce9e7c4fb8f3e2c646236c6, type: 2}
-  stageData: {fileID: 11400000, guid: 35a9939fe81f6dd48803c768fc1acd94, type: 2}
+  enemyData: {fileID: 11400000, guid: 08d5d4458e09aa445beabe7fef5c1915, type: 2}
+  stageData: {fileID: 11400000, guid: 76119e574d879494d9f5430f55284733, type: 2}
   enemyManager: {fileID: 197238856}
   towerManager: {fileID: 2086483729}
   stageManager: {fileID: 197238854}

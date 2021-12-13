@@ -19,7 +19,7 @@ MonoBehaviour:
     towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
     towergrade: 0
-    atk: 10
+    atk: 13
     atkspeed: 2.5
     range: 6
     splashrange: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
     towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
     towergrade: 1
-    atk: 20
+    atk: 25
     atkspeed: 2.25
     range: 7
     splashrange: 1
@@ -40,12 +40,12 @@ MonoBehaviour:
     imagepath: TowerIcon/Grenadier/BoomTower2
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 2.8204117, y: -2.1869693}
   - idx: 2
     towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
     towergrade: 2
-    atk: 30
+    atk: 40
     atkspeed: 2
     range: 8
     splashrange: 1
@@ -53,12 +53,12 @@ MonoBehaviour:
     imagepath: TowerIcon/Grenadier/BoomTower3
     tmi: "\uD3ED\uD0C4\uC744 \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uBC94\uC704\uACF5\uACA9\uC744
       \uAC00\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 2.5727606, y: -3.7146962}
   - idx: 3
     towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
     towergrade: 3
-    atk: 40
+    atk: 55
     atkspeed: 1.75
     range: 9
     splashrange: 1
@@ -71,7 +71,7 @@ MonoBehaviour:
     towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
     towergrade: 4
-    atk: 50
+    atk: 70
     atkspeed: 1.5
     range: 10
     splashrange: 1
@@ -84,7 +84,7 @@ MonoBehaviour:
     towername: "\uD3ED\uD0C4 \uD0C0\uC6CC"
     towertype: 0
     towergrade: 5
-    atk: 60
+    atk: 90
     atkspeed: 1
     range: 11
     splashrange: 1
@@ -97,7 +97,7 @@ MonoBehaviour:
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
     towergrade: 0
-    atk: 3
+    atk: 4
     atkspeed: 4
     range: 6
     splashrange: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
     towergrade: 1
-    atk: 4
+    atk: 5
     atkspeed: 3.5
     range: 8
     splashrange: 0
@@ -120,12 +120,12 @@ MonoBehaviour:
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -2.4121559, y: -3.9701533}
   - idx: 8
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
     towergrade: 2
-    atk: 5
+    atk: 7
     atkspeed: 3
     range: 11
     splashrange: 0
@@ -134,12 +134,12 @@ MonoBehaviour:
     tmi: "\uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD558\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC774
       \uAC00\uB2A5\uD558\uACE0, \uC3D8\uB824\uBA74 \uCC28\uC9D5 \uC2DC\uAC04\uC774
       \uD544\uC694\uD569\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -1.3477224, y: -2.8933237}
   - idx: 9
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
     towergrade: 3
-    atk: 6
+    atk: 9
     atkspeed: 2.5
     range: 13
     splashrange: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
     towergrade: 4
-    atk: 7
+    atk: 12
     atkspeed: 2
     range: 15
     splashrange: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
     towername: "\uB808\uC774\uC800 \uD0C0\uC6CC"
     towertype: 1
     towergrade: 5
-    atk: 6
+    atk: 16
     atkspeed: 1.5
     range: 17
     splashrange: 0
@@ -195,7 +195,7 @@ MonoBehaviour:
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
     towergrade: 1
-    atk: 30
+    atk: 35
     atkspeed: 2.25
     range: 8
     splashrange: 0
@@ -204,12 +204,12 @@ MonoBehaviour:
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 1.0541952, y: -3.9703553}
   - idx: 14
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
     towergrade: 2
-    atk: 40
+    atk: 50
     atkspeed: 2
     range: 10
     splashrange: 0
@@ -218,12 +218,12 @@ MonoBehaviour:
     tmi: "\uC6D0\uC2DC\uC801\uC778 \uD615\uD0DC\uC758 \uD654\uC0B4\uC744 \uC3D8\uB294
       \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740 \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC
       \uAC15\uD55C \uACF5\uACA9\uB825\uC744 \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -0.90480417, y: -1.1522673}
   - idx: 15
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
     towergrade: 3
-    atk: 50
+    atk: 65
     atkspeed: 1.75
     range: 12
     splashrange: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
     towergrade: 4
-    atk: 60
+    atk: 85
     atkspeed: 1.5
     range: 13
     splashrange: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
     towername: "\uD654\uC0B4 \uD0C0\uC6CC"
     towertype: 2
     towergrade: 5
-    atk: 80
+    atk: 105
     atkspeed: 1
     range: 15
     splashrange: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
     towername: "\uD0C4\uD658 \uD0C0\uC6CC"
     towertype: 3
     towergrade: 0
-    atk: 5
+    atk: 10
     atkspeed: 1
     range: 6
     splashrange: 0
@@ -279,7 +279,7 @@ MonoBehaviour:
     towername: "\uD0C4\uD658 \uD0C0\uC6CC"
     towertype: 3
     towergrade: 1
-    atk: 10
+    atk: 13
     atkspeed: 0.5
     range: 7
     splashrange: 0
@@ -288,12 +288,12 @@ MonoBehaviour:
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -2.8227103, y: -2.7512894}
   - idx: 20
     towername: "\uD0C4\uD658 \uD0C0\uC6CC"
     towertype: 3
     towergrade: 2
-    atk: 15
+    atk: 25
     atkspeed: 0.45
     range: 8
     splashrange: 0
@@ -302,12 +302,12 @@ MonoBehaviour:
     tmi: "\uD654\uC57D\uC744 \uC0AC\uC6A9\uD55C \uD0C4\uD658\uC744 \uC3D8\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uAD00\uD1B5\uC740
       \uBD88\uAC00\uB2A5\uD558\uC9C0\uB9CC, \uC900\uC218\uD55C \uACF5\uACA9\uB825\uC5D0
       \uBE60\uB978 \uACF5\uACA9\uC18D\uB3C4\uB97C \uAC00\uC9C0\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: -2.6153746, y: -1.6597611}
   - idx: 21
     towername: "\uD0C4\uD658 \uD0C0\uC6CC"
     towertype: 3
     towergrade: 3
-    atk: 20
+    atk: 40
     atkspeed: 0.4
     range: 9
     splashrange: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
     towername: "\uD0C4\uD658 \uD0C0\uC6CC"
     towertype: 3
     towergrade: 4
-    atk: 25
+    atk: 60
     atkspeed: 0.35
     range: 10
     splashrange: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
     towername: "\uD0C4\uD658 \uD0C0\uC6CC"
     towertype: 3
     towergrade: 5
-    atk: 40
+    atk: 80
     atkspeed: 0.3
     range: 11
     splashrange: 0
@@ -374,7 +374,7 @@ MonoBehaviour:
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 1.0544076, y: -3.9734204}
   - idx: 26
     towername: "\uBC84\uD504 \uD0C0\uC6CC"
     towertype: 4
@@ -389,7 +389,7 @@ MonoBehaviour:
       \uC8FC\uB294 \uD0C0\uC6CC\uC785\uB2C8\uB2E4.\n\uACF5\uACA9\uC740 \uBD88\uAC00\uB2A5
       \uD558\uC9C0\uB9CC, \uC8FC\uBCC0 \uB450 \uD0C0\uC6CC\uC5D0 \uACF5\uACA9\uB825
       \uC99D\uAC00 \uBC84\uD504\uB97C \uC90D\uB2C8\uB2E4."
-    position: {x: 0, y: 0}
+    position: {x: 1.2983685, y: -2.444281}
   - idx: 27
     towername: "\uBC84\uD504 \uD0C0\uC6CC"
     towertype: 4

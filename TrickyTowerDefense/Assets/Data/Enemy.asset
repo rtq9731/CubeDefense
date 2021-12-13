@@ -27,7 +27,7 @@ MonoBehaviour:
     imagepath: EnemyIcon/1
   - idx: 2
     tier: 2
-    hp: 75
+    hp: 65
     speed: 2
     imagepath: EnemyIcon/2
   - idx: 3
