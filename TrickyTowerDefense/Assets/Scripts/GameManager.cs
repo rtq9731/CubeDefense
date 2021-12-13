@@ -64,6 +64,7 @@ public class GameManager : MonoSingleton<GameManager>
         towerManager.ResetALLTowers();
         enemyManager.ResetAllEnemies();
         stageManager.PlusGold = 0;
+        FindObjectOfType<StageTimer>().ResetStageTimer();
         uiManager.infoTexts.UpdateTexts();
         SaveGame();
     }
