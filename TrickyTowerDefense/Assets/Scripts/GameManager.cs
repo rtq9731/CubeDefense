@@ -59,6 +59,8 @@ public class GameManager : MonoSingleton<GameManager>
     {
         gameSpeed = 1f;
         data = new PlayerData();
+        isHeightOver = false;
+        canSpawnTower = true;
         towerManager.ResetALLTowers();
         enemyManager.ResetAllEnemies();
         uiManager.infoTexts.UpdateTexts();
