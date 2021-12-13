@@ -56,6 +56,11 @@ public class TowerAttack_Laser : Attackable
 
     public override void Attack(float damage, EnemyScript target)
     {
+        if(tower._targetList.Find(x => x.gameObject.activeSelf) == null)
+        {
+            return;
+        }
+
         if (bCanAttack)
         {
             targets = new List<EnemyScript>();
