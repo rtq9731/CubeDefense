@@ -21,23 +21,24 @@ public class TimeSetPanel : MonoBehaviour
             buttons[i].onClick.AddListener(() =>
             {
                 GameManager.Instance.gameSpeed = timeSpeed;
-                MoveArrow(buttons[y].transform.position);
+                MoveArrow(y);
             });
         }
 
-        arrowRect.anchoredPosition = new Vector2(buttons[0].transform.position.x - 24, buttons[0].transform.position.y - 72); // 8 32
+        arrowRect.SetParent(buttons[0].transform.Find("ArrowPos").transform);
         arrowTween = arrowRect.DOAnchorPosY(arrowRect.anchoredPosition.y - 10, 0.3f);
         arrowTween.SetLoops(-1, LoopType.Yoyo);
     }
 
-    public void MoveArrow(Vector2 Pos)
+    public void MoveArrow(int buttonNum)
     {
         if (arrowTween != null)
         {
             arrowTween.Kill();
         }
 
-        arrowRect.anchoredPosition = new Vector2(Pos.x -24, Pos.y - 72); // 8 32
+        arrowRect.SetParent(buttons[buttonNum].transform.Find("ArrowPos").transform);
+        arrowRect.anchoredPosition = Vector3.zero;
         arrowTween = arrowRect.DOAnchorPosY(arrowRect.anchoredPosition.y - 10, 0.3f);
         arrowTween.SetLoops(-1, LoopType.Yoyo);
     }

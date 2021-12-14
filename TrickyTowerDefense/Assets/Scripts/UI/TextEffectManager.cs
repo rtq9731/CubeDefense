@@ -15,7 +15,7 @@ public class TextEffectManager : MonoBehaviour
         myCamera = Camera.main;
     }
 
-    public Text GetTextEffect(string msg, Color textColor, Vector3 position, bool isScreenPos, int fontSize = 32, Ease easingMode = Ease.InBack, float fadeTime = 0.5f, float moveTime = 0.5f)
+    public Text GetTextEffect(string msg, Color textColor, Vector3 position, bool isScreenPos, int fontSize = 64, Ease easingMode = Ease.InBack, float fadeTime = 0.5f, float moveTime = 0.5f)
     {
         Text result = textPool.Find(x => !x.gameObject.activeSelf);
         if(!isScreenPos)

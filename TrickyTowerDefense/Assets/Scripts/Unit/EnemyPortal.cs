@@ -15,7 +15,7 @@ public class EnemyPortal : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             collision.gameObject.SetActive(false);
-            GameManager.Instance.GetData().HP--;
+            GameManager.Instance.GetData().HP -= collision.GetComponent<EnemyScript>().Data.Tier;
             _info.UpdateTexts();
         }
     }
