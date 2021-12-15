@@ -1,0 +1,8009 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9caa280777800f049833bad03d581b92, type: 3}
+  m_Name: StageData
+  m_EditorClassIdentifier: 
+  SheetName: Assets/Data/Datas.xlsx
+  WorksheetName: StageData
+  dataArray:
+  - idx: 0
+    enemycount1: 10
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 1
+    enemycount1: 10
+    enemycount2: 10
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 2
+    enemycount1: 0
+    enemycount2: 20
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 3
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 10
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 4
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 15
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 5
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 20
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 6
+    enemycount1: 0
+    enemycount2: 5
+    enemycount3: 15
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 7
+    enemycount1: 0
+    enemycount2: 5
+    enemycount3: 20
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 8
+    enemycount1: 10
+    enemycount2: 0
+    enemycount3: 25
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 9
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 3
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 1
+  - idx: 10
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 5
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 11
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 7
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 12
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 10
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 13
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 5
+    enemycount4: 5
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 14
+    enemycount1: 0
+    enemycount2: 5
+    enemycount3: 5
+    enemycount4: 5
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 15
+    enemycount1: 5
+    enemycount2: 5
+    enemycount3: 5
+    enemycount4: 5
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 16
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 5
+    enemycount5: 1
+    enemycount6: 0
+    isbossround: 0
+  - idx: 17
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 5
+    enemycount5: 2
+    enemycount6: 0
+    isbossround: 0
+  - idx: 18
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 3
+    enemycount6: 0
+    isbossround: 0
+  - idx: 19
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 4
+    enemycount6: 0
+    isbossround: 1
+  - idx: 20
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 5
+    enemycount6: 0
+    isbossround: 0
+  - idx: 21
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 6
+    enemycount6: 0
+    isbossround: 0
+  - idx: 22
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 7
+    enemycount6: 0
+    isbossround: 0
+  - idx: 23
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 8
+    enemycount6: 0
+    isbossround: 0
+  - idx: 24
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 9
+    enemycount6: 0
+    isbossround: 0
+  - idx: 25
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 10
+    enemycount6: 0
+    isbossround: 0
+  - idx: 26
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 4
+    enemycount5: 6
+    enemycount6: 0
+    isbossround: 0
+  - idx: 27
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 1
+    enemycount4: 5
+    enemycount5: 5
+    enemycount6: 0
+    isbossround: 0
+  - idx: 28
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 1
+    enemycount6: 1
+    isbossround: 0
+  - idx: 29
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 2
+    isbossround: 1
+  - idx: 30
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 3
+    isbossround: 0
+  - idx: 31
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 4
+    isbossround: 0
+  - idx: 32
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 5
+    isbossround: 0
+  - idx: 33
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 6
+    isbossround: 0
+  - idx: 34
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 7
+    isbossround: 0
+  - idx: 35
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 8
+    isbossround: 0
+  - idx: 36
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 9
+    isbossround: 0
+  - idx: 37
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 10
+    isbossround: 0
+  - idx: 38
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 11
+    isbossround: 0
+  - idx: 39
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 12
+    isbossround: 1
+  - idx: 40
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 13
+    isbossround: 0
+  - idx: 41
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 14
+    isbossround: 0
+  - idx: 42
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 15
+    isbossround: 0
+  - idx: 43
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 16
+    isbossround: 0
+  - idx: 44
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 17
+    isbossround: 0
+  - idx: 45
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 18
+    isbossround: 0
+  - idx: 46
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 19
+    isbossround: 0
+  - idx: 47
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 20
+    isbossround: 0
+  - idx: 48
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 21
+    isbossround: 0
+  - idx: 49
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 22
+    isbossround: 1
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
+  - idx: 0
+    enemycount1: 0
+    enemycount2: 0
+    enemycount3: 0
+    enemycount4: 0
+    enemycount5: 0
+    enemycount6: 0
+    isbossround: 0
