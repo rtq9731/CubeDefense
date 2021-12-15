@@ -24,6 +24,7 @@ public class GameManager : MonoSingleton<GameManager>
     public UIManager uiManager = null;
     public TextEffectManager textEffectManager = null;
     public GameOverPanel gameOverPanel = null;
+    public Tutorial tutorialPanel = null;
 
     private PlayerData data = new PlayerData();
     
@@ -96,7 +97,7 @@ public class GameManager : MonoSingleton<GameManager>
                 data = JsonUtility.FromJson<PlayerData>(sr.ReadToEnd());
             }
 
-            if(data == null)
+            if (data == null)
             {
                 data = new PlayerData();
                 return;
@@ -110,6 +111,11 @@ public class GameManager : MonoSingleton<GameManager>
         catch
         {
 
+        }
+        Debug.Log(data.Round);
+        if(data.Round == 0)
+        {
+            tutorialPanel.StartTuto();
         }
     }
 }
