@@ -112,7 +112,7 @@ public class GameManager : MonoSingleton<GameManager>
         {
 
         }
-        Debug.Log(data.Round);
+
         if(data.Round == 0)
         {
             tutorialPanel.StartTuto();

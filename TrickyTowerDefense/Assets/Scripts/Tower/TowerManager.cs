@@ -59,6 +59,7 @@ public class TowerManager : MonoBehaviour
         {
             MakeLoadedTower(item).SetData(item.GetCopiedTowerData());
         }
+        towerPool.ForEach(x => x.gameObject.SetActive(true));
         Time.timeScale = 1;
     }
 
@@ -67,6 +68,7 @@ public class TowerManager : MonoBehaviour
         TowerScript result = Instantiate(towerPrefab, this.transform).GetComponent<TowerScript>();
         result.transform.position = data.Position;
         towerPool.Add(result);
+        result.gameObject.SetActive(false);
         return result;
     }
 

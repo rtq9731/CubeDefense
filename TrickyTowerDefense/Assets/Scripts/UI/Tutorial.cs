@@ -8,11 +8,11 @@ public class Tutorial : MonoBehaviour
 {
     [SerializeField] GameObject[] tutorialPanels;
 
+    Tween t;
     int tutorialLength = 0;
 
     public void StartTuto()
     {
-        Debug.Log("¤¾¤·1");
         gameObject.SetActive(true);
         tutorialLength = tutorialPanels.Length;
         int num = 0;
@@ -28,11 +28,12 @@ public class Tutorial : MonoBehaviour
             Text text = tutorialPanels[num].GetComponentInChildren<Text>();
             string msg = text.text;
             text.text = "";
-
-            text.DOText(msg, 3f).SetEase(Ease.Linear);
+            
+            t = text.DOText(msg, msg.Length * 0.1f).SetEase(Ease.Linear);
 
             num++;
-            yield return new WaitForSeconds(4f);
+
+            yield return new WaitForSeconds(msg.Length * 0.1f + msg.Length * 0.15f);
             tutorialPanels[num - 1].gameObject.SetActive(false);
         }
         gameObject.SetActive(false);
