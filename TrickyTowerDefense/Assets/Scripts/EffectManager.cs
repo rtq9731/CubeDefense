@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum effectType
+public enum EffectType
 {
     ExplosionEffect,
     laserEffect,
@@ -15,18 +15,55 @@ public class EffectManager : MonoBehaviour
     [SerializeField] ParticleSystem laserParticle = null;
     [SerializeField] ParticleSystem buffParticle = null;
 
-    Dictionary<effectType, List<ParticleSystem>> effectDict = new Dictionary<effectType, List<ParticleSystem>>();
+    Dictionary<EffectType, List<ParticleSystem>> effectDict = new Dictionary<EffectType, List<ParticleSystem>>();
 
     private void Start()
     {
-        for (int i = 0; i < Enum.GetValues(typeof(effectType)).Length; i++)
+        for (int i = 0; i < Enum.GetValues(typeof(EffectType)).Length; i++)
         {
-            effectDict.Add((effectType)i, new List<ParticleSystem>());
+            effectDict.Add((EffectType)i, new List<ParticleSystem>());
         }
     }
 
-    public void GetParticle()
+    public ParticleSystem GetParticle(EffectType effectType, Transform parent)
     {
+        ParticleSystem result = null;
 
+        if (effectDict.TryGetValue(effectType, out List<ParticleSystem> particle))
+        {
+            if ((result = particle.Find(x => !x.gameObject.activeSelf)) == null)
+            {
+                result = MakeNewParticle(effectType);
+            }
+        }
+
+        result.transform.SetParent(parent);
+        return result;
+    }
+
+    private ParticleSystem MakeNewParticle(EffectType effectType)
+    {
+        ParticleSystem result = null;
+        switch (effectType)
+        {
+            case EffectType.ExplosionEffect:
+                result = Instantiate<ParticleSystem>(explosionParticle);
+                break;
+            case EffectType.laserEffect:
+                result = Instantiate<ParticleSystem>(laserParticle);
+                break;
+            case EffectType.BuffEffect:
+                result = Instantiate<ParticleSystem>(buffParticle);
+                break;
+            default:
+                break;
+        }
+
+        if(result)
+        {
+            result.gameObject.SetActive(false);
+            effectDict[effectType].Add(result);
+        }
+        return result;
     }
 }
